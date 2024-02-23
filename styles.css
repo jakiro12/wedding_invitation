@@ -26,6 +26,7 @@
     width: fit-content;
     height: fit-content;
     text-align: center;
+    margin: auto;
 }
 .carrusel_cotnainer{
     width: 90%;
@@ -192,7 +193,7 @@
     height: fit-content;
 }
 .graph_selected{
-    width: 100%;
+    width: min(100%,650px);
     height: 80%;
     border-radius: 15px;
     background: white;
@@ -208,7 +209,7 @@
     border-bottom: 1px solid black;
 }
 .best_country_emisions{
-    width: 100%;
+    width: min(100%,650px);
     height: 10%;
     display: flex;
     justify-content: space-around;
@@ -422,5 +423,8 @@
     }
     .select_news_display{
         justify-content: space-around;
+    }
+    .imagen_to_{
+        width: 90%;
     }
 }
