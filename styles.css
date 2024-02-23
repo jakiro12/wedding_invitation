@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .page_contianer{
-    height: 300vh;
+    height: 300dvh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
@@ -285,6 +285,7 @@
     height: fit-content;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 .box_our_news{
     width: 100%;
@@ -294,25 +295,37 @@
     justify-content: space-around;
 }
 .box_our_news > img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 15px;
     overflow: hidden;
 }
 .box_our_news > div{
     width: 60%;
-    height: 100px;
+    height: 120px;
     border-radius: 15px;
     background: #68da3e;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3px 2px;
+    padding: 3px 0px;
+    cursor: pointer;
 }
-.box_our_news > div > p{
-    width: fit-content;
+.text_description_post{
+    height: 50px;
+    overflow:hidden ;
+    width: 90%;
+    margin-inline: auto;
+    font-weight: bolder;
+}
+.name_user_post{
+    width: 90%;
     height: fit-content;
+    margin-inline: auto;
+    font-weight: bolder;
+    color: blue;
+    text-decoration: underline;
 }
 .imagen_to_{
     width: 100%;
@@ -347,12 +360,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 45% 45%;
-}
-.box_to_redict_user > p {
-    width: fit-content;
-    height: fit-content;
-    margin: auto;
+    grid-template-rows: 55% 45%;
 }
 .box_to_buy_credits{
     width: min(100%,600px);
@@ -378,7 +386,7 @@
     margin: auto;
     background-color: white;
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2,1fr);
 }
 .box_to_show_exchanges > button {
@@ -404,6 +412,13 @@
     right: 5px;
     top: 5px;
     color: white;
+}
+.exchanges_title{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 22px;
 }
 @media (width > 400px) {
     .news_movements_container{
