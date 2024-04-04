@@ -1,7 +1,6 @@
 /** @type {HTMLCanvasElement} */
 const parentTagSection_1=document.querySelector('.section_1')
-const parentTagSection_2=document.querySelector('.section_2')
-const canvasSection_2=document.querySelector('.section_2_for_canvas')
+
 const canvas = document.getElementById('logoCanvas');
 const ctx = canvas.getContext('2d');
 const image = new Image();
@@ -88,12 +87,13 @@ image.onload = function() {
 };
 
 /*Seccion 2, otro canvas aparte */
+const parent_section_2_canvas=document.querySelector('.section_2')
 const canvas_section_2 = document.getElementById('section_canvas_2');
 const section_2_ctx = canvas_section_2.getContext("2d");
 const borderLogos=new Image();
 borderLogos.src='moon.png'
-const get_width_section_2 = document.getElementById("container_canvas_section_2").offsetWidth;
-const get_height_section_2 = document.getElementById("container_canvas_section_2").offsetHeight;
+const get_width_section_2 = document.querySelector('.section_2').offsetWidth;
+const get_height_section_2 = document.querySelector('.section_2').offsetHeight;
 
 canvas_section_2.width = get_width_section_2;
 canvas_section_2.height = get_height_section_2;
@@ -158,12 +158,48 @@ function animate_2() {
 animate();
 animate_2(); //Agregar el settimeout
 
-console.log(canvasSection_2)
+
 window.addEventListener("scroll", function() {
-  const box2Top = parentTagSection_2.getBoundingClientRect().top;
+  const box2Top = parent_section_2_canvas.getBoundingClientRect().top;
   const textAnimate=this.document.querySelector('.section_2 > p')
   if (box2Top <= window.innerHeight && box2Top >= 0) {
-      canvasSection_2.classList.add('scale_section_2');
+      canvas_section_2.classList.add('scale_section_2');
       textAnimate.classList.add('section_2_text')
   } 
 });
+
+
+/* Tercera Seccion del Canvas */
+const parent_section_3_canvas = document.querySelector('.section_3');
+const canvas_section_3 = document.getElementById('section_canvas_3');
+const section_3_ctx = canvas_section_3.getContext('2d');
+
+const get_width_section_3 = parent_section_3_canvas.offsetWidth;
+const get_height_section_3 = parent_section_3_canvas.offsetHeight;
+
+canvas_section_3.width = get_width_section_3;
+canvas_section_3.height = get_height_section_3;
+
+const width_squares= 250;
+const height_squares=250;
+
+const middle_height=get_height_section_3 /2
+const middle_width= get_width_section_3 / 2
+
+const get_section_3_text = document.querySelector('.section_3--wedding-text');
+const text_wedding = '¡Nos casamos!';
+const velocity_text = 200; // milisegundos
+
+function animateTextWedding(index) {
+  if (index < text_wedding.length) {
+    get_section_3_text.textContent += text_wedding[index];
+    index++;
+    setTimeout(function() {
+      animateTextWedding(index);
+    }, velocity_text);
+  }
+}
+
+animateTextWedding(0);
+
+// Dibujar flores unicamente dentro del canvas 3

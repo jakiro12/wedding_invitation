@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 .page_contianer{
-    height: fit-content;
     display: grid;
     height: 300vh;
     grid-template-columns: 1fr;
@@ -52,8 +51,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.4); 
     opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4); 
     animation: fadeInScale 2s ease-in-out forwards; 
     text-align: center;
     line-height: 30px;
@@ -76,4 +75,84 @@
   animation-duration: 1s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
+}
+.section_3{
+  position: relative;
+}
+@keyframes fadeInText {
+ 0% {
+      opacity: 0;
+      top: 60%;
+    }
+    100% {
+        opacity: 1;
+        top: 80%;
+    }
+}
+
+@keyframes scaleSquares {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4); /* Escala inicial y centrado */
+}
+100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* Escala final y centrado */
+}
+}
+@keyframes scaleSquares_rotate {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4); /* Escala inicial y centrado */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotateZ(-5deg) scale(1); /* Escala final y centrado */
+    }
+}
+.section_3--wedding-text{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: fit-content;
+  font-size: 25px;
+  animation-name: fadeInText;
+  animation-duration: 1.5s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+  
+}
+.img_wedding {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 230px;
+  height: 230px;
+}
+.first_square{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.4); 
+  animation: scaleSquares 1.2s ease-in-out forwards; 
+  width: 250px;
+  height: 250px;
+  border: 3px solid;
+ border-image-source: linear-gradient(90deg,goldenrod 70% ,white 76%,goldenrod );
+ border-image-slice: 1;
+}
+.second_square{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4) ; 
+  animation: scaleSquares_rotate 1.6s ease-in-out forwards; 
+  width: 250px;
+  height: 250px;
+ border: 3px solid;
+ border-image-source: linear-gradient(90deg,goldenrod ,white 16%,goldenrod 25%);
+ border-image-slice: 1;
 }
