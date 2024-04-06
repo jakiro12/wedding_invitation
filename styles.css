@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -56,8 +58,11 @@
     transform: translate(-50%, -50%) scale(0.4); 
     animation: fadeInScale 2s ease-in-out forwards; 
     text-align: center;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 30px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @keyframes fadeInScale {
@@ -76,6 +81,17 @@
   animation-duration: 1s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
+}
+.section_2 > span{
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+  z-index: -1;
 }
 .section_3{
   position: relative;
@@ -119,7 +135,6 @@
         transform: translate(-50%, -50%) scale(1); /* Escala final y centrado */
     }
 }
-
 .section_3--wedding-text{
   position: absolute;
   top: 60%;
