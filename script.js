@@ -10,6 +10,8 @@ const mediumStickGreenImage= new Image();
 const whiteLeaveImage=new Image();
 const tinyGreenLeaveImage=new Image();
 const redPointsLeaveImage=new Image();
+const roseImage = new Image();
+roseImage.src = 'rosa.png';
 image.src = 'moon.png';
 cardLogo.src='sobre-pattern.png'
 biggreenLeaveImage.src='big_green_leave.png'
@@ -18,78 +20,73 @@ mediumStickGreenImage.src='medium_stick_green.png'
 whiteLeaveImage.src='white_leave.png'
 tinyGreenLeaveImage.src='tiny_leave.png'
 redPointsLeaveImage.src='red_points_leave.png'
+const angleRotation=7; // Angulo de Rotacion de las animaciones
+
 const containerWidth = document.getElementById('container_canvas').offsetWidth;
 const containerHeight = document.getElementById('container_canvas').offsetHeight;
 
 canvas.width = containerWidth;
 canvas.height = containerHeight;
 
+const circlesDatesContainer=document.querySelectorAll('.section_1--counter > span')
+const canvasCirclesAnimation=document.querySelector(".circle_times_animation")
+const circles_animations_ctx=canvasCirclesAnimation.getContext("2d")
+circles_animations_ctx.translate(45,0)
+
+
+canvasCirclesAnimation.width=circlesDatesContainer[0].offsetWidth + 20;
+canvasCirclesAnimation.height=circlesDatesContainer[0].offsetHeight + 20;
+let centerXCirclesAnimation=canvasCirclesAnimation.width / 2
+let centerYCirclesAnimation=canvasCirclesAnimation.height/2
+
+
+
+
+let angleLeaveCircles = 0;
+function animate_circles() {
+  circles_animations_ctx.clearRect(0, 0, canvasCirclesAnimation.width , canvasCirclesAnimation.height);
+
+  let roseSize=30;
+  let tinyLeaveSize=15;
+  let mediumStickLeaveSize=30;
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation - 40, centerYCirclesAnimation + 15);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 260 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.drawImage(mediumStickGreenImage, -mediumStickLeaveSize/2, -mediumStickLeaveSize/2, mediumStickLeaveSize, mediumStickLeaveSize);
+  circles_animations_ctx.restore();
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 30);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 180 ) * Math.PI / 180); 
+  circles_animations_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  circles_animations_ctx.restore();
+
+
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate( centerXCirclesAnimation - 30, centerYCirclesAnimation + 30);
+  circles_animations_ctx.rotate( Math.PI * 1.6)
+  circles_animations_ctx.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize, roseSize);
+  circles_animations_ctx.restore();
+
+  angleLeaveCircles += 1
+
+    requestAnimationFrame(animate_circles)
+}
+
+animate_circles();
+
+
 let angle = 0;  // Ángulo inicial de rotación
 
 const widthFourCirclesSections=containerWidth / 3.5 
 
-const angleRotation=7;
-image.onload = function() {
+image.onload = function() { //Dibuja el sobre con canvas
   function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = 'black'; 
-
-    
-    const imageSize = 45;
-    const circleSize = 55;
-    const circleRadius= circleSize / 2;
     const cardLogoSize=380;
-    // 1° Circulo
-    ctx.save();  
-    ctx.beginPath();
-    ctx.arc( (widthFourCirclesSections - circleRadius) * 1, canvas.height / 5, circleSize / 2, 0, Math.PI * 2);
-    ctx.closePath();
-    ctx.stroke();
-    
-    ctx.translate((widthFourCirclesSections - circleRadius) * 1 -10, (canvas.height / 5) - imageSize / 2 + imageSize / 2);  // Translada el origen al centro de la imagen
-    ctx.rotate((Math.sin(angle * Math.PI / 180) * angleRotation + 90) * Math.PI / 180);  // Rota el contexto con una animación suave
-    ctx.drawImage(image, -imageSize / 2, (-imageSize / 2) + 15, imageSize, imageSize);
-    ctx.restore();  
-
-    // 2° Circulo
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc((widthFourCirclesSections - circleRadius) * 2, canvas.height / 5, circleSize / 2, 0, Math.PI * 2);
-    ctx.closePath();
-    ctx.stroke();
-    
-    ctx.translate((widthFourCirclesSections - circleRadius ) * 2 - 10 , (canvas.height / 5) - imageSize / 2 + imageSize / 2);
-    ctx.rotate((Math.sin(angle * Math.PI / 180) * angleRotation) * Math.PI / 180);
-    ctx.drawImage(image, -imageSize / 2,(-imageSize / 2) + 15, imageSize, imageSize);
-    ctx.restore();
-    // 3° Circulo
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc((widthFourCirclesSections - circleRadius) * 3, canvas.height / 5, circleSize / 2, 0, Math.PI * 2);
-    ctx.closePath();
-    ctx.stroke();
-    
-    ctx.translate((widthFourCirclesSections - circleRadius) * 3 - 10 , (canvas.height / 5) - imageSize / 2 + imageSize / 2);
-    ctx.rotate((Math.sin(angle * Math.PI / 180) * angleRotation) * Math.PI / 180);
-    ctx.drawImage(image, -imageSize / 2, (-imageSize / 2) + 15, imageSize, imageSize);
-    ctx.restore();
-      // 4° Circulo
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc((widthFourCirclesSections - circleRadius) * 4, canvas.height / 5, circleSize / 2, 0, Math.PI * 2);
-    ctx.closePath();
-    ctx.stroke();
-    
-    ctx.translate((widthFourCirclesSections - circleRadius ) * 4 - 10 , (canvas.height / 5) - imageSize / 2 + imageSize / 2);
-    ctx.rotate((Math.sin(angle * Math.PI / 180) * angleRotation) * Math.PI / 180);  // Aplica la rotación
-    ctx.drawImage(image, -imageSize / 2, (-imageSize / 2) + 15, imageSize, imageSize);
-    ctx.restore();
-
-    angle += 1;  // Incrementa el ángulo de rotación
-
     ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2 + 100, cardLogoSize, cardLogoSize);
-
-
     requestAnimationFrame(drawFrame);
   }
 
@@ -100,8 +97,7 @@ image.onload = function() {
 const parent_section_2_canvas = document.querySelector('.section_2');
 const canvas_section_2 = document.getElementById('section_canvas_2');
 const section_2_ctx = canvas_section_2.getContext("2d");
-const roseImage = new Image();
-roseImage.src = 'rosa.png';
+
 const get_width_section_2 = document.querySelector('.section_2').offsetWidth;
 const get_height_section_2 = document.querySelector('.section_2').offsetHeight;
 
@@ -349,7 +345,7 @@ function animate_section_3() {
     let roseCornerSize = 140;
     let roseBorderCircleSize = 60;
     let greenBigLeaveCornerSize = 90;
-    let greenBigLeaveSize = 60;
+    let greenBigLeaveSize = 80;
     let littleStickLeaveSize=75;
     let littleStickLeaveCornerSize=85;
     let mediumStickLeaveSize=80;
@@ -366,6 +362,15 @@ function animate_section_3() {
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 260) * angleRotation + 0 ) * Math.PI / 180);  
     section_3_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
     section_3_ctx.restore();
+
+    section_3_ctx.save();
+    section_3_ctx.translate(centerX + 35 , centerY + 110);
+    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 260) * angleRotation + 180 ) * Math.PI / 180);  
+    section_3_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+    section_3_ctx.restore();
+
+
+    
 
     section_3_ctx.save();
     section_3_ctx.translate(centerX , centerY - 80);

@@ -20,7 +20,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.127);
 }
 .canvas_target{
     width: 100%;
@@ -37,7 +36,39 @@
   height: fit-content;
   font-size: 20px;
   text-align: center;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-style: normal;
 }
+.section_1--counter{
+  width: 90%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+  height: 150px;
+  outline: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section_1--counter > span{
+  width: 90px;
+  height: 90px;
+  outline: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+.circle_times_animation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+
+
+}
+
+
 @keyframes scaleframe {
     0% {
       transform: scale(1.1);
@@ -50,7 +81,7 @@
   .section_2{
     overflow: hidden;
     position: relative;
-    background: url('/acuarel_background_center.jpg');
+    background: transparent;
     background-size: 250px 250px;
     background-position: center;
     background-repeat: no-repeat;
@@ -91,13 +122,17 @@
 }
 .section_2-outer_circle{
   position: absolute;
-  width: 290px;
-  height: 290px;
+  width: 300px;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 3px solid transparent;
   border-radius: 50%;
-  border: 2px solid black;
+  background-image: linear-gradient(white,white)
+  ,linear-gradient(90deg,#9b5a01, #cbac44  );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   z-index: -1;
 }
 .section_2-inner_circle{
@@ -107,8 +142,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1px solid transparent;
   border-radius: 50%;
-  border: 1px solid black;
+  background-image: linear-gradient(white,white)
+  ,linear-gradient(90deg,#9b5a01, #cbac44  );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   z-index: -1;
 }
 .section_3{
