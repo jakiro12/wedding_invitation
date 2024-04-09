@@ -42,11 +42,11 @@
   font-style: normal;
 }
 .section_1--counter{
-  width: 90%;
+  width: 100%;
   position: absolute;
   top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
   height: 150px;
   display: flex;
   justify-content: space-around;
@@ -55,19 +55,23 @@
 .section_1--counter > div{
   width: 60px;
   height: 60px;
-  outline: 1px solid black;
+  outline: 1px solid rgba(0, 0, 0, 0.234);
   border-radius: 50%;
   position: relative;
 }
-.circle_times_animation{
+
+.circle_times_animation_1{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) ;
-
-
 }
-
+.circle_times_animation_2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
 
 @keyframes scaleframe {
     0% {

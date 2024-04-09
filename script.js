@@ -29,39 +29,43 @@ canvas.width = containerWidth;
 canvas.height = containerHeight;
 
 const circlesDatesContainer=document.querySelectorAll('.section_1--counter > div')
-const canvasCirclesAnimation=document.querySelector(".circle_times_animation")
+const canvasCirclesAnimation=document.querySelector(".circle_times_animation_1")
+const canvasCirclesAnimation_2=document.querySelector(".circle_times_animation_2")
 const circles_animations_ctx=canvasCirclesAnimation.getContext("2d")
-circles_animations_ctx.translate(45,0)
+const circles_animations_ctx_2=canvasCirclesAnimation_2.getContext("2d")
 
 
 canvasCirclesAnimation.width=circlesDatesContainer[0].offsetWidth + 20;
 canvasCirclesAnimation.height=circlesDatesContainer[0].offsetHeight + 20;
+canvasCirclesAnimation_2.width=circlesDatesContainer[1].offsetWidth + 20;
+canvasCirclesAnimation_2.height=circlesDatesContainer[1].offsetHeight + 20;
 let centerXCirclesAnimation=canvasCirclesAnimation.width / 2
 let centerYCirclesAnimation=canvasCirclesAnimation.height/2
 
-
+let centerXCirclesAnimation_2=canvasCirclesAnimation_2.width / 2;
+let centerYCirclesAnimation_2 = canvasCirclesAnimation_2.height / 2;
 
 
 let angleLeaveCircles = 0;
 function animate_circles() {
   circles_animations_ctx.clearRect(0, 0, canvasCirclesAnimation.width , canvasCirclesAnimation.height);
 
-  let roseSize=30;
-  let tinyLeaveSize=15;
-  let mediumStickLeaveSize=30;
-  let greenBigLeaveSize=20;
-  let littleStickLeaveSize=25;
-  let whiteLeaveSize=15;
-  let redPointsLeaveSize=15;
+  let roseSize=20;
+  let tinyLeaveSize=5;
+  let mediumStickLeaveSize=20;
+  let greenBigLeaveSize=10;
+  let littleStickLeaveSize=15;
+  let whiteLeaveSize=5;
+  let redPointsLeaveSize=5;
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation - 30, centerYCirclesAnimation + 10);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 260 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.translate(centerXCirclesAnimation - 30, centerYCirclesAnimation + 5);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 280 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   circles_animations_ctx.drawImage(mediumStickGreenImage, -mediumStickLeaveSize/2, -mediumStickLeaveSize/2, mediumStickLeaveSize, mediumStickLeaveSize);
   circles_animations_ctx.restore();
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation - 30, centerYCirclesAnimation + 20);
+  circles_animations_ctx.translate(centerXCirclesAnimation - 25, centerYCirclesAnimation  + 10);
   circles_animations_ctx.rotate((Math.sin((angleLeaveCircles) * Math.PI / 240) * angleRotation + 280 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   circles_animations_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
   circles_animations_ctx.restore();
@@ -69,31 +73,31 @@ function animate_circles() {
   
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation - 5, centerYCirclesAnimation + 25);
+  circles_animations_ctx.translate(centerXCirclesAnimation - 10, centerYCirclesAnimation + 20);
   circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 180 ) * Math.PI / 180); 
   circles_animations_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
   circles_animations_ctx.restore();
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation - 0, centerYCirclesAnimation + 35);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 240) * angleRotation + 260 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 25);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 240) * angleRotation + 280 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   circles_animations_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
   circles_animations_ctx.restore();
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation - 5, centerYCirclesAnimation + 35);
+  circles_animations_ctx.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 30);
   circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   circles_animations_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
   circles_animations_ctx.restore();
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation - 5, centerYCirclesAnimation + 35);
+  circles_animations_ctx.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 30);
   circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   circles_animations_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
   circles_animations_ctx.restore()
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate( centerXCirclesAnimation - 20, centerYCirclesAnimation + 25);
+  circles_animations_ctx.translate( centerXCirclesAnimation - 25, centerYCirclesAnimation + 20);
   circles_animations_ctx.rotate( Math.PI * 1.6)
   circles_animations_ctx.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize, roseSize);
   circles_animations_ctx.restore();
@@ -102,10 +106,40 @@ function animate_circles() {
 // Rosa superior
 
   circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 30, centerYCirclesAnimation - 10);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 120 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.translate(centerXCirclesAnimation + 30, centerYCirclesAnimation - 15);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 100 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   circles_animations_ctx.drawImage(mediumStickGreenImage, -mediumStickLeaveSize/2, -mediumStickLeaveSize/2, mediumStickLeaveSize, mediumStickLeaveSize);
   circles_animations_ctx.restore();
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation + 25, centerYCirclesAnimation - 15 );
+  circles_animations_ctx.rotate((Math.sin((angleLeaveCircles) * Math.PI / 240) * angleRotation + 100 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
+  circles_animations_ctx.restore();
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation + 10, centerYCirclesAnimation - 20);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 0 ) * Math.PI / 180); 
+  circles_animations_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  circles_animations_ctx.restore();
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation + 5, centerYCirclesAnimation - 35);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 240) * angleRotation + 80 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
+  circles_animations_ctx.restore();
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation + 10, centerYCirclesAnimation - 30);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 60 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize,whiteLeaveSize);
+  circles_animations_ctx.restore();
+
+  circles_animations_ctx.save();
+  circles_animations_ctx.translate(centerXCirclesAnimation + 10, centerYCirclesAnimation - 30);
+  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 60 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize,redPointsLeaveSize);
+  circles_animations_ctx.restore()
 
   circles_animations_ctx.save();
   circles_animations_ctx.translate( centerXCirclesAnimation + 20, centerYCirclesAnimation - 25);
@@ -119,6 +153,84 @@ function animate_circles() {
 }
 
 animate_circles();
+
+function animate_circles_2() {
+  circles_animations_ctx_2.clearRect(0, 0, canvasCirclesAnimation.width , canvasCirclesAnimation.height);
+
+  let roseSize=20;
+  let tinyLeaveSize=5;
+  let mediumStickLeaveSize=20;
+  let greenBigLeaveSize=10;
+  let littleStickLeaveSize=15;
+  let whiteLeaveSize=5;
+  let redPointsLeaveSize=5;
+
+ 
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation - 30, centerYCirclesAnimation + 5);
+  circles_animations_ctx_2.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 280 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx_2.drawImage(mediumStickGreenImage, -mediumStickLeaveSize/2, -mediumStickLeaveSize/2, mediumStickLeaveSize, mediumStickLeaveSize);
+  circles_animations_ctx_2.restore();
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation - 25, centerYCirclesAnimation  + 10);
+  circles_animations_ctx_2.rotate((Math.sin((angleLeaveCircles) * Math.PI / 240) * angleRotation + 280 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx_2.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
+  circles_animations_ctx_2.restore();
+
+  
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation - 10, centerYCirclesAnimation + 20);
+  circles_animations_ctx_2.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 180 ) * Math.PI / 180); 
+  circles_animations_ctx_2.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  circles_animations_ctx_2.restore();
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 25);
+  circles_animations_ctx_2.rotate((Math.sin(angleLeaveCircles * Math.PI / 240) * angleRotation + 280 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx_2.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
+  circles_animations_ctx_2.restore();
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 30);
+  circles_animations_ctx_2.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx_2.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
+  circles_animations_ctx_2.restore();
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation - 15, centerYCirclesAnimation + 30);
+  circles_animations_ctx_2.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx_2.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
+  circles_animations_ctx_2.restore()
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate( centerXCirclesAnimation - 25, centerYCirclesAnimation + 20);
+  circles_animations_ctx_2.rotate( Math.PI * 1.6)
+  circles_animations_ctx_2.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize, roseSize);
+  circles_animations_ctx_2.restore();
+
+
+// Rosa superior
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate(centerXCirclesAnimation + 30, centerYCirclesAnimation - 10);
+  circles_animations_ctx_2.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 120 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  circles_animations_ctx_2.drawImage(mediumStickGreenImage, -mediumStickLeaveSize/2, -mediumStickLeaveSize/2, mediumStickLeaveSize, mediumStickLeaveSize);
+  circles_animations_ctx_2.restore();
+
+  circles_animations_ctx_2.save();
+  circles_animations_ctx_2.translate( centerXCirclesAnimation + 20, centerYCirclesAnimation - 25);
+  circles_animations_ctx_2.rotate( Math.PI * 0.6)
+  circles_animations_ctx_2.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize, roseSize);
+  circles_animations_ctx_2.restore();
+
+  angleLeaveCircles += 1
+
+    requestAnimationFrame(animate_circles_2)
+}
+
+animate_circles_2();
 
 
 let angle = 0;  // Ángulo inicial de rotación
