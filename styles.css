@@ -20,7 +20,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
 }
 .canvas_target{
     width: 100%;
@@ -55,9 +54,29 @@
 .section_1--counter > div{
   width: 60px;
   height: 60px;
-  outline: 1px solid rgba(0, 0, 0, 0.234);
+  border: 2px solid transparent;
   border-radius: 50%;
   position: relative;
+  background-image: linear-gradient(white,white)
+  ,linear-gradient(90deg,#9b5a01, #cbac44  );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.section_1--counter > div >span{
+  width: calc(100% - 4px);
+  display: block;
+  height:calc(100% - 4px) ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  background-image: linear-gradient(white,white)
+  ,linear-gradient(90deg,#9b5a01, #cbac44  );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .circle_times_animation_1{
@@ -72,7 +91,18 @@
   left: 50%;
   transform: translate(-50%, -50%) ;
 }
-
+.circle_times_animation_3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
+.circle_times_animation_4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
 @keyframes scaleframe {
     0% {
       transform: scale(1.1);
@@ -104,7 +134,7 @@
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
-    color: goldenrod;
+    color: #cbac44;
 }
 
 @keyframes fadeInScale {
@@ -212,6 +242,7 @@
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
+  color: #cbac44;
 }
 
 .img_wedding {
@@ -236,7 +267,7 @@
   width: 250px;
   height: 250px;
   border: 3px solid;
-  border-image-source: linear-gradient(90deg,goldenrod 70% ,white 76%,goldenrod );
+  border-image-source: linear-gradient(90deg,#cbac44 70% ,white 76%,#cbac44 );
   border-image-slice: 1;
   z-index: -2;
 }
@@ -249,7 +280,7 @@
   width: 250px;
   height: 250px;
   border: 3px solid;
-  border-image-source: linear-gradient(90deg,goldenrod ,white 16%,goldenrod 25%);
+  border-image-source: linear-gradient(90deg,#cbac44 ,white 16%,#cbac44 25%);
   border-image-slice: 1;
   z-index: -2;
 }
