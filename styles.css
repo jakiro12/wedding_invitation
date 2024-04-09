@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: gray;
 }
 .canvas_target{
     width: 100%;
@@ -43,18 +44,17 @@
 .section_1--counter{
   width: 90%;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%) ;
   height: 150px;
-  outline: 2px solid black;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-.section_1--counter > span{
-  width: 90px;
-  height: 90px;
+.section_1--counter > div{
+  width: 60px;
+  height: 60px;
   outline: 1px solid black;
   border-radius: 50%;
   position: relative;
