@@ -154,13 +154,25 @@
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
+@keyframes scaleOuterCircle {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4); 
+}
+100% {
+    transform: translate(-50%, -50%) scale(1); 
+  }
+}
 .section_2-outer_circle{
   position: absolute;
   width: 300px;
   height: 300px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.4);
+  animation-name: scaleOuterCircle;
+  animation-duration: 1.5s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
   border: 3px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
@@ -169,13 +181,27 @@
   background-clip: content-box, border-box;
   z-index: -1;
 }
+@keyframes scaleInnerCircle {
+      0% {
+        transform: translate(-50%, -50%) scale(0.4); 
+      /* Escala inicial y centrado */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Escala final y centrado */
+
+    }
+}
 .section_2-inner_circle{
   position: absolute;
   width: 280px;
   height: 280px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)scale(0.4);
+  animation-name: scaleInnerCircle;
+  animation-duration: 1.8s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
   border: 1px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
@@ -183,6 +209,7 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
   z-index: -1;
+  
 }
 .section_3{
   position: relative;
@@ -253,7 +280,7 @@
   width: 230px;
   height: 230px;
   animation-name: scaleImage;
-  animation-duration: 2s; 
+  animation-duration: 2.4s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
   z-index: -1;
@@ -263,7 +290,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4); 
-  animation: scaleSquares 1.2s ease-in-out forwards; 
+  animation: scaleSquares 1.6s ease-in-out forwards;
   width: 250px;
   height: 250px;
   border: 3px solid;
@@ -276,7 +303,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4) ; 
-  animation: scaleSquares_rotate 1.8s ease-in-out forwards; 
+  animation: scaleSquares_rotate 2.2s ease-in-out forwards;
   width: 250px;
   height: 250px;
   border: 3px solid;
@@ -287,10 +314,24 @@
 .section_4 {
   position: relative;
 }
-.section_4 > p{
+@keyframes scalePhrase {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2); 
+    color: transparent;
+  }
+50%{
+  transform: translate(-50%, -50%) scale(1.2); 
+  color: #9b5b0171;
+
+}
+100% {
+    transform: translate(-50%, -50%) scale(1); 
+    color: #9b5a01;
+  }
+}
+.phrase_bible{
   width: 250px;
   height: 250px;
-  z-index: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -300,14 +341,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
   line-height: 20px;
   font-size: 20px;
   background-color: rgba(255, 99, 71, 0.181);
-  z-index: -1;rgba(255, 99, 71, 0.379)rgba(80, 12, 0, 0.379)
+  z-index: -1;
   font-family: "Cormorant Infant", serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   color: #9b5a01;
+  transform: translate(-50%, -50%) scale(0.4) ; 
+  animation: scalePhrase 2.2s ease-in-out forwards;
 }
 .section_4-outer_circle{
   position: absolute;
@@ -315,7 +360,11 @@
   height: 300px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.4);
+  animation-name: scaleOuterCircle;
+  animation-duration: 1.5s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
   border: 3px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
@@ -323,7 +372,6 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
   z-index: -2;
-
 }
 .section_4-inner_circle{
   position: absolute;
@@ -331,7 +379,11 @@
   height: 280px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)scale(0.4);
+  animation-name: scaleInnerCircle;
+  animation-duration: 1.8s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
   border: 1px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
