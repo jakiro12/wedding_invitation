@@ -750,7 +750,7 @@ const middle_width= get_width_section_3 / 2
 
 const get_section_3_text = document.querySelector('.section_3 > p');
 const text_wedding = '¡Nos casamos!';
-const velocity_text = 200; // milisegundos
+const velocity_text = 400; // milisegundos
 
 function animateTextWedding(index) {
   if (index < text_wedding.length) {
@@ -762,7 +762,6 @@ function animateTextWedding(index) {
   }
 }
 
-animateTextWedding(0);
 
 const initialImageSize=0;
 function animate_section_3() {
@@ -870,19 +869,24 @@ function animate_section_3() {
 }
 animate_section_3()
 
+let executeTextSection_3=false
+
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_3_canvas.getBoundingClientRect().top;
   const textAnimate=document.querySelector('.section_3 > p')
   const squaresImage=this.document.querySelectorAll('.section_3 > div')
   const imageAnimate=this.document.querySelector('.section_3 > img')
   const canvasVisibility=this.document.querySelector('.section_3 > canvas')
-  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
-      textAnimate.classList.add('section_3--wedding-text')
-      squaresImage[0].classList.add('first_square')
-      squaresImage[1].classList.add('second_square')
-      imageAnimate.classList.add('img_wedding')
-      canvasVisibility.classList.add('canvas_section_3')
-  } 
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_3 ) {
+      
+    textAnimate.classList.add('section_3--wedding-text')
+    squaresImage[0].classList.add('first_square')
+    squaresImage[1].classList.add('second_square')
+    imageAnimate.classList.add('img_wedding')
+    canvasVisibility.classList.add('canvas_section_3')
+    executeTextSection_3=true
+    animateTextWedding(0);
+    } 
 });
 // Seccion 4 
 const parent_section_4_canvas = document.querySelector('.section_4');
@@ -1354,8 +1358,33 @@ function animate_section_5() {
   section_5_ctx.drawImage(roseImage, -(roseCornerSize/2) , -(roseCornerSize/2), roseCornerSize, roseCornerSize);
   section_5_ctx.restore();
 
-    angleLeave += 0.1; // Incrementar el ángulo para la animación
+    angleLeave += 0.1; 
 
     requestAnimationFrame(animate_section_5);
 }
 animate_section_5()
+
+const allTagsParentsAssist=document.querySelectorAll('.section_5--names_persons')
+const text_wedding_section5 = 'Jesus Montoya Sanchez';
+
+function animateTextWedding_section5(index) {
+  if (index < text_wedding_section5.length) {
+    allTagsParentsAssist[0].textContent += text_wedding_section5[index];
+    index++;
+    setTimeout(function() {
+      animateTextWedding_section5(index);
+    }, velocity_text);
+  }
+}
+
+let executeTextSection_5=false
+window.addEventListener("scroll", function() {
+  const box2Top = parent_section_5_canvas.getBoundingClientRect().top;
+//  const textAnimate=document.querySelector('.section_4 > p')
+  const canvasVisibility=this.document.querySelector('.section_5 > canvas')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_5) {
+   canvasVisibility.classList.add('scale_section_5')
+   executeTextSection_5=true
+   animateTextWedding_section5(0)
+  }   
+});
