@@ -8,9 +8,9 @@
 
 .page_contianer{
     display: grid;
-    height: 400vh;
+    height: 500vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
 }
 .page_contianer > div{
     width: 350px;
@@ -20,6 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .canvas_target{
     width: 100%;
@@ -106,9 +107,11 @@
 @keyframes scaleframe {
     0% {
       transform: scale(1.1);
+      opacity: 0;
     }
     100% {
       transform: scale(1);
+      opacity: 1;
     }
   }
 
@@ -119,6 +122,7 @@
     background-size: 250px 250px;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 1;
     z-index: -2;
   }
   .section_2_text {
@@ -129,12 +133,18 @@
     transform: translate(-50%, -50%) scale(0.4); 
     animation: fadeInScale 2s ease-in-out forwards; 
     text-align: center;
-    line-height: 40px;
-    font-size: 30px;
+    line-height: 60px;
+    font-size: 40px;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
     color: #cbac44;
+    overflow: visible;
+    background-image: url('/acuarel_background_center.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    letter-spacing: 2px;
 }
 
 @keyframes fadeInScale {
@@ -213,6 +223,21 @@
 }
 .section_3{
   position: relative;
+}
+@keyframes fadeCanvas3 {
+  0% {
+       opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+.canvas_section_3{
+  opacity: 1;
+  animation-name: fadeCanvas3;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 @keyframes fadeInText {
  0% {
@@ -391,4 +416,24 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
   z-index: -2;
+}
+@keyframes scaleframe_section4 {
+  0% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.scale_section_4{
+  animation-name: scaleframe_section4;
+  animation-duration: 4.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
