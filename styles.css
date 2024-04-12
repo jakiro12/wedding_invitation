@@ -437,3 +437,31 @@
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
+.section_5{
+  position: relative;
+}
+.section_5 > div{
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 40% 30%;
+}
+.section_5--title{
+  font-size: 30px;
+  width: 85%;
+  height: fit-content;
+  text-decoration: underline;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: auto;
+  color: #9b5a01;
+  margin-inline: auto;
+  text-align: center;
+}

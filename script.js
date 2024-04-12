@@ -1250,26 +1250,26 @@ function animate_section_5() {
   section_5_ctx.restore();
 
   section_5_ctx.save();
-  section_5_ctx.translate((centerX * 2),(centerY * 2) - 40);
-  section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotationSection5 + 25 ) * Math.PI / 180);  
+  section_5_ctx.translate((centerX * 2) - 160, 40);
+  section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotationSection5 + 220 ) * Math.PI / 180);  
   section_5_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveCornerSize / 2), -(mediumStickLeaveCornerSize / 2), mediumStickLeaveCornerSize, mediumStickLeaveCornerSize);
   section_5_ctx.restore();
 
   section_5_ctx.save();
-  section_5_ctx.translate((centerX * 2),(centerY * 2) - 160);
-  section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotationSection5 + 320 ) * Math.PI / 180);  
+  section_5_ctx.translate((centerX * 2) - 40, 160);
+  section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotationSection5 + 100 ) * Math.PI / 180);  
   section_5_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveCornerSize / 2), -(mediumStickLeaveCornerSize / 2), mediumStickLeaveCornerSize, mediumStickLeaveCornerSize);
   section_5_ctx.restore();
 
   section_5_ctx.save();
-  section_5_ctx.translate((centerX * 2),(centerY * 2) - 120);
-  section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 360) * angleRotationSection5 + 120 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_5_ctx.translate((centerX * 2) - 30, 120);
+  section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 360) * angleRotationSection5 + 320 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   section_5_ctx.drawImage(whiteLeaveImage, -(whiteLeaveCornerSize / 2), -(whiteLeaveCornerSize / 2), whiteLeaveCornerSize, whiteLeaveCornerSize);
   section_5_ctx.restore();
 
 
   section_5_ctx.save();
-  section_5_ctx.translate((centerX * 2) - 60,+ 120);
+  section_5_ctx.translate((centerX * 2) - 95, 65);
   section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotationSection5 + 0 ) * Math.PI / 180);  
   section_5_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveCornerSize / 2), -(tinyLeaveCornerSize / 2), tinyLeaveCornerSize, tinyLeaveCornerSize);
   section_5_ctx.restore();
@@ -1289,8 +1289,8 @@ function animate_section_5() {
 
 
   section_5_ctx.save();
-  section_5_ctx.translate( (centerX * 2) - 100, 45 );
-  section_5_ctx.rotate((Math.sin((angleLeave) * Math.PI / 360) * angleRotationSection5 + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_5_ctx.translate( (centerX * 2) - 50, 100 );
+  section_5_ctx.rotate((Math.sin((angleLeave) * Math.PI / 360) * angleRotationSection5 + 180 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   section_5_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveCornerSize / 2), -(greenBigLeaveCornerSize / 2), greenBigLeaveCornerSize, greenBigLeaveCornerSize);
   section_5_ctx.restore();
 
