@@ -8,9 +8,9 @@
 
 .page_contianer{
     display: grid;
-    height: 500vh;
+    height: 600vh;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
 .page_contianer > div{
     width: min(360px, 100%);
@@ -451,6 +451,17 @@
   grid-template-columns: 1fr;
   grid-template-rows: 30% 40% 30%;
 }
+@keyframes fadeInScale_text_section5 {
+  0% {
+      opacity: 0;
+      transform: scale(0.4); /* Escala inicial y centrado */
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1); /* Escala final y centrado */
+  }
+}
+
 .section_5--title{
   font-size: 30px;
   width: 85%;
@@ -464,6 +475,7 @@
   color: #9b5a01;
   margin-inline: auto;
   text-align: center;
+  animation: fadeInScale_text_section5 2s ease-in-out forwards; 
 }
 .section_5--godparents_container{
   width: 100%;
@@ -472,8 +484,6 @@
   place-items: center;
   margin: auto;
 }
-
-
 .section_5--names_persons{
   font-family: "Cormorant Infant", serif;
   font-weight: 600;
@@ -505,4 +515,7 @@
   animation-duration: 2.6s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
+}
+.section_6{
+  position: relative;
 }

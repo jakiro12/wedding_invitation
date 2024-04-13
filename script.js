@@ -878,7 +878,6 @@ window.addEventListener("scroll", function() {
   const imageAnimate=this.document.querySelector('.section_3 > img')
   const canvasVisibility=this.document.querySelector('.section_3 > canvas')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_3 ) {
-      
     textAnimate.classList.add('section_3--wedding-text')
     squaresImage[0].classList.add('first_square')
     squaresImage[1].classList.add('second_square')
@@ -1365,23 +1364,50 @@ function animate_section_5() {
 animate_section_5()
 
 const allTagsParentsAssist=document.querySelectorAll('.section_5--names_persons')
+const velocity_text_parents=200;
 const assistantsNames={
-  husband_parents:'Jesus Montoya Sanchez',
-  wife_parents:'Jesus Montoya Sanchez roberto'
+  husband_parents:{
+    padre:'Jesus Montoya Sanchez',
+    madre:'Leonarda Alarcon Cespedes'
+  },
+  wife_parents:{
+    padre:'Leonardo Monzon Gutierrez',
+    madre:'Carmen Enciso Solis'
+  },
+  god_parents:{
+    padrino:'Antonio Prado Cervantes',
+    madrina:'Maria Chavez Macedo'
+  }
 }
 function animateTextWedding_section5(index) {
-  let maxCharacters=Math.max(assistantsNames["husband_parents"].length, assistantsNames["wife_parents"].length)
+  let maxCharactersParentsHusband = Math.max(Object.values(assistantsNames["husband_parents"])[0].length, Object.values(assistantsNames["husband_parents"])[1].length);
+  let maxCharactersParentsWife = Math.max(Object.values(assistantsNames["wife_parents"])[0].length, Object.values(assistantsNames["wife_parents"])[1].length);
+
+  let maxCharacters = Math.max(maxCharactersParentsHusband, maxCharactersParentsWife);
+  
   if (index < maxCharacters) {
-    if (index < assistantsNames["husband_parents"].length) {
-      allTagsParentsAssist[0].textContent += assistantsNames["husband_parents"][index];
+    if (index < Object.values(assistantsNames["husband_parents"])[0].length) {
+      allTagsParentsAssist[0].textContent += Object.values(assistantsNames["husband_parents"])[0][index];
     }
-    if (index < assistantsNames["wife_parents"].length) {
-      allTagsParentsAssist[1].textContent += assistantsNames["wife_parents"][index];
+    if (index < Object.values(assistantsNames["husband_parents"])[1].length) {
+      allTagsParentsAssist[1].textContent += Object.values(assistantsNames["husband_parents"])[1][index];
+    }
+    if (index < Object.values(assistantsNames["wife_parents"])[0].length) {
+      allTagsParentsAssist[2].textContent += Object.values(assistantsNames["wife_parents"])[0][index];
+    }
+    if (index < Object.values(assistantsNames["wife_parents"])[1].length) {
+      allTagsParentsAssist[3].textContent += Object.values(assistantsNames["wife_parents"])[1][index];
+    }
+    if (index < Object.values(assistantsNames["god_parents"])[0].length) {
+      allTagsParentsAssist[4].textContent += Object.values(assistantsNames["god_parents"])[0][index];
+    }
+    if (index < Object.values(assistantsNames["god_parents"])[1].length) {
+      allTagsParentsAssist[5].textContent += Object.values(assistantsNames["god_parents"])[1][index];
     }
     index++;
     setTimeout(function() {
       animateTextWedding_section5(index);
-    }, velocity_text);
+    }, velocity_text_parents);
   }
 }
 
@@ -1389,9 +1415,41 @@ let executeTextSection_5=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_5_canvas.getBoundingClientRect().top;
   const canvasVisibility=this.document.querySelector('.section_5 > canvas')
+  const animeTextTitle=this.document.querySelector('.section_5 > div > h3')
+  const animeText=this.document.querySelector('.section_5--godparents_container > h3')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_5) {
    canvasVisibility.classList.add('scale_section_5')
+   animeText.classList.add('section_5--title')
+   animeTextTitle.classList.add('section_5--title')
    executeTextSection_5=true
-   animateTextWedding_section5(0)
+  animateTextWedding_section5(0)
+  }   
+});
+
+// Seccion 6
+const parent_section_6_canvas = document.querySelector('.section_6');
+const canvas_section_6 = document.getElementById('section_canvas_6');
+const section_6_ctx = canvas_section_6.getContext('2d');
+
+
+const get_width_section_6 = parent_section_6_canvas.offsetWidth;
+const get_height_section_6 = parent_section_6_canvas.offsetHeight;
+
+canvas_section_6.width = get_width_section_6;
+canvas_section_6.height = get_height_section_6;
+
+let executeTextSection_6=false
+window.addEventListener("scroll", function() {
+  const box2Top = parent_section_6_canvas.getBoundingClientRect().top;
+  const canvasVisibility=this.document.querySelector('.section_6 > canvas')
+  const squaresImage=this.document.querySelectorAll('.section_6 > div')
+  const imageAnimate=this.document.querySelector('.section_6 > img')
+  //const animeTextTitle=this.document.querySelector('.section_5 > div > h3')
+  //const animeText=this.document.querySelector('.section_5--godparents_container > h3')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_6) {
+   console.log('estoy aqui')
+   squaresImage[0].classList.add('first_square')
+   squaresImage[1].classList.add('second_square')
+   imageAnimate.classList.add('img_wedding')
   }   
 });
