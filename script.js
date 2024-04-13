@@ -1365,11 +1365,19 @@ function animate_section_5() {
 animate_section_5()
 
 const allTagsParentsAssist=document.querySelectorAll('.section_5--names_persons')
-const text_wedding_section5 = 'Jesus Montoya Sanchez';
-
+const assistantsNames={
+  husband_parents:'Jesus Montoya Sanchez',
+  wife_parents:'Jesus Montoya Sanchez roberto'
+}
 function animateTextWedding_section5(index) {
-  if (index < text_wedding_section5.length) {
-    allTagsParentsAssist[0].textContent += text_wedding_section5[index];
+  let maxCharacters=Math.max(assistantsNames["husband_parents"].length, assistantsNames["wife_parents"].length)
+  if (index < maxCharacters) {
+    if (index < assistantsNames["husband_parents"].length) {
+      allTagsParentsAssist[0].textContent += assistantsNames["husband_parents"][index];
+    }
+    if (index < assistantsNames["wife_parents"].length) {
+      allTagsParentsAssist[1].textContent += assistantsNames["wife_parents"][index];
+    }
     index++;
     setTimeout(function() {
       animateTextWedding_section5(index);
@@ -1380,7 +1388,6 @@ function animateTextWedding_section5(index) {
 let executeTextSection_5=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_5_canvas.getBoundingClientRect().top;
-//  const textAnimate=document.querySelector('.section_4 > p')
   const canvasVisibility=this.document.querySelector('.section_5 > canvas')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_5) {
    canvasVisibility.classList.add('scale_section_5')
