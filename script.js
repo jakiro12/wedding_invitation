@@ -9,6 +9,7 @@ const littleStickGreenImage=new Image();
 const mediumStickGreenImage= new Image();
 const whiteLeaveImage=new Image();
 const tinyGreenLeaveImage=new Image();
+const tinyGreenLeaveImage_2= new Image();
 const redPointsLeaveImage=new Image();
 const roseImage = new Image();
 roseImage.src = 'rosa.png';
@@ -19,6 +20,7 @@ littleStickGreenImage.src='little_stick_green.png'
 mediumStickGreenImage.src='medium_stick_green.png'
 whiteLeaveImage.src='white_leave.png'
 tinyGreenLeaveImage.src='tiny_leave.png'
+tinyGreenLeaveImage_2.src='tiny_leave_2.png'
 redPointsLeaveImage.src='red_points_leave.png'
 const angleRotation=7; // Angulo de Rotacion de las animaciones
 
@@ -497,7 +499,7 @@ let angle = 0;  // Ángulo inicial de rotación
 
 const widthFourCirclesSections=containerWidth / 3.5 
 
-image.onload = function() { //Dibuja el sobre con canvas
+ //Dibuja el sobre con canvas
   function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const cardLogoSize=380;
@@ -506,7 +508,7 @@ image.onload = function() { //Dibuja el sobre con canvas
   }
 
   drawFrame();
-};
+
 
 /*Seccion 2, otro canvas aparte */
 const parent_section_2_canvas = document.querySelector('.section_2');
@@ -526,7 +528,7 @@ const centerY = canvas_section_2.height / 2;
 let angleLeave = 0;
 function animate_1() {
   section_2_ctx.clearRect(0, 0, canvas_section_2.width, canvas_section_2.height);
-    let roseCornerSize = 140;
+    let roseCornerSize = 120;
     let roseBorderCircleSize = 80;
     let greenBigLeaveCornerSize = 90;
     let greenBigLeaveSize = 60;
@@ -660,13 +662,13 @@ function animate_1() {
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(40, 160);
+    section_2_ctx.translate(43, 160);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 140 ) * Math.PI / 180);  
     section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveCornerSize / 2), -(mediumStickLeaveCornerSize / 2), mediumStickLeaveCornerSize, mediumStickLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate( 60, 120);
+    section_2_ctx.translate( 53, 120);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 300 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveCornerSize / 2), -(whiteLeaveCornerSize / 2), whiteLeaveCornerSize, whiteLeaveCornerSize);
     section_2_ctx.restore();
@@ -700,7 +702,7 @@ function animate_1() {
 
 
     section_2_ctx.save();
-    section_2_ctx.translate(60, 100 );
+    section_2_ctx.translate(55, 90 );
     section_2_ctx.rotate((Math.sin((angleLeave) * Math.PI / 280) * angleRotation + 90 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveCornerSize / 2), -(greenBigLeaveCornerSize / 2), greenBigLeaveCornerSize, greenBigLeaveCornerSize);
     section_2_ctx.restore();
@@ -902,7 +904,7 @@ canvas_section_4.height = get_height_section_4;
 
 function animate_section_4() {
   section_4_ctx.clearRect(0, 0, canvas_section_4.width, canvas_section_4.height);
-    let roseCornerSize = 140;
+    let roseCornerSize = 120;
     let roseBorderCircleSize = 80;
     let greenBigLeaveCornerSize = 90;
     let greenBigLeaveSize = 60;
@@ -1199,7 +1201,7 @@ canvas_section_5.height = get_height_section_5;
 let angleRotationSection5=5;
 function animate_section_5() {
   section_5_ctx.clearRect(0, 0, canvas_section_5.width, canvas_section_5.height);
-  let roseCornerSize = 140;
+  let roseCornerSize = 120;
   let greenBigLeaveCornerSize = 90;
   let mediumStickLeaveCornerSize=90;
   let whiteLeaveCornerSize=80;
@@ -1445,10 +1447,33 @@ function animate_section_6() {
   let littleStickLeaveSize=80;
   let mediumStickLeaveSize=75;
   let whiteLeaveSize=35;
+  let whiteLeaveCornerSize=75;
   let tinyLeaveSize=30;
+  let tinyLeaveCornerSize=120;
   let redPointsLeaveSize=35;
+  let redPointsLeaveCornerSize=65;
   let roseBorderCircleSize = 60;
   
+
+    section_6_ctx.save();
+    section_6_ctx.translate(tinyLeaveCornerSize/2 ,  100);
+    section_6_ctx.rotate((Math.sin(angleLeave * Math.PI / 260) * angleRotation + 320 ) * Math.PI / 180);  
+    section_6_ctx.drawImage(tinyGreenLeaveImage_2, -(tinyLeaveCornerSize / 2), -(tinyLeaveCornerSize / 2), tinyLeaveCornerSize, tinyLeaveCornerSize);
+    section_6_ctx.restore();
+    section_6_ctx.save();
+
+    section_6_ctx.save();
+    section_6_ctx.translate(redPointsLeaveCornerSize / 2 + 25 ,  85 );
+    section_6_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 220 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+    section_6_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveCornerSize / 2), -(redPointsLeaveCornerSize / 2), redPointsLeaveCornerSize,redPointsLeaveCornerSize);
+    section_6_ctx.restore();
+
+    section_6_ctx.save();
+    section_6_ctx.translate( whiteLeaveCornerSize / 2 - 30, 80);
+    section_6_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 240 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+    section_6_ctx.drawImage(whiteLeaveImage, -(whiteLeaveCornerSize / 2), -(whiteLeaveCornerSize / 2), whiteLeaveCornerSize, whiteLeaveCornerSize);
+    section_6_ctx.restore();
+
     section_6_ctx.save();
     section_6_ctx.translate(centerX - 35 , centerY - 110);
     section_6_ctx.rotate((Math.sin(angleLeave * Math.PI / 260) * angleRotation + 0 ) * Math.PI / 180);  
@@ -1551,10 +1576,9 @@ function animateTextWedding_section6(index) {
     index++;
     setTimeout(function() {
       animateTextWedding_section6(index);
-    }, 200);
+    }, 150);
   }
 }
-animateTextWedding_section6(0)
 
 let executeTextSection_6=false
 window.addEventListener("scroll", function() {
@@ -1563,10 +1587,53 @@ window.addEventListener("scroll", function() {
   const imageAnimate=this.document.querySelector('.section_6 > img')
   const animateText=this.document.querySelector('.section_6 > p')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_6) {
-   console.log(animateText)
    animateText.classList.add('section_3--wedding-text')
    squaresImage[0].classList.add('first_square')
    squaresImage[1].classList.add('second_square')
    imageAnimate.classList.add('img_wedding')
+   executeTextSection_6=true
+   animateTextWedding_section6(0)
+
   }   
 });
+// Seccion 7
+const parent_section_7_canvas = document.querySelector('.section_7');
+const canvas_section_7 = document.getElementById('section_canvas_7');
+const section_7_ctx = canvas_section_7.getContext('2d');
+
+
+const get_width_section_7 = parent_section_7_canvas.offsetWidth;
+const get_height_section_7 = parent_section_7_canvas.offsetHeight;
+
+canvas_section_7.width = get_width_section_7;
+canvas_section_7.height = get_height_section_7;
+
+function animate_section_7(){
+  section_7_ctx.clearRect(0, 0, canvas_section_7.width, canvas_section_7.height);
+  let roseBorderCircleSize = 100;
+  let whiteLeaveSize= 40;
+  let tinyLeaveSize= 100;
+
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX + 60, tinyLeaveSize / 2    );
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(tinyGreenLeaveImage_2, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  section_7_ctx.restore();
+
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX , roseBorderCircleSize/2 - 20);
+  section_7_ctx.rotate(Math.PI * 1.3);
+  section_7_ctx.drawImage(roseImage, -roseBorderCircleSize/2, -roseBorderCircleSize/2, roseBorderCircleSize, roseBorderCircleSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX , centerY * 2 - 30);
+  section_7_ctx.rotate(Math.PI * 0.3);
+  section_7_ctx.drawImage(roseImage, -roseBorderCircleSize/2, -roseBorderCircleSize/2, roseBorderCircleSize, roseBorderCircleSize);
+  section_7_ctx.restore();
+
+  requestAnimationFrame(animate_section_7)
+}
+animate_section_7()
