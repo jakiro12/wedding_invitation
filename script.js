@@ -1653,7 +1653,7 @@ function animate_section_7(){
 
   section_7_ctx.save();
   section_7_ctx.translate(centerX - 60, centerY * 2 -tinyLeaveSize/2);
-  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7  + 160 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7  + 150 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   section_7_ctx.drawImage(tinyGreenLeaveImage_2, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
   section_7_ctx.restore();
 
@@ -1663,6 +1663,23 @@ function animate_section_7(){
   section_7_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
   section_7_ctx.restore();
 
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX + 40,centerY * 2 -whiteLeaveSize/2);
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 230 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(whiteLeaveImage, -whiteLeaveSize / 2, -whiteLeaveSize / 2, whiteLeaveSize, whiteLeaveSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX - 40,centerY * 2 -whiteLeaveSize/2);
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(whiteLeaveImage, -whiteLeaveSize / 2, -whiteLeaveSize / 2, whiteLeaveSize, whiteLeaveSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX + 10,centerY*2 - roseBorderCircleSize +20 );
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 130 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(redPointsLeaveImage, -redPointsLeaveSize / 2, -redPointsLeaveSize / 2, redPointsLeaveSize, redPointsLeaveSize);
+  section_7_ctx.restore();
 
   section_7_ctx.save();
   section_7_ctx.translate(centerX , centerY * 2 - 30);
