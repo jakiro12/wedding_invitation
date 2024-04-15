@@ -1607,26 +1607,62 @@ const get_height_section_7 = parent_section_7_canvas.offsetHeight;
 
 canvas_section_7.width = get_width_section_7;
 canvas_section_7.height = get_height_section_7;
-
+let angleRotationSection_7=3
 function animate_section_7(){
   section_7_ctx.clearRect(0, 0, canvas_section_7.width, canvas_section_7.height);
   let roseBorderCircleSize = 100;
-  let whiteLeaveSize= 40;
+  let whiteLeaveSize= 60;
   let tinyLeaveSize= 100;
-
+  let redPointsLeaveSize=30;
 
   section_7_ctx.save();
-  section_7_ctx.translate(centerX + 60, tinyLeaveSize / 2    );
-  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.translate(centerX + 65, tinyLeaveSize / 2  );
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 - 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
   section_7_ctx.drawImage(tinyGreenLeaveImage_2, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
   section_7_ctx.restore();
 
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX - 60, tinyLeaveSize / 2 );
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX - 40, whiteLeaveSize / 2 );
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(whiteLeaveImage, -whiteLeaveSize / 2, -whiteLeaveSize / 2, whiteLeaveSize, whiteLeaveSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX + 40, whiteLeaveSize/2);
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 230 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(whiteLeaveImage, -whiteLeaveSize / 2, -whiteLeaveSize / 2, whiteLeaveSize, whiteLeaveSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX - 10, roseBorderCircleSize -20 );
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 - 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(redPointsLeaveImage, -redPointsLeaveSize / 2, -redPointsLeaveSize / 2, redPointsLeaveSize, redPointsLeaveSize);
+  section_7_ctx.restore();
 
   section_7_ctx.save();
   section_7_ctx.translate(centerX , roseBorderCircleSize/2 - 20);
   section_7_ctx.rotate(Math.PI * 1.3);
   section_7_ctx.drawImage(roseImage, -roseBorderCircleSize/2, -roseBorderCircleSize/2, roseBorderCircleSize, roseBorderCircleSize);
   section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX - 60, centerY * 2 -tinyLeaveSize/2);
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7  + 160 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(tinyGreenLeaveImage_2, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  section_7_ctx.restore();
+
+  section_7_ctx.save();
+  section_7_ctx.translate(centerX + 65, centerY * 2  -tinyLeaveSize/2);
+  section_7_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotationSection_7 + 220 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+  section_7_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
+  section_7_ctx.restore();
+
 
   section_7_ctx.save();
   section_7_ctx.translate(centerX , centerY * 2 - 30);
