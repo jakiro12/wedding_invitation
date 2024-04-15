@@ -515,8 +515,32 @@
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
+@keyframes scaleframe_section6 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section_6{
   position: relative;
+}
+.scale_section_6{
+  animation-name: scaleframe_section6;
+  animation-duration: 7.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
+@keyframes scaleframe_section7 {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%)  scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform:  translate(-50%, -50%) scale(1);
+  }
 }
 .section_7{
   position: relative;
@@ -531,6 +555,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4,1fr);
+}
+.scale_section_7{
+  animation-name: scaleframe_section7;
+  animation-duration: 7.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_7--title{
   width: fit-content;
@@ -616,4 +646,81 @@
   width: fit-content;
   margin: auto;
   text-align: center;
+}
+.section_8{
+  position: relative;
+  outline: 1px solid red;
+}
+.section_8 > section{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 2px solid #9b5a01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.section_8--container_info{
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 2px solid #9b5a01;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 25% 10% 35%;
+}
+.section_8--container_info_title{
+  width: fit-content;
+  height: fit-content;
+  margin-top: auto;
+  margin-inline:auto;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #9b5a01;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.section_8--container_description{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  color: #9b5a01;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+.section_8--container_info > button{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  font-size: 16px;
+  border-radius:  10px / 50%;
+  background-color: rgb(89, 3, 89);
+  color: white;
+  padding: 5px 7px;
+  border: none;
+}
+.section_8--clothes{
+  width: 90%;
+  height: 80%;
+  outline: 1px solid greenyellow;
+  margin: auto;
+  display: grid;
+}
+.section_8--clothes > p{
+  width: fit-content;
+  height: fit-content;
+  margin-inline:auto ;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #9b5a01;
+  font-size: 28px;
+  text-decoration: underline;
 }
