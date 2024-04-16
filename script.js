@@ -24,7 +24,7 @@ whiteLeaveImage.src='white_leave.png'
 tinyGreenLeaveImage.src='tiny_leave.png'
 tinyGreenLeaveImage_2.src='tiny_leave_2.png'
 redPointsLeaveImage.src='red_points_leave.png'
-const angleRotation=7; // Angulo de Rotacion de las animaciones
+const angleRotation=4; // Angulo de Rotacion de las animaciones
 
 const containerWidth = document.getElementById('container_canvas').offsetWidth;
 const containerHeight = document.getElementById('container_canvas').offsetHeight;
@@ -548,7 +548,7 @@ function animate_1() {
     section_2_ctx.lineWidth = 1;  
     section_2_ctx.save();  
     section_2_ctx.translate(0, 100);  
-    section_2_ctx.rotate(-15 * Math.PI / 180);  
+    section_2_ctx.rotate(-10 * Math.PI / 180);  
     section_2_ctx.beginPath();
     section_2_ctx.moveTo(0, 0);
     section_2_ctx.lineTo(400, 0);
@@ -559,8 +559,8 @@ function animate_1() {
     section_2_ctx.strokeStyle = '#9b5a01';
     section_2_ctx.lineWidth = 1;  
     section_2_ctx.save();  
-    section_2_ctx.translate(0, - 100);  
-    section_2_ctx.rotate(30 * Math.PI / 180);  
+    section_2_ctx.translate(0,  0);  
+    section_2_ctx.rotate(20 * Math.PI / 180);  
     section_2_ctx.beginPath();
     section_2_ctx.moveTo(0, 0);
     section_2_ctx.lineTo(450, 0);
@@ -1804,7 +1804,7 @@ function animate_section_8(){
   section_8_ctx.restore();
 
   section_8_ctx.save();
-  section_8_ctx.translate(centerX , roseBorderCircleSize/2 - 20);
+  section_8_ctx.translate(centerX , roseBorderCircleSize/2 );
   section_8_ctx.rotate(Math.PI * 1.3);
   section_8_ctx.drawImage(roseImage, -roseBorderCircleSize/2, -roseBorderCircleSize/2, roseBorderCircleSize, roseBorderCircleSize);
   section_8_ctx.restore();
