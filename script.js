@@ -504,8 +504,8 @@ const widthFourCirclesSections=containerWidth / 3.5
  //Dibuja el sobre con canvas
   function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const cardLogoSize=380;
-    ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2 + 100, cardLogoSize, cardLogoSize);
+    const cardLogoSize=400;
+    ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2 -30 , cardLogoSize, cardLogoSize);
     requestAnimationFrame(drawFrame);
   }
 
