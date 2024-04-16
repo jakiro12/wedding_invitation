@@ -663,7 +663,6 @@
 }
 .section_8{
   position: relative;
-  outline: 1px solid red;
 }
 .section_8 > section{
   position: absolute;
@@ -737,4 +736,16 @@
   color: #9b5a01;
   font-size: 28px;
   text-decoration: underline;
+}
+.section_9{
+  position: relative;
+}
+.section_9 > section{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 1px solid blue;
 }
