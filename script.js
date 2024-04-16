@@ -1697,8 +1697,10 @@ animate_section_7()
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_7_canvas.getBoundingClientRect().top;
   const animateSection=this.document.querySelector('.section_7 > section')
+  const animateCanvas=this.document.querySelector('.section_7 > canvas')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
    animateSection.classList.add('scale_section_7')
+   animateCanvas.classList.add('canvas_section_7')
   }   
 });
 

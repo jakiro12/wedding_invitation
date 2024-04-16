@@ -13,7 +13,7 @@
     grid-template-rows: repeat(11,1fr);
 }
 .page_contianer > div{
-    width: min(360px, 100%);
+    width: min(400px, 100%);
     height: 100%;
     margin: auto;
     display: flex;
@@ -542,6 +542,14 @@
     transform:  translate(-50%, -50%) scale(1);
   }
 }
+@keyframes fadeCanvas_section7 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section_7{
   position: relative;
 }
@@ -559,6 +567,12 @@
 .scale_section_7{
   animation-name: scaleframe_section7;
   animation-duration: 7.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
+.canvas_section_7{
+  animation-name: fadeCanvas_section7;
+  animation-duration: 5.6s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
