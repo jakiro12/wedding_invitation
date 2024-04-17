@@ -1129,7 +1129,7 @@ function animate_section_4() {
 animate_section_4();
 
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_4_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_4_canvas.getBoundingClientRect().top + parent_section_4_canvas.offsetHeight/2;
   const textAnimate=document.querySelector('.section_4 > p')
   const bothCircles=this.document.querySelectorAll('.section_4 > span')
   const canvasVisibility=this.document.querySelector('.section_4 > canvas')
@@ -1325,7 +1325,7 @@ function animateTextWedding_section5(index) {
 
 let executeTextSection_5=false
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_5_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_5_canvas.getBoundingClientRect().top + parent_section_5_canvas.offsetHeight/2;
   const canvasVisibility=this.document.querySelector('.section_5 > canvas')
   const animeTextTitle=this.document.querySelector('.section_5 > div > h3')
   const animeText=this.document.querySelector('.section_5--godparents_container > h3')
@@ -1492,7 +1492,7 @@ function animateTextWedding_section6(index) {
 
 let executeTextSection_6=false
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_6_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_6_canvas.getBoundingClientRect().top + parent_section_6_canvas.offsetHeight/2;
   const squaresImage=this.document.querySelectorAll('.section_6 > div')
   const animateCanvas=this.document.querySelector('.section_6 > canvas')
   const imageAnimate=this.document.querySelector('.section_6 > img')
@@ -1603,7 +1603,7 @@ function animate_section_7(){
 }
 animate_section_7()
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_7_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_7_canvas.getBoundingClientRect().top + parent_section_7_canvas.offsetHeight/2;
   const animateSection=this.document.querySelector('.section_7 > section')
   const animateCanvas=this.document.querySelector('.section_7 > canvas')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
@@ -2164,11 +2164,12 @@ function animate_section_11(){
 }
 animate_section_11()
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_11_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_11_canvas.getBoundingClientRect().top + parent_section_11_canvas.offsetHeight/2 ;
   const textAnimate=this.document.querySelector('.section_11 > p')
   const bothCircles=this.document.querySelectorAll('.section_11 > span')
+  const animateCanvas=this.document.querySelector('.section_11 > canvas')
   if (box2Top <= window.innerHeight && box2Top >= 0) {
-      canvas_section_2.classList.add('scale_section_2');
+      animateCanvas.classList.add('scale_section_2');
       textAnimate.classList.add('section_2_text')
       bothCircles[0].classList.add('section_2-outer_circle')
       bothCircles[1].classList.add('section_2-inner_circle')

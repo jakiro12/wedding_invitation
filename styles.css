@@ -271,9 +271,11 @@
 }
 @keyframes scaleImage {
       0% {
+        opacity: 0;
         transform: translate(-50%, -50%) scale(0.2) rotateZ(-30deg); /* Escala inicial y centrado */
     }
     100% {
+      opacity: 1;
         transform: translate(-50%, -50%) scale(1) rotateZ(0deg); /* Escala final y centrado */
     }
 }
@@ -283,6 +285,7 @@
   left: 50%;
   transform: translate(-50%, -50%) ;
   width: 75%;
+  opacity: 0;
   height: fit-content;
   font-size: 35px;
   text-align: center;
@@ -477,6 +480,7 @@
   color: #9b5a01;
   margin-inline: auto;
   text-align: center;
+  opacity: 0;
   animation: fadeInScale_text_section5 4s ease-in-out forwards; 
 }
 .section_5--godparents_container{
@@ -528,6 +532,9 @@
 }
 .section_6{
   position: relative;
+}
+.section_6 > img{
+  opacity: 0;
 }
 .scale_section_6{
   animation-name: scaleframe_section6;
@@ -844,4 +851,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.section_11 > p {
+  font-size: 25px;
+  line-height: 30px;
 }
