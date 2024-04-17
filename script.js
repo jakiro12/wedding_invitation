@@ -1726,6 +1726,17 @@ function animate_section_8(){
   requestAnimationFrame(animate_section_8)
 }
 animate_section_8()
+window.addEventListener("scroll", function() {
+  const box2Top = parent_section_8_canvas.getBoundingClientRect().top + parent_section_8_canvas.offsetHeight/2;
+  const animateSection=this.document.querySelector('.section_8 > section')
+  const animateCanvas=this.document.querySelector('.section_8 > canvas')
+  const animateInnerBox=this.document.querySelector('.section_8 > section > div')
+  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+   animateSection.classList.add('scale_section_8')
+   animateCanvas.classList.add('canvas_section_7')
+   animateInnerBox.classList.add('section_8--container_info')
+  }   
+});
 //Seccion 9
 const parent_section_9_canvas = document.querySelector('.section_9');
 const canvas_section_9 = document.getElementById('section_canvas_9');
@@ -1801,6 +1812,16 @@ function animate_section_9(){
   requestAnimationFrame(animate_section_9)
 }
 animate_section_9()
+window.addEventListener("scroll", function() {
+  const box2Top = parent_section_9_canvas.getBoundingClientRect().top + parent_section_9_canvas.offsetHeight/2;
+  const animateSection=this.document.querySelector('.section_9 > section')
+  const animateCanvas=this.document.querySelector('.section_9 > canvas')
+  
+  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+   animateCanvas.classList.add('animate_section_9_canvas')
+   animateSection.classList.add('animate_section_9') 
+  }   
+});
 //Seccion 10
 const parent_section_10_canvas = document.querySelector('.section_10');
 const canvas_section_10 = document.getElementById('section_canvas_10');

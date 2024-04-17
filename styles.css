@@ -116,13 +116,13 @@
   }
 
   .section_2{
-    position: relative;
-    background: transparent;
-    background-size: 250px 250px;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    z-index: -2;
+    position: relative;    
+  }
+  .section_2 > canvas{
+    opacity: 0;
+  }
+  .section_2 > p{
+    opacity: 0;
   }
   .section_2_text {
     position: absolute;
@@ -222,6 +222,9 @@
 }
 .section_3{
   position: relative;
+}
+.section_3 > img{
+  opacity: 0;
 }
 @keyframes fadeCanvas3 {
   0% {
@@ -341,22 +344,32 @@
 .section_4 {
   position: relative;
 }
+.section_4 > canvas{
+  opacity: 0;
+}
+.section_4 > p{
+  opacity: 0;
+}
 @keyframes scalePhrase {
   0% {
     transform: translate(-50%, -50%) scale(0.2); 
     color: transparent;
+    opacity: 0;
   }
 50%{
   transform: translate(-50%, -50%) scale(1.2); 
   color: #9b5b0171;
+  opacity: 0.25;
 }
 75%{
   transform: translate(-50%, -50%) scale(1.1); 
   color: #9b5b0171;
+  opacity: 0.75;
 }
 100% {
     transform: translate(-50%, -50%) scale(1); 
     color: #9b5a01;
+    opacity: 1;
   }
 }
 .phrase_bible{
@@ -674,18 +687,48 @@
 .section_8{
   position: relative;
 }
+@keyframes scaleframe_section8 {
+  0% {
+    transform:  translate(-50%, -50%) scale(1.1);
+    opacity: 0;
+  }
+  50%{
+    transform:  translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform:  translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scaleframe_section_frame8 {
+  0% {
+    transform: scale(0.5);
+  }
+  
+  100% {
+    transform:  scale(1);
+  }
+}
 .section_8 > section{
   position: absolute;
+  opacity: 0;
   width: 80%;
   height: 80%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   outline: 2px solid #9b5a01;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
+}
+.scale_section_8{
+  animation-name: scaleframe_section8;
+  animation-duration: 7.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_8--container_info{
   width: calc(100% - 6px);
@@ -694,6 +737,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 25% 25% 10% 35%;
+  animation-name: scaleframe_section_frame8;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_8--container_info_title{
   width: fit-content;
@@ -750,6 +797,24 @@
 .section_9{
   position: relative;
 }
+@keyframes fade_section_9 {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+.section_9 > canvas{
+  opacity: 0;
+}
+.animate_section_9_canvas{
+  animation-name: fade_section_9;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
 .section_9 > section{
   position: absolute;
   width: 80%;
@@ -759,7 +824,14 @@
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 1fr;
+  opacity: 0;
   grid-template-rows: 20% 30% 50%;
+}
+.animate_section_9{
+  animation-name: fade_section_9;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_9--title{
   width: fit-content;
@@ -844,6 +916,9 @@
 .section_11{
   position: relative;
 }
+.section_11 > canvas{
+  opacity: 0;
+}
 .section_11 > section{
   position: absolute;
   width: 80%;
@@ -851,8 +926,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 .section_11 > p {
   font-size: 25px;
   line-height: 30px;
+  opacity: 0;
 }
