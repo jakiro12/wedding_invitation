@@ -505,7 +505,7 @@ const widthFourCirclesSections=containerWidth / 3.5
   function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const cardLogoSize=400;
-    ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2  , cardLogoSize, cardLogoSize);
+    ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2 -20 , cardLogoSize, cardLogoSize);
     requestAnimationFrame(drawFrame);
   }
   drawFrame();
@@ -514,8 +514,8 @@ const parent_section_2_canvas = document.querySelector('.section_2');
 const canvas_section_2 = document.getElementById('section_canvas_2');
 const section_2_ctx = canvas_section_2.getContext("2d");
 
-const get_width_section_2 = document.querySelector('.section_2').offsetWidth;
-const get_height_section_2 = document.querySelector('.section_2').offsetHeight;
+const get_width_section_2 = parent_section_2_canvas.offsetWidth;
+const get_height_section_2 = parent_section_2_canvas.offsetHeight;
 
 canvas_section_2.width = get_width_section_2;
 canvas_section_2.height = get_height_section_2;
@@ -545,10 +545,10 @@ function animate_1() {
     section_2_ctx.lineWidth = 1;  
     section_2_ctx.save();  
     section_2_ctx.translate(0, 100);  
-    section_2_ctx.rotate(-10 * Math.PI / 180);  
+    section_2_ctx.rotate(-13 * Math.PI / 180);  
     section_2_ctx.beginPath();
     section_2_ctx.moveTo(0, 0);
-    section_2_ctx.lineTo(400, 0);
+    section_2_ctx.lineTo(450, 0);
     section_2_ctx.stroke();
     section_2_ctx.restore();  
 
@@ -557,7 +557,7 @@ function animate_1() {
     section_2_ctx.lineWidth = 1;  
     section_2_ctx.save();  
     section_2_ctx.translate(0,  0);  
-    section_2_ctx.rotate(20 * Math.PI / 180);  
+    section_2_ctx.rotate(13 * Math.PI / 180);  
     section_2_ctx.beginPath();
     section_2_ctx.moveTo(0, 0);
     section_2_ctx.lineTo(450, 0);
@@ -721,7 +721,7 @@ animate_1();
 
 
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_2_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_2_canvas.getBoundingClientRect().top + parent_section_2_canvas.offsetHeight/2;
   const textAnimate=this.document.querySelector('.section_2 > p')
   const bothCircles=this.document.querySelectorAll('.section_2 > span')
   if (box2Top <= window.innerHeight && box2Top >= 0) {
@@ -873,7 +873,7 @@ animate_section_3()
 let executeTextSection_3=false
 
 window.addEventListener("scroll", function() {
-  const box2Top = parent_section_3_canvas.getBoundingClientRect().top;
+  const box2Top = parent_section_3_canvas.getBoundingClientRect().top + parent_section_3_canvas.offsetHeight /2;
   const textAnimate=document.querySelector('.section_3 > p')
   const squaresImage=this.document.querySelectorAll('.section_3 > div')
   const imageAnimate=this.document.querySelector('.section_3 > img')
@@ -917,52 +917,7 @@ function animate_section_4() {
     let tinyLeaveCornerSize=100;
     let redPointsLeaveSize=40;
     
-    section_4_ctx.strokeStyle = '#9b5a01';
-    section_4_ctx.lineWidth = 1;  
-    section_4_ctx.save();  
-    section_4_ctx.translate(0, 100);  
-    section_4_ctx.rotate(-15 * Math.PI / 180);  
-    section_4_ctx.beginPath();
-    section_4_ctx.moveTo(0, 0);
-    section_4_ctx.lineTo(400, 0);
-    section_4_ctx.stroke();
-    section_4_ctx.restore();  
-
-    // Segunda línea
-    section_4_ctx.strokeStyle = '#9b5a01';
-    section_4_ctx.lineWidth = 1;  
-    section_4_ctx.save();  
-    section_4_ctx.translate(0, - 100);  
-    section_4_ctx.rotate(30 * Math.PI / 180);  
-    section_4_ctx.beginPath();
-    section_4_ctx.moveTo(0, 0);
-    section_4_ctx.lineTo(450, 0);
-    section_4_ctx.stroke();
-    section_4_ctx.restore();
-    //Tercera linea
-    section_4_ctx.strokeStyle = '#9b5a01';
-    section_4_ctx.lineWidth = 1;  
-    section_4_ctx.save();  
-    section_4_ctx.translate(0, (centerY * 2) - 100);  
-    section_4_ctx.rotate(30 * Math.PI / 180);  
-    section_4_ctx.beginPath();
-    section_4_ctx.moveTo(0, 0);
-    section_4_ctx.lineTo(450, 0);
-    section_4_ctx.stroke();
-    section_4_ctx.restore();
-
-    //Cuarta linea
-    section_4_ctx.strokeStyle = '#9b5a01';
-    section_4_ctx.lineWidth = 1;  
-    section_4_ctx.save();  
-    section_4_ctx.translate(0, (centerY * 2)- 5);  
-    section_4_ctx.rotate(-15 * Math.PI / 180);  
-    section_4_ctx.beginPath();
-    section_4_ctx.moveTo(0, 0);
-    section_4_ctx.lineTo(400, 0);
-    section_4_ctx.stroke();
-    section_4_ctx.restore(); 
-
+    
     section_4_ctx.save();
     section_4_ctx.translate(centerX + 70, centerY - 100);
     section_4_ctx.rotate((Math.sin(angleLeave * Math.PI / 260) * angleRotation + 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
@@ -1208,51 +1163,7 @@ function animate_section_5() {
   let redPointsLeaveSize=40;
 
 
-  section_5_ctx.strokeStyle = '#9b5a01';
-  section_5_ctx.lineWidth = 1;  
-  section_5_ctx.save();  
-  section_5_ctx.translate(0, 5);  
-  section_5_ctx.rotate(15 * Math.PI / 180);  
-  section_5_ctx.beginPath();
-  section_5_ctx.moveTo(0, 0);
-  section_5_ctx.lineTo(400, 0);
-  section_5_ctx.stroke();
-  section_5_ctx.restore();  
-
-  section_5_ctx.strokeStyle = '#9b5a01';
-  section_5_ctx.lineWidth = 1;  
-  section_5_ctx.save();  
-  section_5_ctx.translate(0, 100);  
-  section_5_ctx.rotate(-30 * Math.PI / 180);  
-  section_5_ctx.beginPath();
-  section_5_ctx.moveTo(0, 0);
-  section_5_ctx.lineTo(450, 0);
-  section_5_ctx.stroke();
-  section_5_ctx.restore();
-
   
-  section_5_ctx.strokeStyle = '#9b5a01';
-  section_5_ctx.lineWidth = 1;  
-  section_5_ctx.save();  
-  section_5_ctx.translate(0, (centerY * 2)- 100);  
-  section_5_ctx.rotate(15 * Math.PI / 180);  
-  section_5_ctx.beginPath();
-  section_5_ctx.moveTo(0, 0);
-  section_5_ctx.lineTo(400, 0);
-  section_5_ctx.stroke();
-  section_5_ctx.restore();
-
-  section_5_ctx.strokeStyle = '#9b5a01';
-  section_5_ctx.lineWidth = 1;  
-  section_5_ctx.save();  
-  section_5_ctx.translate(centerX, (centerY * 2));  
-  section_5_ctx.rotate(-30 * Math.PI / 180);  
-  section_5_ctx.beginPath();
-  section_5_ctx.moveTo(0, 0);
-  section_5_ctx.lineTo(450, 0);
-  section_5_ctx.stroke();
-  section_5_ctx.restore();
-
   section_5_ctx.save();
   section_5_ctx.translate((centerX * 2) - 160, 40);
   section_5_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotationSection5 + 220 ) * Math.PI / 180);  
@@ -2025,7 +1936,7 @@ function animate_section_11(){
   section_11_ctx.lineWidth = 1;  
   section_11_ctx.save();  
   section_11_ctx.translate(0, (centerY * 2) - 100);  
-  section_11_ctx.rotate(30 * Math.PI / 180);  
+  section_11_ctx.rotate(13 * Math.PI / 180);  
   section_11_ctx.beginPath();
   section_11_ctx.moveTo(0, 0);
   section_11_ctx.lineTo(450, 0);
@@ -2037,7 +1948,7 @@ function animate_section_11(){
   section_11_ctx.lineWidth = 1;  
   section_11_ctx.save();  
   section_11_ctx.translate(0, (centerY * 2)- 5);  
-  section_11_ctx.rotate(-15 * Math.PI / 180);  
+  section_11_ctx.rotate(-13 * Math.PI / 180);  
   section_11_ctx.beginPath();
   section_11_ctx.moveTo(0, 0);
   section_11_ctx.lineTo(400, 0);
