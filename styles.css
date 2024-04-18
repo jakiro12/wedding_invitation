@@ -888,6 +888,9 @@
 .section_10{
   position: relative;
 }
+.section_10 > canvas{
+  opacity: 0;
+}
 .section_10 > section{
   position: absolute;
   width: 80%;
@@ -899,6 +902,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: 30% 50% 20%;
 }
+@keyframes scaletext_section10 {
+  0% {
+    opacity: 0;
+    transform:  scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform:  scale(1);
+  }
+}
+.section_10 > section > h3{
+  opacity: 0;
+}
+.section_10 > section > p{
+  opacity: 0;
+}
 .section_10--title{
   width: fit-content;
   height: fit-content;
@@ -906,10 +925,15 @@
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
+  opacity: 0;
   color: #9b5a01;
   margin-inline: auto;
   font-size: 30px;
   text-decoration: underline;
+  animation-name: scaletext_section10;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_10--description{
   font-size: 20px;
@@ -922,6 +946,10 @@
   height: fit-content;
   margin: auto;
   text-align: center;
+  animation-name: scaletext_section10;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_11{
   position: relative;
