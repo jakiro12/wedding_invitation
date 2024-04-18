@@ -1924,6 +1924,18 @@ function animate_section_10(){
   requestAnimationFrame(animate_section_10)
 }
 animate_section_10()
+window.addEventListener("scroll", function() {
+  const box2Top = parent_section_10_canvas.getBoundingClientRect().top + parent_section_10_canvas.offsetHeight/2;
+  const animateTitle=this.document.querySelector('.section_10 > section > h3')
+  const animateDescription=this.document.querySelector('.section_10 > section > p')
+  const animateBtn=this.document.querySelector('.section_10 > section > button')
+  const animateCanvas=this.document.querySelector('.section_10 > canvas')
+  
+  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+   animateCanvas.classList.add('animate_section_9_canvas')
+   animateBtn.classList.add('animate_section_9_canvas') 
+  }   
+});
 //Seccion 11
 const parent_section_11_canvas = document.querySelector('.section_11');
 const canvas_section_11 = document.getElementById('section_canvas_11');
