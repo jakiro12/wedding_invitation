@@ -1933,7 +1933,7 @@ window.addEventListener("scroll", function() {
   
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
    animateCanvas.classList.add('animate_section_9_canvas')
-   animateBtn.classList.add('animate_section_9_canvas') 
+   animateBtn.classList.add('btn_assist') 
    animateTitle.classList.add('section_10--title')
    animateDescription.classList.add('section_10--description')
   }   

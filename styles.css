@@ -912,6 +912,14 @@
     transform:  scale(1);
   }
 }
+@keyframes see_btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section_10 > section > h3{
   opacity: 0;
 }
@@ -946,6 +954,21 @@
   height: fit-content;
   margin: auto;
   text-align: center;
+  animation-name: scaletext_section10;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
+.btn_assist{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  font-size: 16px;
+  border-radius:  10px / 50%;
+  background-color: rgb(89, 3, 89);
+  color: white;
+  padding: 5px 7px;
+  border: none;
   animation-name: scaletext_section10;
   animation-duration: 2s; 
   animation-timing-function: linear; 
