@@ -565,90 +565,87 @@ function animate_1() {
     section_2_ctx.restore();  
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 70, centerY - 100);
+    section_2_ctx.translate(centerX + 90, centerY - 110);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 260) * angleRotation + 30 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
     section_2_ctx.restore();
 
-
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 125, centerY - 60);
+    section_2_ctx.translate(centerX + 145, centerY - 70);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 100 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
     section_2_ctx.restore();
 
-
-
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 120, centerY - 80);
+    section_2_ctx.translate(centerX + 140, centerY - 90);
     section_2_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 100 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 50, centerY - 145);
+    section_2_ctx.translate(centerX + 70, centerY - 155);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 85 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 75, centerY - 142);
+    section_2_ctx.translate(centerX + 95, centerY - 152);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 85 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 75, centerY - 142);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 85 ) * Math.PI / 180);  // Rota el contexto con una animación suave
+    section_2_ctx.translate(centerX + 95, centerY - 152);
+    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 85 ) * Math.PI / 180);  
     section_2_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX + 75, centerY - 80);
+    section_2_ctx.translate(centerX + 95, centerY - 90);
     section_2_ctx.rotate(Math.PI / 2);
     section_2_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize, roseBorderCircleSize);
     section_2_ctx.restore();
 
     //Rosa del Lado izquierdo inferior
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 75, centerY + 85);
+    section_2_ctx.translate(centerX - 95, centerY + 95);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
     section_2_ctx.restore();
     
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 130, centerY + 45);
+    section_2_ctx.translate(centerX - 150, centerY + 55);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 300 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 45, centerY + 135);
+    section_2_ctx.translate(centerX - 65, centerY + 145);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 260 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
     section_2_ctx.restore();
     
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 75, centerY + 120);
+    section_2_ctx.translate(centerX - 95, centerY + 130);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 240 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
     section_2_ctx.restore();
 
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 125, centerY + 65);
+    section_2_ctx.translate(centerX - 145, centerY + 75);
     section_2_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 300 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 75, centerY + 120);
+    section_2_ctx.translate(centerX - 95, centerY + 130);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 240 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX - 70, centerY + 80);
+    section_2_ctx.translate(centerX - 90, centerY + 90);
     section_2_ctx.rotate(Math.PI * 1.6);
     section_2_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize, roseBorderCircleSize);
     section_2_ctx.restore();
@@ -767,84 +764,84 @@ function animateTextWedding(index) {
 const initialImageSize=0;
 function animate_section_3() {
   section_3_ctx.clearRect(0, 0, canvas_section_3.width, canvas_section_3.height);
-  let greenBigLeaveSize = 50;
-  let littleStickLeaveSize=90;
-  let mediumStickLeaveSize=85;
-  let whiteLeaveSize=45;
-  let redPointsLeaveSize=45;
-  let roseBorderCircleSize = 60;
+  let greenBigLeaveSize = 55;
+  let littleStickLeaveSize=95;
+  let mediumStickLeaveSize=90;
+  let whiteLeaveSize=50;
+  let redPointsLeaveSize=50;
+  let roseBorderCircleSize = 65;
   
     
     
     section_3_ctx.save();
-    section_3_ctx.translate( centerX - 120,  centerY - 105 );
+    section_3_ctx.translate( centerX - 150,  centerY - 125 );
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 0 ) * Math.PI / 180);  
     section_3_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX - 20 , centerY - 140 );
+    section_3_ctx.translate(centerX - 50 , centerY - 160 );
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 200) * angleRotation  +  30 ) * Math.PI / 180);  
     section_3_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX - 50 , centerY - 130 )
+    section_3_ctx.translate(centerX - 80 , centerY - 150 )
     section_3_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 100 ) * Math.PI / 180);  
     section_3_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
     section_3_ctx.restore(); 
 
     section_3_ctx.save();
-    section_3_ctx.translate( centerX - 100 , centerY - 125 );
+    section_3_ctx.translate( centerX - 130 , centerY - 145 );
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 10 ) * Math.PI / 180);  
     section_3_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX - 100 ,  centerY - 125 );
+    section_3_ctx.translate(centerX - 130 ,  centerY - 145 );
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 10 ) * Math.PI / 180);  
     section_3_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize,redPointsLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX - 60 , centerY - 80 );
+    section_3_ctx.translate(centerX - 90 , centerY - 100 );
     section_3_ctx.rotate(Math.PI * 2.2);
     section_3_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize,roseBorderCircleSize);
     section_3_ctx.restore();
 
     //Rosa inferior
     section_3_ctx.save();
-    section_3_ctx.translate( centerX + 100,  centerY  +  105);
+    section_3_ctx.translate( centerX + 150,  centerY  +  125);
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 190 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_3_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX + 10 , centerY + 150);
+    section_3_ctx.translate(centerX + 60 , centerY + 170);
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotation  - 160 ) * Math.PI / 180);  
     section_3_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX  + 30 , centerY  + 140);
+    section_3_ctx.translate(centerX  + 80 , centerY  + 160);
     section_3_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 240 ) * Math.PI / 180);  
     section_3_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate( centerX + 90, centerY + 120);
+    section_3_ctx.translate( centerX + 140, centerY + 140);
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 180 ) * Math.PI / 180); 
     section_3_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX + 90,  centerY + 120);
+    section_3_ctx.translate(centerX + 140,  centerY + 140);
     section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 180 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_3_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
     section_3_ctx.restore();
 
     section_3_ctx.save();
-    section_3_ctx.translate(centerX + 50 , centerY + 80);
+    section_3_ctx.translate(centerX + 100 , centerY + 100);
     section_3_ctx.rotate(Math.PI * 1.2);
     section_3_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize, roseBorderCircleSize);
     section_3_ctx.restore();
