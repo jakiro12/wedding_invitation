@@ -20,7 +20,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    outline: 1px solid red;
 }
 .canvas_target{
     width: 100%;
@@ -428,8 +427,8 @@
 }
 .section_4-outer_circle{
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4);
@@ -447,8 +446,8 @@
 }
 .section_4-inner_circle{
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 330px;
+  height: 330px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)scale(0.4);
@@ -486,6 +485,10 @@
 }
 .section_5{
   position: relative;
+  background: url('fondo-arriba.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section_5 > canvas{
   opacity: 0;
@@ -577,6 +580,10 @@
 }
 .section_6{
   position: relative;
+  background: url('fondo-abajo.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section_6 > img{
   opacity: 0;
@@ -610,6 +617,10 @@
 }
 .section_7{
   position: relative;
+  background: url('fondo-arriba.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section_7 > canvas{
   opacity: 0;
@@ -725,6 +736,11 @@
 }
 .section_8{
   position: relative;
+  background: url('fondo-abajo.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 @keyframes scaleframe_section8 {
   0% {
@@ -838,6 +854,10 @@
 }
 .section_9{
   position: relative;
+  background: url('fondo-arriba.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @keyframes fade_section_9 {
   0% {
@@ -919,6 +939,10 @@
 }
 .section_10{
   position: relative;
+  background: url('fondo-abajo.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section_10 > canvas{
   opacity: 0;
@@ -1008,6 +1032,11 @@
 }
 .section_11{
   position: relative;
+  background: url('fondo-arriba.svg');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -3;
 }
 .section_11 > canvas{
   opacity: 0;
