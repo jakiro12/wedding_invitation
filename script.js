@@ -25,14 +25,6 @@ tinyGreenLeaveImage.src='tiny_leave.png'
 tinyGreenLeaveImage_2.src='tiny_leave_2.png'
 redPointsLeaveImage.src='red_points_leave.png'
 const angleRotation=4; // Angulo de Rotacion de las animaciones
-//Manchas de Fondo
-const img_background_1=document.createElement('img')
-img_background_1.src='bg_stain.svg'
-img_background_1.className='img_bg_stain_1'
-const img_background_2=document.createElement('img')
-img_background_2.src='bg_stain.svg'
-img_background_2.className='img_bg_stain_2'
-const img_background_3=document.createElement('img')
 
 
 
@@ -807,13 +799,14 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_2_canvas.getBoundingClientRect().top + parent_section_2_canvas.offsetHeight/2;
   const textAnimate=this.document.querySelector('.section_2 > p')
   const bothCircles=this.document.querySelectorAll('.section_2 > span')
+  const allImageAnimate=this.document.querySelectorAll('.section_2 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_2) {
       canvas_section_2.classList.add('scale_section_2');
       textAnimate.classList.add('section_2_text')
       bothCircles[0].classList.add('section_2-outer_circle')
       bothCircles[1].classList.add('section_2-inner_circle')
-      parent_section_2_canvas.appendChild(img_background_1)
-      parent_section_2_canvas.appendChild(img_background_2)
+      allImageAnimate[0].classList.add('img_bg_stain_1')
+      allImageAnimate[1].classList.add('img_bg_stain_2')
       executeTextSection_2=true
   } 
 });
@@ -834,8 +827,6 @@ const height_squares=250;
 
 const middle_height=get_height_section_3 /2
 const middle_width= get_width_section_3 / 2
-
-const get_section_3_text = document.querySelector('.section_3 > p');
 
 
 const initialImageSize=0;
@@ -991,9 +982,9 @@ window.addEventListener("scroll", function() {
     squaresImage[1].classList.add('second_square')
     imageAnimate[0].classList.add('img_wedding')
     imageAnimate[1].classList.add('section_3--recent_wedding')
+    imageAnimate[2].classList.add('img_bg_stain_1')
+    imageAnimate[3].classList.add('img_bg_stain_2')
     canvasVisibility.classList.add('canvas_section_3')
-    parent_section_3_canvas.appendChild(img_background_1)
-    parent_section_3_canvas.appendChild(img_background_2)
     executeTextSection_3=true
     } 
 });
@@ -1281,13 +1272,14 @@ window.addEventListener("scroll", function() {
   const textAnimate=document.querySelector('.section_4 > p')
   const bothCircles=this.document.querySelectorAll('.section_4 > span')
   const canvasVisibility=this.document.querySelector('.section_4 > canvas')
+  const animateImages=this.document.querySelectorAll('.section_4 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_4) {
     bothCircles[0].classList.add('section_4-outer_circle')
     bothCircles[1].classList.add('section_4-inner_circle')
     textAnimate.classList.add('phrase_bible')
     canvasVisibility.classList.add('scale_section_4')
-    parent_section_4_canvas.appendChild(img_background_1)
-    parent_section_4_canvas.appendChild(img_background_2)
+    animateImages[0].classList.add('img_bg_stain_1')
+    animateImages[1].classList.add('img_bg_stain_2')
     executeTextSection_4=true
   }   
 });
@@ -1480,10 +1472,13 @@ window.addEventListener("scroll", function() {
   const canvasVisibility=this.document.querySelector('.section_5 > canvas')
   const animeTextTitle=this.document.querySelector('.section_5 > div > h3')
   const animeText=this.document.querySelector('.section_5--godparents_container > h3')
+  const animateImages=this.document.querySelectorAll('.section_5 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_5) {
    canvasVisibility.classList.add('scale_section_5')
    animeText.classList.add('section_5--title')
    animeTextTitle.classList.add('section_5--title')
+   animateImages[0].classList.add('img_bg_stain_1')
+   animateImages[1].classList.add('img_bg_stain_2')
    executeTextSection_5=true
   animateTextWedding_section5(0)
   }   
@@ -1678,6 +1673,8 @@ window.addEventListener("scroll", function() {
    squaresImage[1].classList.add('second_square')
    imageAnimate[0].classList.add('img_wedding')
    imageAnimate[1].classList.add('section_6--recent_wedding')
+   imageAnimate[2].classList.add('img_bg_stain_1')
+   imageAnimate[3].classList.add('img_bg_stain_2')
    animateCanvas.classList.add('scale_section_6')
    executeTextSection_6=true
   }   
@@ -1776,13 +1773,18 @@ function animate_section_7(){
   requestAnimationFrame(animate_section_7)
 }
 animate_section_7()
+let executeTextSection_7= false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_7_canvas.getBoundingClientRect().top + parent_section_7_canvas.offsetHeight/2;
   const animateSection=this.document.querySelector('.section_7 > section')
   const animateCanvas=this.document.querySelector('.section_7 > canvas')
-  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+  const animateImages=this.document.querySelectorAll('.section_7 > img')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_7) {
    animateSection.classList.add('scale_section_7')
    animateCanvas.classList.add('canvas_section_7')
+   animateImages[0].classList.add('img_bg_stain_1')
+   animateImages[1].classList.add('img_bg_stain_2')
+   executeTextSection_7=true
   }   
 });
 
@@ -1900,15 +1902,20 @@ function animate_section_8(){
   requestAnimationFrame(animate_section_8)
 }
 animate_section_8()
+let executeTextSection_8=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_8_canvas.getBoundingClientRect().top + parent_section_8_canvas.offsetHeight/2;
   const animateSection=this.document.querySelector('.section_8 > section')
   const animateCanvas=this.document.querySelector('.section_8 > canvas')
   const animateInnerBox=this.document.querySelector('.section_8 > section > div')
+  const animateImages=this.document.querySelectorAll('.section_8 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
    animateSection.classList.add('scale_section_8')
    animateCanvas.classList.add('canvas_section_7')
    animateInnerBox.classList.add('section_8--container_info')
+   animateImages[0].classList.add('img_bg_stain_1')
+   animateImages[1].classList.add('img_bg_stain_2')
+   executeTextSection_8=true
   }   
 });
 //Seccion 9
@@ -1983,13 +1990,18 @@ function animate_section_9(){
   requestAnimationFrame(animate_section_9)
 }
 animate_section_9()
+let executeTextSection_9=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_9_canvas.getBoundingClientRect().top + parent_section_9_canvas.offsetHeight/2;
   const animateSection=this.document.querySelector('.section_9 > section')
   const animateCanvas=this.document.querySelector('.section_9 > canvas') 
-  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+  const animateImages=this.document.querySelectorAll('.section_9 > img')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_9) {
    animateCanvas.classList.add('animate_section_9_canvas')
    animateSection.classList.add('animate_section_9') 
+   animateImages[0].classList.add('img_bg_stain_1')
+   animateImages[1].classList.add('img_bg_stain_2')
+   executeTextSection_9=true
   }   
 });
 //Seccion 10
@@ -2094,18 +2106,22 @@ function animate_section_10(){
   requestAnimationFrame(animate_section_10)
 }
 animate_section_10()
+let executeTextSection_10=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_10_canvas.getBoundingClientRect().top + parent_section_10_canvas.offsetHeight/2;
   const animateTitle=this.document.querySelector('.section_10 > section > h3')
   const animateDescription=this.document.querySelector('.section_10 > section > p')
   const animateBtn=this.document.querySelector('.section_10 > section > button')
   const animateCanvas=this.document.querySelector('.section_10 > canvas')
-  
-  if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+  const animateImages=this.document.querySelectorAll('.section_10 > img')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_10) {
    animateCanvas.classList.add('animate_section_9_canvas')
    animateBtn.classList.add('btn_assist') 
    animateTitle.classList.add('section_10--title')
    animateDescription.classList.add('section_10--description')
+   animateImages[0].classList.add('img_bg_stain_1')
+   animateImages[1].classList.add('img_bg_stain_2')
+   executeTextSection_10=true
   }   
 });
 //Seccion 11
@@ -2385,15 +2401,20 @@ function animate_section_11(){
   requestAnimationFrame(animate_section_11)
 }
 animate_section_11()
+let executeTextSection_11=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_11_canvas.getBoundingClientRect().top + parent_section_11_canvas.offsetHeight/2 ;
   const textAnimate=this.document.querySelector('.section_11 > p')
   const bothCircles=this.document.querySelectorAll('.section_11 > span')
   const animateCanvas=this.document.querySelector('.section_11 > canvas')
-  if (box2Top <= window.innerHeight && box2Top >= 0) {
+  const animateImages=this.document.querySelectorAll('.section_11 > img')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
       animateCanvas.classList.add('scale_section_2');
       textAnimate.classList.add('section_2_text')
       bothCircles[0].classList.add('section_2-outer_circle')
       bothCircles[1].classList.add('section_2-inner_circle')
+      animateImages[0].classList.add('img_bg_stain_1')
+      animateImages[1].classList.add('img_bg_stain_2')
+      executeTextSection_11=true
   } 
 });

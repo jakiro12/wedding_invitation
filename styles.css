@@ -127,6 +127,14 @@
       opacity: 1;
     }
   }
+  @keyframes scaleStain {
+    0% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
   .section_2{
     position: relative;  
@@ -139,6 +147,9 @@
   .section_2 > canvas{
     opacity: 0;
     z-index: 2;
+  }
+  .section_2 > img{
+    opacity: 0;
   }
   .section_2 > p{
     opacity: 0;
@@ -258,7 +269,7 @@
   background-position: center;
   
 }
-.section_3 > img:nth-child(1), .section_3 > img:nth-child(2){
+.section_3 > img{
   opacity: 0;
 }
 
@@ -332,6 +343,7 @@
         transform: translate(-50%, -50%) scale(1) rotateZ(0deg); /* Escala final y centrado */
     }
 }
+
 .img_wedding {
   position: absolute;
   top: 50%;
@@ -379,6 +391,9 @@
 .section_4 > canvas{
   opacity: 0;
 }
+.section_4 > img{
+  opacity: 0;
+}
 .section_4 > p{
   opacity: 0;
 }
@@ -419,7 +434,7 @@
   padding-left: 10px;
   padding-right: 10px;
   line-height: 20px;
-  font-size: 20px;
+  font-size: 28px;
   background-color: rgba(255, 99, 71, 0.181);
   z-index: -1;
   font-family: "Cormorant Infant", serif;
@@ -497,6 +512,9 @@
 .section_5 > canvas{
   opacity: 0;
 }
+.section_5 > img{
+  opacity: 0;
+}
 .section_5 > div{
   position: absolute;
   width: 80%;
@@ -547,7 +565,7 @@
   font-weight: 600;
   font-style: normal;
   color: #9b5a01;
-  font-size: 20px;
+  font-size: 28px;
   width: 80%;
   margin-inline: auto;
   text-align: center;
@@ -643,6 +661,9 @@
 .section_7 > canvas{
   opacity: 0;
 }
+.section_7 > img{
+  opacity: 0;
+}
 .section_7 > section{
   position: absolute;
   width: 80%;
@@ -692,7 +713,7 @@
   border-bottom: 2px solid #9b5a01;
   margin: auto;
   color: #9b5a01;
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
 }
 .section_7--date_description{
@@ -710,7 +731,7 @@
   font-family: "Cormorant Infant", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
+  font-size: 35px;
 }
 .section_7--date_description > p:nth-child(2){
   font-size: 40px;
@@ -719,12 +740,13 @@
   width: fit-content;
   height: fit-content;
   margin: auto;
-  font-size: 16px;
+  font-size: 22px;
   border-radius:  10px / 50%;
   background-color: rgb(89, 3, 89);
   color: white;
   padding: 5px 7px;
   border: none;
+  cursor: pointer;
 }
 .section_7--description_event{
   width: 100%;
@@ -735,7 +757,7 @@
   height: fit-content;
   width: fit-content;
   margin: auto;
-  font-size: 30px;
+  font-size: 32px;
   border-bottom: 1px solid #9b5a01 ;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -747,7 +769,7 @@
   font-family: "Cormorant Infant", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 16px;
+  font-size: 22px;
   width: fit-content;
   margin: auto;
   text-align: center;
@@ -784,6 +806,9 @@
   }
 }
 .section_8 > canvas{
+  opacity: 0;
+}
+.section_8 > img{
   opacity: 0;
 }
 .section_8 > section{
@@ -838,7 +863,7 @@
   font-family: "Cormorant Infant", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
 }
 .section_8--container_info > button{
@@ -889,6 +914,9 @@
 .section_9 > canvas{
   opacity: 0;
 }
+.section_9 > img{
+  opacity: 0;
+}
 .animate_section_9_canvas{
   animation-name: fade_section_9;
   animation-duration: 2s; 
@@ -934,7 +962,7 @@
   font-family: "Cormorant Infant", serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
+  font-size: 28px;
 }
 .section_9--medias{
   width: 100%;
@@ -948,7 +976,7 @@
   height: 100%;
   display: grid;
   margin: auto;
-  font-size: 20px;
+  font-size: 28px;
   place-items: center;
   color: #9b5a01;
   font-family: "Cormorant Infant", serif;
@@ -963,6 +991,9 @@
   background-position: center;
 }
 .section_10 > canvas{
+  opacity: 0;
+}
+.section_10 > img{
   opacity: 0;
 }
 .section_10 > section{
@@ -1018,7 +1049,7 @@
   animation-fill-mode: forwards;
 }
 .section_10--description{
-  font-size: 20px;
+  font-size: 28px;
   place-items: center;
   color: #9b5a01;
   font-family: "Cormorant Infant", serif;
@@ -1059,6 +1090,9 @@
 .section_11 > canvas{
   opacity: 0;
 }
+.section_11 > img{
+  opacity: 0;
+}
 .section_11 > section{
   position: absolute;
   width: 80%;
@@ -1079,6 +1113,11 @@
   right: 5%;
   width: 230px;
   height: 230px;
+  opacity: 0;
+  animation-name: scaleStain;
+  animation-duration: 1.5s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .img_bg_stain_2{
   position:absolute;
@@ -1086,4 +1125,9 @@
   left: 5%;
   width: 230px;
   height: 230px;
+  opacity: 0;
+  animation-name: scaleStain;
+  animation-duration: 1.5s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
