@@ -258,7 +258,7 @@
   background-position: center;
   
 }
-.section_3 > img{
+.section_3 > img:nth-child(1), .section_3 > img:nth-child(2){
   opacity: 0;
 }
 
@@ -594,6 +594,20 @@
 }
 .section_6 > canvas{
   z-index: 2;
+}
+.section_6--recent_wedding{
+  position:absolute;
+  opacity: 0;
+  width: 80%;
+  height: 50px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+  z-index: 5;
+  animation-name: fadeInText;
+  animation-duration: 2.5s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .scale_section_6{
   animation-name: scaleframe_section6;
@@ -1058,4 +1072,18 @@
   font-size: 25px;
   line-height: 30px;
   opacity: 0;
+}
+.img_bg_stain_1{
+  position:absolute;
+  top: 3%;
+  right: 5%;
+  width: 230px;
+  height: 230px;
+}
+.img_bg_stain_2{
+  position:absolute;
+  bottom: 3%;
+  left: 5%;
+  width: 230px;
+  height: 230px;
 }
