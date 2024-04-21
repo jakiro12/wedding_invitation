@@ -92,6 +92,10 @@
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
 }
 .circle_times_animation_1{
   position: absolute;
@@ -1102,10 +1106,49 @@
   transform: translate(-50%, -50%);
   opacity: 0;
 }
-.section_11 > p {
-  font-size: 25px;
-  line-height: 30px;
+.section_11 > div {
+  position: absolute;
+  width: 230px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   opacity: 0;
+}
+@keyframes scaletext_section11 {
+  0% {
+    opacity: 0;
+    transform:translate(-50%, -50%)  scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform:translate(-50%, -50%)  scale(1);
+  }
+}
+.section_11--box_text{
+  animation-name: scaletext_section11;
+  animation-duration: 4s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
+.section_11 > div > p{
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 22px;
+  color: #9b5a01;
+}
+.section_11 > div > h3{
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #cbac44 ;
 }
 .img_bg_stain_1{
   position:absolute;

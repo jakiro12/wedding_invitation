@@ -2404,17 +2404,55 @@ animate_section_11()
 let executeTextSection_11=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_11_canvas.getBoundingClientRect().top + parent_section_11_canvas.offsetHeight/2 ;
-  const textAnimate=this.document.querySelector('.section_11 > p')
   const bothCircles=this.document.querySelectorAll('.section_11 > span')
   const animateCanvas=this.document.querySelector('.section_11 > canvas')
   const animateImages=this.document.querySelectorAll('.section_11 > img')
+  const animateTextBox=this.document.querySelector('.section_11 > div')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
       animateCanvas.classList.add('scale_section_2');
-      textAnimate.classList.add('section_2_text')
       bothCircles[0].classList.add('section_2-outer_circle')
       bothCircles[1].classList.add('section_2-inner_circle')
       animateImages[0].classList.add('img_bg_stain_1')
       animateImages[1].classList.add('img_bg_stain_2')
+      animateTextBox.classList.add('section_11--box_text')
       executeTextSection_11=true
   } 
 });
+const fechaObjetivo = new Date(2024, 3, 28);
+
+function tiempoRestante(fechaObjetivo) {
+  let fechaActual = new Date();
+  let tiempoActual = fechaActual.getTime();
+  let tiempoObjetivo = fechaObjetivo.getTime();
+  let diferencia = tiempoObjetivo - tiempoActual;
+
+  let diasRestantes = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+  let horasRestantes = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutosRestantes = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+  let segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
+  
+  return {
+      dias: diasRestantes,
+      horas: horasRestantes,
+      minutos: minutosRestantes,
+      segundos: segundosRestantes
+  };
+}
+
+
+// Función para actualizar los divs con el tiempo restante
+function updateCounter() {
+  let currentTime = tiempoRestante(fechaObjetivo);
+  let divs = document.querySelectorAll('.section_1--background_circle');
+
+  divs[0].innerHTML = currentTime.dias;//Dias
+  divs[1].innerHTML = currentTime.horas;//Horas
+  divs[2].innerHTML = currentTime.minutos; //Minutos
+  divs[3].innerHTML = currentTime.segundos;//Segundos
+}
+
+// Actualizar el contador cada segundo
+setInterval(updateCounter, 1000);
+
+// Llamar a actualizarContador() una vez para mostrar el tiempo inicial
+updateCounter();
