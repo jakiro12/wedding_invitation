@@ -12,8 +12,8 @@
     grid-template-rows: repeat(11,1fr);
 }
 .page_contianer > div{
-    width: 516px;
-    height: 918px;
+    width: min(100%, 430px);
+    height: 100dvh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -96,6 +96,9 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 .circle_times_animation_1{
   position: absolute;
@@ -162,23 +165,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    opacity: 0;
     transform: translate(-50%, -50%) scale(0.4); 
-    animation: fadeInScale 8s ease-in-out forwards; 
-    line-height: 60px;
-    font-size: 40px;
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: #cbac44;
-    letter-spacing: 2px;
-    width: 275px;
-    height: 275px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    animation: fadeInScale 8s ease-in-out forwards;   
+    width: 240px;
+    height: 240px;
     background: transparent;
 }
 .section_2--background_card{
@@ -429,22 +419,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) ;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 20px;
-  font-size: 28px;
+  background: url('phrase.svg');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: rgba(255, 99, 71, 0.181);
   z-index: -1;
-  font-family: "Cormorant Infant", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #9b5a01;
   transform: translate(-50%, -50%) scale(0.4) ; 
   animation: scalePhrase 3.8s linear forwards;
 }

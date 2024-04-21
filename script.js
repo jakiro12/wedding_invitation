@@ -802,11 +802,11 @@ window.addEventListener("scroll", function() {
   const allImageAnimate=this.document.querySelectorAll('.section_2 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_2) {
       canvas_section_2.classList.add('scale_section_2');
-      textAnimate.classList.add('section_2_text')
+      allImageAnimate[0].classList.add('section_2_text')
       bothCircles[0].classList.add('section_2-outer_circle')
       bothCircles[1].classList.add('section_2-inner_circle')
-      allImageAnimate[0].classList.add('img_bg_stain_1')
-      allImageAnimate[1].classList.add('img_bg_stain_2')
+      allImageAnimate[1].classList.add('img_bg_stain_1')
+      allImageAnimate[2].classList.add('img_bg_stain_2')
       executeTextSection_2=true
   } 
 });
