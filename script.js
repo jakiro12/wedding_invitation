@@ -501,9 +501,7 @@ function animate_circles_4() {
 animate_circles_4();
 
 let angle = 0;  // Ángulo inicial de rotación
-
-const widthFourCirclesSections=containerWidth / 3.5 
-  function drawFrame() {
+function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const cardLogoSize=containerWidth + 100;//pixeles
     ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2 + 150 , cardLogoSize, cardLogoSize);
@@ -2445,10 +2443,10 @@ function updateCounter() {
   let currentTime = tiempoRestante(fechaObjetivo);
   let divs = document.querySelectorAll('.section_1--background_circle');
 
-  divs[0].innerHTML = currentTime.dias;//Dias
-  divs[1].innerHTML = currentTime.horas;//Horas
-  divs[2].innerHTML = currentTime.minutos; //Minutos
-  divs[3].innerHTML = currentTime.segundos;//Segundos
+  divs[0].innerHTML = `<p  style="width: fit-content; height: fit-content;font-size: 30px;">${currentTime.dias}</p>` + "dias";//Dias
+  divs[1].innerHTML = `<p  style="width: fit-content; height: fit-content;font-size: 30px;">${currentTime.horas}</p>` + "horas";//Horas
+  divs[2].innerHTML = `<p  style="width: fit-content; height: fit-content;font-size: 30px;">${currentTime.minutos}</p>` + "min"; //Minutos
+  divs[3].innerHTML = `<p  style="width: fit-content; height: fit-content;font-size: 30px;">${currentTime.segundos}</p>` + "seg";//Segundos
 }
 
 // Actualizar el contador cada segundo

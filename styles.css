@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    outline: 1px solid red;
 }
 .canvas_target{
     width: 100%;
@@ -33,11 +34,11 @@
 }
 .section_1 > p{
   position: absolute;
-  top: 45px;
+  top: 35px;
   margin-inline:auto ;
   width: 95%;
   height: fit-content;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   font-family: "Cormorant Infant", serif;
   font-weight: 300;
@@ -46,7 +47,7 @@
 .section_1--counter{
   width: 100%;
   position: absolute;
-  top: 22%;
+  top: 24%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 150px;
@@ -93,12 +94,15 @@
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  font-size: 24px;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
+  
 }
 .circle_times_animation_1{
   position: absolute;
