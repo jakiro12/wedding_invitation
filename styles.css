@@ -85,8 +85,8 @@
   align-items: center;
 }
 .section_1--background_circle{
-  width: calc(100% - 5px);
-  height: calc(100% - 5px);
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
   border-radius: 50%;
   background: url('fondo-arriba.svg');
   background-size: 150%;
