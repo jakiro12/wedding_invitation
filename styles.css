@@ -7,7 +7,7 @@
 }
 .page_contianer{
     display: grid;
-    height: 1100vh;
+    height: 1100dvh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(11,1fr);
 }
