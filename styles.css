@@ -289,11 +289,11 @@
 @keyframes fadeInText {
  0% {
       opacity: 0;
-      top: 60%;
+      top: 50%;
     }
     100% {
         opacity: 1;
-        top: 88%;
+        top: 68%;
     }
 }
 .section_3--recent_wedding{
@@ -301,7 +301,7 @@
   opacity: 0;
   width: 80%;
   height: 50px;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) ;
   z-index: 5;
@@ -343,7 +343,7 @@
 
 .img_wedding {
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.2) rotateZ(-30deg);
   width: 290px;
@@ -356,7 +356,7 @@
 }
 .first_square{
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4) rotateZ(-45deg); 
   animation: scaleSquares 4.5s ease-in-out forwards;
@@ -368,7 +368,7 @@
 }
 .second_square{
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4) rotateZ(-45deg); 
   animation: scaleSquares_rotate 5s ease-in-out forwards;
@@ -500,97 +500,39 @@
   background-position: center;
 }
 .section_5 > canvas{
-  opacity: 0;
-  z-index: 1;
+  opacity: 1;
+  z-index: 2;
 }
 .section_5 > img{
   opacity: 0;
 }
-.section_5 > div{
+.section_5 > section{
   position: absolute;
-  width: 95%;
-  height: 80%;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 30% 40% 30%;
-  z-index: 2;
-}
-@keyframes fadeInScale_text_section5 {
-  0% {
-      opacity: 0;
-      transform: scale(0.4); /* Escala inicial y centrado */
-  }
-  100% {
-      opacity: 1;
-      transform: scale(1); /* Escala final y centrado */
-  }
-}
-
-.section_5--title{
-  font-size: 30px;
-  width: 85%;
-  height: fit-content;
-  text-decoration: underline;
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
-  margin-top: auto;
-  color: #9b5a01;
-  margin-inline: auto;
-  text-align: center;
-  opacity: 0;
-  animation: fadeInScale_text_section5 4s ease-in-out forwards; 
-}
-.section_5--godparents_container{
-  width: 100%;
-  height: 90%;
-  display: grid;
-  place-items: center;
-  margin: auto;
-}
-.section_5--names_persons{
-  font-family: "Cormorant Infant", serif;
-  font-weight: 600;
-  font-style: normal;
-  color: #9b5a01;
-  font-size: 28px;
   width: 80%;
-  margin-inline: auto;
-  text-align: center;
-  height: fit-content;
-  margin-bottom:auto;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  outline: 2px solid #9b5a01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
-@keyframes scaleframe_section5 {
-  0% {
-    transform: scale(1.1);
-    opacity: 0;
-  }
-  50%{
-    transform: scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-.scale_section_5{
-  animation-name: scaleframe_section4;
-  animation-duration: 7.6s; 
+.section_5--container_info{
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 2px solid #9b5a01;
+  animation-name: scaleframe_section_frame8;
+  animation-duration: 2s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
+  background: url('./parents_names.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
 }
-@keyframes scaleframe_section6 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .section_6{
   position: relative;
   background: url('fondo-abajo.svg');
@@ -598,32 +540,19 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.section_6 > img{
-  opacity: 0;
+.section_6 > section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  outline: 1px solid black;
+  width: 60%;
+  height: 80%;
 }
 .section_6 > canvas{
   z-index: 2;
 }
-.section_6--recent_wedding{
-  position:absolute;
-  opacity: 0;
-  width: 80%;
-  height: 50px;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%) ;
-  z-index: 5;
-  animation-name: fadeInText;
-  animation-duration: 2.5s; 
-  animation-timing-function: linear; 
-  animation-fill-mode: forwards;
-}
-.scale_section_6{
-  animation-name: scaleframe_section6;
-  animation-duration: 7.6s; 
-  animation-timing-function: linear; 
-  animation-fill-mode: forwards;
-}
+
 @keyframes scaleframe_section7 {
   0% {
     opacity: 0;
@@ -650,122 +579,49 @@
   background-position: center;
 }
 .section_7 > canvas{
-  opacity: 0;
+  z-index: 2;
 }
 .section_7 > img{
   opacity: 0;
 }
 .section_7 > section{
   position: absolute;
-  width: 90%;
+  width: 80%;
   height: 80%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,1fr);
-  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  outline: 2px solid #9b5a01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
 }
-.scale_section_7{
-  animation-name: scaleframe_section7;
-  animation-duration: 7.6s; 
-  animation-timing-function: linear; 
-  animation-fill-mode: forwards;
-}
-.canvas_section_7{
-  animation-name: fadeCanvas_section7;
-  animation-duration: 5.6s; 
-  animation-timing-function: linear; 
-  animation-fill-mode: forwards;
-}
-.section_7--title{
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: #9b5a01;
-  font-size: 35px;
-  letter-spacing: 5px;
-}
-.section_7--date{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: 1fr;
-}
-.section_7--date > p{
-  width: 100%;
-  height: fit-content;
-  border-top: 2px solid #9b5a01;
-  border-bottom: 2px solid #9b5a01;
-  margin: auto;
-  color: #9b5a01;
-  font-size: 25px;
-  text-align: center;
-}
-.section_7--date_description{
-  width: 100%;
-  height: 100%;
+.section_7--container_info{
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 2px solid #9b5a01; 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30% 40% 30%;
+  grid-template-rows: 70% 30%;
 }
-.section_7--date_description > p{
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  color: #9b5a01;
-  font-family: "Cormorant Infant", serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30px;
+.section_7--container_info > img{
+  width: 100%;
+  height:95%;
+  object-fit: contain;
 }
-.section_7--date_description > p:nth-child(2){
-  font-size: 35px;
-}
-.section_7--see_map{
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  font-size: 20px;
-  border-radius:  10px / 50%;
-  background-color: rgb(89, 3, 89);
-  color: white;
-  padding: 5px 7px;
+.section_7--container_info > button{
+  width: 120px;
+  height: 60px;
+  margin-inline: auto;
+  margin-bottom: auto;
+  border-radius: 15px/50%;
+  background: url('./btn_place.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
-  z-index: 1;
-}
-.section_7--description_event{
-  width: 100%;
-  height: 100%;
-  display: grid;
-}
-.section_7--description_event > h4{
-  height: fit-content;
-  width: fit-content;
-  margin: auto;
-  font-size: 32px;
-  border-bottom: 1px solid #9b5a01 ;
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: #9b5a01;
-}
-.section_7--description_event > p{
-  color: #9b5a01;
-  font-family: "Cormorant Infant", serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 22px;
-  width: fit-content;
-  margin: auto;
-  text-align: center;
 }
 .section_8{
   position: relative;
@@ -799,7 +655,6 @@
   }
 }
 .section_8 > canvas{
-  opacity: 0;
   z-index: 2;
 }
 .section_8 > img{
@@ -807,17 +662,33 @@
 }
 .section_8 > section{
   position: absolute;
-  opacity: 0;
   width: 80%;
-  height: 80%;
+  height: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  outline: 2px solid #9b5a01;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%;
   z-index: 1;
+}
+.section_8 > section > img{
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+}
+.section_8 > section > button{
+  width: 120px;
+  height: 60px;
+  margin-inline: auto;
+  margin-bottom: auto;
+  border-radius: 15px/50%;
+  background: url('./btn_place.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }
 .scale_section_8{
   animation-name: scaleframe_section8;
