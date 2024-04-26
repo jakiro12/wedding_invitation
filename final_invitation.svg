@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 208.88 422.33">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: .03em;
+      }
+
+      .cls-3 {
+        font-family: GreatVibes-Regular, 'Great Vibes';
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 47.44px;
+      }
+
+      .cls-3, .cls-5 {
+        fill: url(#Nueva_muestra_de_motivo_3);
+      }
+
+      .cls-6 {
+        letter-spacing: .02em;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-9 {
+        letter-spacing: .03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        fill: none;
+      }
+
+      .cls-12 {
+        fill: #504322;
+        font-family: Italiana-Regular, Italiana;
+        font-size: 20.95px;
+        stroke: #504322;
+        stroke-miterlimit: 10;
+        stroke-width: .26px;
+      }
+
+      .cls-13 {
+        letter-spacing: .02em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-17 {
+        font-size: 20px;
+      }
+
+      .cls-5 {
+        font-family: TrajanPro-Bold, 'Trajan Pro';
+        font-weight: 700;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1703.29" y1="554.85" x2="1944.16" y2="554.85" gradientTransform="translate(698.22 1944.16) rotate(-90) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dcc173"/>
+      <stop offset=".24" stop-color="#ab8136"/>
+      <stop offset=".52" stop-color="#73582b"/>
+      <stop offset=".86" stop-color="#dcc173"/>
+    </linearGradient>
+    <pattern id="Nueva_muestra_de_motivo_3" data-name="Nueva muestra de motivo 3" x="0" y="0" width="286.73" height="240.87" patternTransform="translate(1084.33 -5135.17)" patternUnits="userSpaceOnUse" viewBox="0 0 286.73 240.87">
+      <g>
+        <rect class="cls-8" width="286.73" height="240.87"/>
+        <polygon class="cls-7" points="286.73 0 286.73 240.87 0 240.87 0 0 286.73 0"/>
+      </g>
+    </pattern>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <text class="cls-3" transform="translate(0 97.95)"><tspan x="0" y="0">Te esperamos</tspan></text>
+    <text class="cls-12" transform="translate(12.11 17.94)"><tspan class="cls-6" x="0" y="0">G</tspan><tspan class="cls-1" x="13.91" y="0">r</tspan><tspan class="cls-11" x="21.33" y="0">a</tspan><tspan class="cls-9" x="32.31" y="0">c</tspan><tspan class="cls-14" x="42.91" y="0">ia</tspan><tspan class="cls-2" x="59.09" y="0">s p</tspan><tspan class="cls-14" x="86.88" y="0">o</tspan><tspan class="cls-2" x="98.72" y="0">r s</tspan><tspan class="cls-15" x="122.92" y="0">e</tspan><tspan class="cls-2" x="133.27" y="0">r p</tspan><tspan class="cls-14" x="159.73" y="0">a</tspan><tspan class="cls-2" x="170.72" y="0">r</tspan><tspan class="cls-1" x="178.76" y="0">t</tspan><tspan class="cls-2" x="185.66" y="0">e</tspan><tspan class="cls-10" x="10.72" y="25.15">d</tspan><tspan class="cls-2" x="22.72" y="25.15">e nues</tspan><tspan class="cls-1" x="83.93" y="25.15">tr</tspan><tspan class="cls-2" x="98.24" y="25.15">a </tspan><tspan class="cls-14" x="116.43" y="25.15">h</tspan><tspan class="cls-6" x="128.19" y="25.15">i</tspan><tspan class="cls-13" x="133.59" y="25.15">s</tspan><tspan class="cls-16" x="142.96" y="25.15">t</tspan><tspan class="cls-14" x="149.44" y="25.15">o</tspan><tspan class="cls-2" x="161.27" y="25.15">r</tspan><tspan class="cls-14" x="169.32" y="25.15">i</tspan><tspan class="cls-13" x="174.52" y="25.15">a</tspan></text>
+    <image width="564" height="450" transform="translate(62.41 241.78) scale(.16)" xlink:href="D:\Downloads\anillo de compromiso.png"/>
+    <text class="cls-5" transform="translate(30.34 392.65)"><tspan class="cls-4"><tspan x="0" y="0">M &amp; A</tspan></tspan><tspan class="cls-17"><tspan x="22.26" y="24">17.12.2024</tspan></tspan></text>
+  </g>
+</svg>
