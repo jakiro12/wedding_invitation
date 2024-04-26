@@ -1691,8 +1691,8 @@ window.addEventListener("scroll", function() {
   const animateCanvas=this.document.querySelector('.section_7 > canvas')
   const animateImages=this.document.querySelectorAll('.section_7 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_7) {
-   animateSection.classList.add('scale_section_7')
-   animateCanvas.classList.add('canvas_section_7')
+   animateSection.classList.add('scale_section_5')
+   animateCanvas.classList.add('canvas_section_3')
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
    executeTextSection_7=true
