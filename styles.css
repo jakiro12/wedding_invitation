@@ -175,6 +175,7 @@
     background: transparent;
 }
 .section_2--background_card{
+  display: block;
   width: calc(100% - 3px);
   height:calc(100% - 3px) ;
   border-radius: 50%;
@@ -1057,16 +1058,14 @@
 @keyframes fadeInImg_14 {
   0% {
        opacity: 0;
-       top: 30%;
      }
      100% {
          opacity: 1;
-         top: 60%;
      }
  }
 .section_14--img_invitation{
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 220px;
