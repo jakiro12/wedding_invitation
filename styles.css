@@ -342,7 +342,7 @@
 
 .img_wedding {
   position: absolute;
-  top: 380px;
+  top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) scale(0.2) rotateZ(-30deg);
   width: 290px;
@@ -355,7 +355,7 @@
 }
 .first_square{
   position: absolute;
-  top: 380px;
+  top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4) rotateZ(-45deg); 
   animation: scaleSquares 4.5s ease-in-out forwards;
@@ -367,7 +367,7 @@
 }
 .second_square{
   position: absolute;
-  top: 380px;
+  top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4) rotateZ(-45deg); 
   animation: scaleSquares_rotate 5s ease-in-out forwards;
