@@ -780,7 +780,7 @@ function animate_1() {
     section_2_ctx.drawImage(roseImage, -(roseCornerSize/2) , -(roseCornerSize/2), roseCornerSize, roseCornerSize);
     section_2_ctx.restore();
 
-    angleLeave += 1; // Incrementar el ángulo para la animación
+    angleLeave += 0.1; // Incrementar el ángulo para la animación
 
     requestAnimationFrame(animate_1);
 }
