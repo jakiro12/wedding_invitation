@@ -2561,9 +2561,6 @@ window.addEventListener("scroll", function() {
   const animateImages=this.document.querySelectorAll('.section_12 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
       animateCanvas.classList.add('scale_section_2');
-      
-    animateImages[0].classList.add('img_bg_stain_1')
-    animateImages[1].classList.add('img_bg_stain_2')
       executeTextSection_12=true
   } 
 });
@@ -2973,24 +2970,3 @@ setInterval(updateCounter, 1000);
 updateCounter();
 
 
-// Obtener el agente de usuario del navegador
-var userAgent = window.navigator.userAgent;
-
-// Verificar si el agente de usuario contiene la palabra "Safari"
-if (userAgent.indexOf('Safari') !== -1) {
-    // Safari podría ser el navegador
-    alert("¡Hola, mundo!");
-    // Sin embargo, Safari también puede estar presente en otros navegadores como Chrome o Firefox en su versión para iOS
-    // Verificar si es realmente Safari o una versión de Safari en otro navegador
-    if (userAgent.indexOf('Chrome') === -1 && userAgent.indexOf('Firefox') === -1) {
-        // Si no contiene "Chrome" ni "Firefox", es probable que sea Safari
-        console.log('El navegador es Safari');
-    alert("soy safaroni")
-    } else {
-        // Es posible que sea Safari en un dispositivo iOS pero no Safari en macOS
-        console.log('El navegador podría ser Safari pero en un dispositivo diferente');
-    }
-} else {
-    // No es Safari
-    console.log('El navegador no es Safari');
-}
