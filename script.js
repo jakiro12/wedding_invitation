@@ -2933,7 +2933,7 @@ window.addEventListener("scroll", function() {
   }   
 });
 
-const fechaObjetivo = new Date(2024, 3, 28);
+const fechaObjetivo = new Date(2024, 4, 28);
 
 function tiempoRestante(fechaObjetivo) {
   let fechaActual = new Date();
