@@ -2985,6 +2985,7 @@ if (userAgent.indexOf('Safari') !== -1) {
     if (userAgent.indexOf('Chrome') === -1 && userAgent.indexOf('Firefox') === -1) {
         // Si no contiene "Chrome" ni "Firefox", es probable que sea Safari
         console.log('El navegador es Safari');
+    alert("soy safaroni")
     } else {
         // Es posible que sea Safari en un dispositivo iOS pero no Safari en macOS
         console.log('El navegador podría ser Safari pero en un dispositivo diferente');
