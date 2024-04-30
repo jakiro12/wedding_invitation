@@ -414,8 +414,8 @@
   }
 }
 .phrase_bible{
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -846,8 +846,8 @@
   z-index: 1;
 }
 .phrase_section_10{
-  width: 250px;
-  height: 250px;
+  width: 290px;
+  height: 290px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -970,22 +970,8 @@
   justify-content: center;
   align-items: center;
 }
-.section_12--description{
-  width: calc(100% - 6px);
-  height: calc(100% - 6px);
-  border: 2px solid #9b5a01; 
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-.section_12--description > p{
-  width: 250px;
-  height: 200px;
-  background: url('slider.svg');
-  background-position: center;
-  background-size: 50%;
-  background-repeat: no-repeat;
-}
+
+
 .section_13{
   position: relative;
   background: url('fondo-arriba.svg');
@@ -1024,7 +1010,7 @@
   position: absolute;
   width: 330px;
   height: 330px;
-  top: 37%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4);
   animation-name: scaleOuterCircle;
@@ -1043,7 +1029,7 @@
   position: absolute;
   width: 310px;
   height: 310px;
-  top: 37%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%)scale(0.4);
   animation-name: scaleInnerCircle;
@@ -1073,9 +1059,9 @@
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.5);
   width: 220px;
-  height: 80%;
+  height: 90%;
   object-fit: covers;
   animation-name: fadeInImg_14;
   animation-duration: 2.5s; 
@@ -1106,3 +1092,12 @@
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
+
+/* Carrusel */
+.section_12--description{
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 2px solid #9b5a01; 
+  position: relative;
+}
+
