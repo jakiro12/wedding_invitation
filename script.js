@@ -26,8 +26,8 @@ const angleRotation=4; // Angulo de Rotacion de las animaciones
 
 
 
-const containerWidth = document.getElementById('container_canvas').offsetWidth;
-const containerHeight = document.getElementById('container_canvas').offsetHeight;
+const containerWidth = document.getElementById('container_canvas').clientWidth;
+const containerHeight = document.getElementById('container_canvas').clientHeight;
 
 canvas.width = containerWidth;
 canvas.height = containerHeight;
@@ -46,14 +46,14 @@ const circles_animations_ctx_4=canvasCirclesAnimation_4.getContext("2d")
 
 
 
-canvasCirclesAnimation.width=circlesDatesContainer[0].offsetWidth + 20;
-canvasCirclesAnimation.height=circlesDatesContainer[0].offsetHeight + 20;
-canvasCirclesAnimation_2.width=circlesDatesContainer[1].offsetWidth + 20;
-canvasCirclesAnimation_2.height=circlesDatesContainer[1].offsetHeight + 20;
-canvasCirclesAnimation_3.width=circlesDatesContainer[2].offsetWidth + 20;
-canvasCirclesAnimation_3.height=circlesDatesContainer[2].offsetHeight + 20;
-canvasCirclesAnimation_4.width=circlesDatesContainer[3].offsetWidth + 20;
-canvasCirclesAnimation_4.height=circlesDatesContainer[3].offsetHeight + 20;
+canvasCirclesAnimation.width=circlesDatesContainer[0].clientWidth + 20;
+canvasCirclesAnimation.height=circlesDatesContainer[0].clientHeight + 20;
+canvasCirclesAnimation_2.width=circlesDatesContainer[1].clienttWidth + 20;
+canvasCirclesAnimation_2.height=circlesDatesContainer[1].clientHeight + 20;
+canvasCirclesAnimation_3.width=circlesDatesContainer[2].clientWidth + 20;
+canvasCirclesAnimation_3.height=circlesDatesContainer[2].clientHeight + 20;
+canvasCirclesAnimation_4.width=circlesDatesContainer[3].clientWidth + 20;
+canvasCirclesAnimation_4.height=circlesDatesContainer[3].clientHeight + 20;
 let centerXCirclesAnimation=canvasCirclesAnimation.width / 2
 let centerYCirclesAnimation=canvasCirclesAnimation.height/2
 
@@ -510,8 +510,8 @@ const parent_section_2_canvas = document.querySelector('.section_2');
 const canvas_section_2 = document.getElementById('section_canvas_2');
 const section_2_ctx = canvas_section_2.getContext("2d");
 
-const get_width_section_2 = parent_section_2_canvas.offsetWidth;
-const get_height_section_2 = parent_section_2_canvas.offsetHeight;
+const get_width_section_2 = parent_section_2_canvas.clientWidth;
+const get_height_section_2 = parent_section_2_canvas.clientHeight;
 
 canvas_section_2.width = get_width_section_2;
 canvas_section_2.height = get_height_section_2;
@@ -805,8 +805,8 @@ window.addEventListener("scroll", function() {
 const parent_section_3_canvas = document.querySelector('.section_3');
 const canvas_section_3 = document.getElementById('section_canvas_3');
 const section_3_ctx = canvas_section_3.getContext('2d');
-const get_width_section_3 = parent_section_3_canvas.offsetWidth;
-const get_height_section_3 = parent_section_3_canvas.offsetHeight;
+const get_width_section_3 = parent_section_3_canvas.clientWidth;
+const get_height_section_3 = parent_section_3_canvas.clientHeight;
 
 canvas_section_3.width = get_width_section_3;
 canvas_section_3.height = get_height_section_3;
