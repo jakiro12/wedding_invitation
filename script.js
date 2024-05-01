@@ -1,8 +1,6 @@
-/** @type {HTMLCanvasElement} */
 const parentTagSection_1=document.querySelector('.section_1')
 const canvas = document.getElementById('logoCanvas');
 const ctx = canvas.getContext('2d');
-const image = new Image();
 const cardLogo= new Image();
 const biggreenLeaveImage=new Image();
 const littleStickGreenImage=new Image();
@@ -14,7 +12,6 @@ const tinyGreenLeaveImage_2= new Image();
 const redPointsLeaveImage=new Image();
 const roseImage = new Image();
 roseImage.src = 'rosa.png';
-image.src = 'moon.png';
 cardLogo.src='sobre-pattern.png'
 biggreenLeaveImage.src='big_green_leave.png'
 littleStickGreenImage.src='little_stick_green.png'
