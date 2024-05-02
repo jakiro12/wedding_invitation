@@ -781,7 +781,6 @@ function animate_1() {
 
     requestAnimationFrame(animate_1);
 }
-animate_1();
 
 
 let executeTextSection_2=false
@@ -2984,3 +2983,9 @@ verifyTag.forEach((element, index) => {
 
 // Muestra el objeto con las medidas por consola
 console.log(medidas);
+window.onload = function() {
+  // Este código se ejecutará cuando la página y todos sus recursos (CSS, imágenes, etc.) se hayan cargado completamente
+  // Puedes incluir aquí cualquier código JavaScript que desees ejecutar después de que la página se haya cargado completamente
+animate_1();
+
+};
