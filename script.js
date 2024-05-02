@@ -2966,4 +2966,21 @@ setInterval(updateCounter, 1000);
 // Llamar a actualizarContador() una vez para mostrar el tiempo inicial
 updateCounter();
 
+const verifyTag=document.querySelectorAll('.page_contianer > div')
+const medidas = {};
 
+// Itera sobre cada elemento capturado
+verifyTag.forEach((element, index) => {
+    // Obtiene el ancho y el alto del elemento
+    const width = element.offsetWidth;
+    const height = element.offsetHeight;
+
+    // Almacena el número de elemento con sus medidas en el objeto
+    medidas[index + 1] = {
+        ancho: width,
+        alto: height
+    };
+});
+
+// Muestra el objeto con las medidas por consola
+console.log(medidas);
