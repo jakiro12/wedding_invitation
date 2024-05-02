@@ -512,9 +512,9 @@ const section_2_ctx = canvas_section_2.getContext("2d");
 
 const get_width_section_2 = parent_section_2_canvas.clientWidth;
 const get_height_section_2 = parent_section_2_canvas.clientHeight;
-console.log(get_width_section_2)
 canvas_section_2.width = get_width_section_2 > 430 ? 430 : get_width_section_2 ;
-canvas_section_2.height = get_height_section_2;
+canvas_section_2.height = get_height_section_2 > 172 ? get_height_section_2 : 900;
+console.log(get_width_section_2,get_height_section_2)
 
 const centerX = canvas_section_2.width / 2;
 const centerY = canvas_section_2.height / 2;
