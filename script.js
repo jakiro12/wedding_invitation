@@ -2983,9 +2983,3 @@ verifyTag.forEach((element, index) => {
 
 // Muestra el objeto con las medidas por consola
 console.log(medidas);
-if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-  // Si es Safari, espera 5 segundos antes de recargar la página
-  setTimeout(function() {
-      window.location.reload();
-  }, 5000); // 5000 milisegundos = 5 segundos
-}
