@@ -32,7 +32,7 @@
 .section_1{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -94,7 +94,7 @@
   height: calc(100% - 3px);
   border-radius: 50%;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -154,7 +154,7 @@
   .section_2{
     position: relative;  
     background: url('fondo-abajo.svg');
-    background-size: 150%;
+    background-size: 200%;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -2;
@@ -188,7 +188,7 @@
   height:calc(100% - 3px) ;
   border-radius: 50%;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -270,7 +270,7 @@
 .section_3{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -390,7 +390,7 @@
 .section_4 {
   position: relative;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -4;
@@ -500,7 +500,7 @@
 .section_5{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -556,7 +556,7 @@
 .section_6{
   position: relative;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -601,7 +601,7 @@
 .section_7{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -653,7 +653,7 @@
 .section_8{
   position: relative;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
@@ -751,7 +751,7 @@
 .section_9{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -831,7 +831,7 @@
 .section_10{
   position: relative;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
@@ -932,7 +932,7 @@
 .section_11{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: -3;
@@ -961,7 +961,7 @@
 .section_12{
   position: relative;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -985,7 +985,7 @@
 .section_13{
   position: relative;
   background: url('fondo-arriba.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1002,7 +1002,7 @@
 .section_14{
   position: relative;
   background: url('fondo-abajo.svg');
-  background-size: 150%;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -48,7 +48,7 @@ const circles_animations_ctx_4=canvasCirclesAnimation_4.getContext("2d")
 
 canvasCirclesAnimation.width=circlesDatesContainer[0].clientWidth + 20;
 canvasCirclesAnimation.height=circlesDatesContainer[0].clientHeight + 20;
-canvasCirclesAnimation_2.width=circlesDatesContainer[1].clienttWidth + 20;
+canvasCirclesAnimation_2.width=circlesDatesContainer[1].clientWidth + 20;
 canvasCirclesAnimation_2.height=circlesDatesContainer[1].clientHeight + 20;
 canvasCirclesAnimation_3.width=circlesDatesContainer[2].clientWidth + 20;
 canvasCirclesAnimation_3.height=circlesDatesContainer[2].clientHeight + 20;
@@ -514,7 +514,6 @@ const get_width_section_2 = parent_section_2_canvas.clientWidth;
 const get_height_section_2 = parent_section_2_canvas.clientHeight;
 canvas_section_2.width = get_width_section_2 > 430 ? 430 : get_width_section_2 ;
 canvas_section_2.height = get_height_section_2 > 172 ? get_height_section_2 : 900;
-console.log(get_width_section_2,get_height_section_2)
 
 const centerX = canvas_section_2.width / 2;
 const centerY = canvas_section_2.height / 2;
@@ -808,7 +807,7 @@ const get_width_section_3 = parent_section_3_canvas.clientWidth;
 const get_height_section_3 = parent_section_3_canvas.clientHeight;
 
 canvas_section_3.width = get_width_section_3 > 430 ? 430 : get_width_section_3 ;
-canvas_section_3.height = get_height_section_3 > 172 ? get_height_section_4 : 900;
+canvas_section_3.height = get_height_section_3 > 172 ? get_height_section_3 : 900;
 
 const width_squares= 250;
 const height_squares=250;
@@ -1390,11 +1389,11 @@ const canvas_section_6 = document.getElementById('section_canvas_6');
 const section_6_ctx = canvas_section_6.getContext('2d');
 
 
-const get_width_section_6 = parent_section_6_canvas.offsetWidth > 430 ? 430 : get_width_section_6;
-const get_height_section_6 = parent_section_6_canvas.offsetHeight > 172 ? get_height_section_6 : 900;
+const get_width_section_6 = parent_section_6_canvas.offsetWidth ;
+const get_height_section_6 = parent_section_6_canvas.offsetHeight ;
 
-canvas_section_6.width = get_width_section_6;
-canvas_section_6.height = get_height_section_6;
+canvas_section_6.width = get_width_section_6 > 430 ? 430 : get_width_section_6;
+canvas_section_6.height = get_height_section_6 > 172 ? get_height_section_6 : 900;
 
 
 function animate_section_6() {
@@ -1588,11 +1587,11 @@ const canvas_section_7 = document.getElementById('section_canvas_7');
 const section_7_ctx = canvas_section_7.getContext('2d');
 
 
-const get_width_section_7 = parent_section_7_canvas.offsetWidth > 430 ? 430 : get_width_section_7 ;
-const get_height_section_7 = parent_section_7_canvas.offsetHeight > 172 ? get_height_section_7 : 900;
+const get_width_section_7 = parent_section_7_canvas.offsetWidth;
+const get_height_section_7 = parent_section_7_canvas.offsetHeight ;
 
-canvas_section_7.width = get_width_section_7;
-canvas_section_7.height = get_height_section_7;
+canvas_section_7.width = get_width_section_7  > 430 ? 430 : get_width_section_7 ;
+canvas_section_7.height = get_height_section_7 > 172 ? get_height_section_7 : 900; 
 let angleRotationSection_7=3
 function animate_section_7(){
   section_7_ctx.clearRect(0, 0, canvas_section_7.width, canvas_section_7.height);
@@ -1701,11 +1700,11 @@ const canvas_section_8 = document.getElementById('section_canvas_8');
 const section_8_ctx = canvas_section_8.getContext('2d');
 
 
-const get_width_section_8 = parent_section_8_canvas.offsetWidth > 430 ? 430 : get_width_section_8;
-const get_height_section_8 = parent_section_8_canvas.offsetHeight > 172 ? get_height_section_8 : 900;
+const get_width_section_8 = parent_section_8_canvas.offsetWidth ;
+const get_height_section_8 = parent_section_8_canvas.offsetHeight ;
 
-canvas_section_8.width = get_width_section_8;
-canvas_section_8.height = get_height_section_8;
+canvas_section_8.width = get_width_section_8 > 430 ? 430 : get_width_section_8;
+canvas_section_8.height = get_height_section_8 > 172 ? get_height_section_8 : 900;
 
 function animate_section_8(){
   section_8_ctx.clearRect(0, 0, canvas_section_8.width, canvas_section_8.height);
@@ -1894,11 +1893,11 @@ const canvas_section_9 = document.getElementById('section_canvas_9');
 const section_9_ctx = canvas_section_9.getContext('2d');
 
 
-const get_width_section_9 = parent_section_9_canvas.offsetWidth > 430 ? 430 : get_width_section_9 ;
-const get_height_section_9 = parent_section_9_canvas.offsetHeight > 172 ? get_height_section_9 : 900;
+const get_width_section_9 = parent_section_9_canvas.offsetWidth ;
+const get_height_section_9 = parent_section_9_canvas.offsetHeight ;
 
-canvas_section_9.width = get_width_section_9;
-canvas_section_9.height = get_height_section_9;
+canvas_section_9.width = get_width_section_9 > 430 ? 430 : get_width_section_9 ;
+canvas_section_9.height = get_height_section_9 > 172 ? get_height_section_9 : 900;
 
 function animate_section_9(){
   section_9_ctx.clearRect(0, 0, canvas_section_9.width, canvas_section_9.height);
@@ -2006,11 +2005,11 @@ const canvas_section_10 = document.getElementById('section_canvas_10');
 const section_10_ctx = canvas_section_10.getContext('2d');
 
 
-const get_width_section_10 = parent_section_10_canvas.offsetWidth > 430 ? 430 : get_width_section_10 ;
-const get_height_section_10 = parent_section_10_canvas.offsetHeight > 172 ? get_height_section_10 : 900;
+const get_width_section_10 = parent_section_10_canvas.offsetWidth ;
+const get_height_section_10 = parent_section_10_canvas.offsetHeight ;
 
-canvas_section_10.width = get_width_section_10;
-canvas_section_10.height = get_height_section_10;
+canvas_section_10.width = get_width_section_10 > 430 ? 430 : get_width_section_10 ;
+canvas_section_10.height = get_height_section_10 > 172 ? get_height_section_10 : 900;
 function animate_section_10(){
   section_10_ctx.clearRect(0, 0, canvas_section_10.width, canvas_section_10.height);
   let roseCornerSize = 95;
@@ -2293,11 +2292,11 @@ const canvas_section_11 = document.getElementById('section_canvas_11');
 const section_11_ctx = canvas_section_11.getContext('2d');
 
 
-const get_width_section_11 = parent_section_11_canvas.offsetWidth > 430 ? 430 : get_width_section_11 ;
-const get_height_section_11 = parent_section_11_canvas.offsetHeight > 172 ? get_height_section_11 : 900;
+const get_width_section_11 = parent_section_11_canvas.offsetWidth ;
+const get_height_section_11 = parent_section_11_canvas.offsetHeight ;
 
-canvas_section_11.width = get_width_section_11;
-canvas_section_11.height = get_height_section_11;
+canvas_section_11.width = get_width_section_11 > 430 ? 430 : get_width_section_11 ;
+canvas_section_11.height = get_height_section_11 > 172 ? get_height_section_11 : 900;
 function animate_section_11(){
   section_11_ctx.clearRect(0, 0, canvas_section_11.width, canvas_section_11.height);
   let greenBigLeaveSize = 55;
@@ -2456,11 +2455,11 @@ const canvas_section_12 = document.getElementById('section_canvas_12');
 const section_12_ctx = canvas_section_12.getContext('2d');
 
 
-const get_width_section_12 = parent_section_12_canvas.offsetWidth > 430 ? 430 : get_width_section_12 ;
-const get_height_section_12 = parent_section_12_canvas.offsetHeight > 172 ? get_height_section_12 : 900;
+const get_width_section_12 = parent_section_12_canvas.offsetWidth ;
+const get_height_section_12 = parent_section_12_canvas.offsetHeight ;
 
-canvas_section_12.width = get_width_section_12;
-canvas_section_12.height = get_height_section_12;
+canvas_section_12.width = get_width_section_12 > 430 ? 430 : get_width_section_12 ;
+canvas_section_12.height = get_height_section_12 > 172 ? get_height_section_12 : 900;
 
 function animate_section_12(){
   section_12_ctx.clearRect(0, 0, canvas_section_12.width, canvas_section_12.height);
@@ -2565,11 +2564,11 @@ const canvas_section_13 = document.getElementById('section_canvas_13');
 const section_13_ctx = canvas_section_13.getContext('2d');
 
 
-const get_width_section_13 = parent_section_13_canvas.offsetWidth > 430 ? 430 : get_width_section_13 ;
-const get_height_section_13 = parent_section_13_canvas.offsetHeight > 172 ? get_height_section_13 : 900;
+const get_width_section_13 = parent_section_13_canvas.offsetWidth ;
+const get_height_section_13 = parent_section_13_canvas.offsetHeight ;
 
-canvas_section_13.width = get_width_section_13;
-canvas_section_13.height = get_height_section_13;
+canvas_section_13.width = get_width_section_13 > 430 ? 430 : get_width_section_13 ;
+canvas_section_13.height = get_height_section_13 > 172 ? get_height_section_13 : 900;
 
 function animate_section_13(){
   section_13_ctx.clearRect(0, 0, canvas_section_13.width, canvas_section_13.height);
@@ -2756,11 +2755,11 @@ const canvas_section_14 = document.getElementById('section_canvas_14');
 const section_14_ctx = canvas_section_14.getContext('2d');
 
 
-const get_width_section_14 = parent_section_14_canvas.offsetWidth > 430 ? 430 : get_width_section_14 ;
-const get_height_section_14 = parent_section_14_canvas.offsetHeight > 172 ? get_height_section_14 : 900;
+const get_width_section_14 = parent_section_14_canvas.offsetWidth ;
+const get_height_section_14 = parent_section_14_canvas.offsetHeight ;
 
-canvas_section_14.width = get_width_section_14;
-canvas_section_14.height = get_height_section_14;
+canvas_section_14.width = get_width_section_14 > 430 ? 430 : get_width_section_14 ;
+canvas_section_14.height = get_height_section_14 > 172 ? get_height_section_14 : 900;
 function animate_section_14(){
   section_14_ctx.clearRect(0, 0, canvas_section_14.width, canvas_section_14.height);
     let roseBorderCircleSize = 80;
