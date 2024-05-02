@@ -7,9 +7,10 @@
 }
 .page_contianer{
     display: grid;
-    height: 1400vh;
+    height: 1400svh;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(14,1fr);
+    width: 100%;
 }
 .page_contianer > div{
     width: min(430px , 100%);
