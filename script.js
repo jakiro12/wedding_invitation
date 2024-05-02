@@ -512,8 +512,8 @@ const section_2_ctx = canvas_section_2.getContext("2d");
 
 const get_width_section_2 = parent_section_2_canvas.clientWidth;
 const get_height_section_2 = parent_section_2_canvas.clientHeight;
-
-canvas_section_2.width = get_width_section_2;
+console.log(get_width_section_2)
+canvas_section_2.width = get_width_section_2 > 430 ? 430 : get_width_section_2 ;
 canvas_section_2.height = get_height_section_2;
 
 const centerX = canvas_section_2.width / 2;
@@ -781,7 +781,7 @@ function animate_1() {
 
     requestAnimationFrame(animate_1);
 }
-
+animate_1()
 
 let executeTextSection_2=false
 window.addEventListener("scroll", function() {
