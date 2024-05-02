@@ -2983,9 +2983,9 @@ verifyTag.forEach((element, index) => {
 
 // Muestra el objeto con las medidas por consola
 console.log(medidas);
-window.onload = function() {
-  // Este código se ejecutará cuando la página y todos sus recursos (CSS, imágenes, etc.) se hayan cargado completamente
-  // Puedes incluir aquí cualquier código JavaScript que desees ejecutar después de que la página se haya cargado completamente
-animate_1();
-
-};
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+  // Si es Safari, espera 5 segundos antes de recargar la página
+  setTimeout(function() {
+      window.location.reload();
+  }, 5000); // 5000 milisegundos = 5 segundos
+}
