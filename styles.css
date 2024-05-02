@@ -8,8 +8,8 @@
 .page_contianer{
     display: grid;
     height: 1400svh;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(14,1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(14 , 10%);
     width: 100%;
 }
 .page_contianer > div{
