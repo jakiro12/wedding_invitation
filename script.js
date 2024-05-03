@@ -2451,111 +2451,12 @@ window.addEventListener("scroll", function() {
   } 
 });
 const parent_section_12_canvas = document.querySelector('.section_12');
-const canvas_section_12 = document.getElementById('section_canvas_12');
-const section_12_ctx = canvas_section_12.getContext('2d');
 
-
-const get_width_section_12 = parent_section_12_canvas.offsetWidth ;
-const get_height_section_12 = parent_section_12_canvas.offsetHeight ;
-
-canvas_section_12.width = get_width_section_12 > 430 ? 430 : get_width_section_12 ;
-canvas_section_12.height = get_height_section_12 < 300 ?  900 : get_height_section_12;
-
-function animate_section_12(){
-  section_12_ctx.clearRect(0, 0, canvas_section_12.width, canvas_section_12.height);
-  let greenBigLeaveSize = 55;
-  let littleStickLeaveSize=95;
-  let mediumStickLeaveSize=90;
-  let whiteLeaveSize=50;
-  let redPointsLeaveSize=50;
-  let roseSize = 65;
-
-  
-    section_12_ctx.save();
-    section_12_ctx.translate( centerX + 40 ,  70 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 240 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX - 60 , 80 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 200) * angleRotation  +  200 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX - 25 , 60 )
-    section_12_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 220 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
-    section_12_ctx.restore(); 
-
-    section_12_ctx.save();
-    section_12_ctx.translate( centerX + 30 , 60 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 180 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX + 30 ,  45 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 180 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize,redPointsLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX  , 60 );
-    section_12_ctx.rotate(Math.PI * 2.4);
-    section_12_ctx.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize,roseSize);
-    section_12_ctx.restore();
-    // Rosa inferior
-    section_12_ctx.save();
-    section_12_ctx.translate( centerX - 40 , centerY*2 - 70 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 60 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX + 60 ,centerY*2 - 80 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 200) * angleRotation  +  20 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX + 25 ,centerY*2 - 60 )
-    section_12_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 20 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
-    section_12_ctx.restore(); 
-
-    section_12_ctx.save();
-    section_12_ctx.translate( centerX - 30 ,centerY*2 - 60 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 10 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX - 30 ,centerY*2 -  45 );
-    section_12_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 10 ) * Math.PI / 180);  
-    section_12_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize,redPointsLeaveSize);
-    section_12_ctx.restore();
-
-    section_12_ctx.save();
-    section_12_ctx.translate(centerX  , centerY*2 - 60 );
-    section_12_ctx.rotate(Math.PI * 1.2);
-    section_12_ctx.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize,roseSize);
-    section_12_ctx.restore();
-
-  
-  requestAnimationFrame(animate_section_12)
-}
-animate_section_12()
 
 let executeTextSection_12=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_12_canvas.getBoundingClientRect().top + parent_section_12_canvas.offsetHeight/2 ;
-  const bothSquares=this.document.querySelectorAll('.section_12 > div')
-  const animateCanvas=this.document.querySelector('.section_12 > canvas')
-  const animateImages=this.document.querySelectorAll('.section_12 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
-      animateCanvas.classList.add('scale_section_2');
       executeTextSection_12=true
   } 
 });
@@ -2982,3 +2883,22 @@ verifyTag.forEach((element, index) => {
 
 // Muestra el objeto con las medidas por consola
 console.log(medidas);
+
+const buttons = document.querySelectorAll("[data-carousel-button]")
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1
+    const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]")
+
+    const activeSlide = slides.querySelector("[data-active]")
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset
+    if (newIndex < 0) newIndex = slides.children.length - 1
+    if (newIndex >= slides.children.length) newIndex = 0
+
+    slides.children[newIndex].dataset.active = true
+    delete activeSlide.dataset.active
+  })
+})
