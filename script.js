@@ -723,55 +723,55 @@ function animate_1() {
     section_2_ctx.restore();
     //Rosa Inferior
     section_2_ctx.save();
-    section_2_ctx.translate( centerX*2 - 160, centerY*2 - 90);
+    section_2_ctx.translate( centerX*2 - 160, centerY*2 - 50);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 230 ) * Math.PI / 180);  
     section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveCornerSize / 2), -(mediumStickLeaveCornerSize / 2), mediumStickLeaveCornerSize, mediumStickLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 40, centerY*2 - 190);
+    section_2_ctx.translate(centerX*2 - 40, centerY*2 - 150);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 320 ) * Math.PI / 180);  
     section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveCornerSize / 2), -(mediumStickLeaveCornerSize / 2), mediumStickLeaveCornerSize, mediumStickLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 140, centerY*2 - 110 );
+    section_2_ctx.translate(centerX*2 - 140, centerY*2 - 70 );
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotation + 80 ) * Math.PI / 180);  
     section_2_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveCornerSize / 2), -(tinyLeaveCornerSize / 2), tinyLeaveCornerSize, tinyLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 110, centerY*2 - 80);
+    section_2_ctx.translate(centerX*2 - 110, centerY*2 - 40);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 10 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveCornerSize / 2), -(whiteLeaveCornerSize / 2), whiteLeaveCornerSize, whiteLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate( centerX*2 - 90,  centerY*2 - 180) ;
+    section_2_ctx.translate( centerX*2 - 90,  centerY*2 - 140) ;
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 100 ) * Math.PI / 180);  
     section_2_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveCornerSize / 2), -(littleStickLeaveCornerSize / 2), littleStickLeaveCornerSize, littleStickLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 50, centerY*2 - 140);
+    section_2_ctx.translate(centerX*2 - 50, centerY*2 - 100);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveCornerSize / 2), -(whiteLeaveCornerSize / 2), whiteLeaveCornerSize, whiteLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 130,  centerY*2 - 160);
+    section_2_ctx.translate(centerX*2 - 130,  centerY*2 - 120);
     section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 60 ) * Math.PI / 180);  
     section_2_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 55,centerY*2 - 105 );
+    section_2_ctx.translate(centerX*2 - 55,centerY*2 - 65 );
     section_2_ctx.rotate((Math.sin((angleLeave) * Math.PI / 280) * angleRotation + 140 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_2_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveCornerSize / 2), -(greenBigLeaveCornerSize / 2), greenBigLeaveCornerSize, greenBigLeaveCornerSize);
     section_2_ctx.restore();
 
     section_2_ctx.save();
-    section_2_ctx.translate(centerX*2 - 75, centerY*2 - 120);
+    section_2_ctx.translate(centerX*2 - 75, centerY*2 - 80);
     section_2_ctx.rotate(Math.PI * 0.15);
     section_2_ctx.drawImage(roseImage, -(roseCornerSize/2) , -(roseCornerSize/2), roseCornerSize, roseCornerSize);
     section_2_ctx.restore();
