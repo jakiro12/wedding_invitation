@@ -539,7 +539,7 @@ function animate_1() {
     section_2_ctx.strokeStyle = '#9b5a01';
     section_2_ctx.lineWidth = 2;  
     section_2_ctx.save();  
-    section_2_ctx.translate(0, 140);  
+    section_2_ctx.translate(0, 100);  
     section_2_ctx.rotate(-13 * Math.PI / 180);  
     section_2_ctx.beginPath();
     section_2_ctx.moveTo(0, 0);
@@ -551,7 +551,7 @@ function animate_1() {
     section_2_ctx.strokeStyle = '#9b5a01';
     section_2_ctx.lineWidth = 2;  
     section_2_ctx.save();  
-    section_2_ctx.translate(0, 30);  
+    section_2_ctx.translate(0, 20);  
     section_2_ctx.rotate(13 * Math.PI / 180);  
     section_2_ctx.beginPath();
     section_2_ctx.moveTo(0, 0);
