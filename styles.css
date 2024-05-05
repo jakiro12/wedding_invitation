@@ -963,6 +963,21 @@
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
+.section_11 > button{
+  position: absolute;
+  bottom: 5%;
+  width: 120px;
+  height: 60px;
+  border-radius: 15px/50%;
+  background: url('./btn_bg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+}
 .section_12{
   background: url('fondo-abajo.svg');
   background-size: 200%;
@@ -1067,9 +1082,9 @@
  }
 .section_14--img_invitation{
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.7);
+  transform: translate(-50%, -50%) scale(1.5);
   width: 220px;
   height: 90%;
   object-fit: covers;
