@@ -500,7 +500,7 @@ animate_circles_4();
 let angle = 0;  // Ángulo inicial de rotación
 function drawFrame() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const cardLogoSize=containerWidth + 80;//pixeles
+    const cardLogoSize=430;//pixeles
     ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (containerHeight - cardLogoSize) / 2 + 110 , cardLogoSize, cardLogoSize);
     requestAnimationFrame(drawFrame);
   }
