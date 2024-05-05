@@ -39,11 +39,11 @@
 }
 .section_1 > p{
   position: absolute;
-  top: 25px;
+  top: 35px;
   margin-inline:auto ;
   width: 95%;
   height: fit-content;
-  font-size: 22px;
+  font-size: 23px;
   text-align: center;
   font-family: "Cormorant Infant", serif;
   font-weight: 300;
@@ -52,7 +52,7 @@
 .section_1--counter{
   width: 100%;
   position: absolute;
-  top: 24%;
+  top: 26%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 150px;
