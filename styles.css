@@ -438,7 +438,7 @@
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  background: url('phrase.svg');
+  background: url('prober.svg');
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
@@ -541,7 +541,7 @@
   animation-duration: 2s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
-  background: url('./parents_names.svg');
+  background: url('text_5.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
@@ -702,25 +702,31 @@
 .section_8 > section{
   position: absolute;
   width: 80%;
-  height: 50%;
+  height: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70% 30%;
+  grid-template-rows:  100%;
   z-index: 1;
+  overflow: visible;
 }
 .section_8 > section > img{
   width: 100%;
-  height: 90%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .section_8 > section > button{
-  width: 120px;
-  height: 60px;
+  position: absolute;
+  width: 140px;
+  height: 80px;
   margin-inline: auto;
-  margin-bottom: auto;
+  margin-bottom: 100%;
+  top: 83%;
+  left: 48%;
+  transform: translate(-50%, -50%) ;
   border-radius: 15px/50%;
   background: url('./btn_bg.svg');
   background-position: center;
@@ -728,6 +734,7 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  filter: drop-shadow(6px 6px 8px #565657);
 }
 .scale_section_8{
   animation-name: scaleframe_section8;
@@ -819,8 +826,10 @@
 }
 .section_9--description > img{
   width: 100%;
-  height: 95%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 60px;
+  transform: scale(1.15);
 }
 .section_9--description > div{
   width: 100%;
@@ -839,6 +848,7 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  margin-top: 10px;
 }
 .section_10{
   position: relative;
@@ -874,8 +884,8 @@
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  background: url('dress.svg');
-  background-size: 60%;
+  background: url('text_10.svg');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(255, 99, 71, 0.181);
@@ -959,11 +969,11 @@
 .section_11--recent_wedding{
   position:absolute;
   opacity: 0;
-  width: 60%;
-  height: 100px;
-  bottom: 10%;
+  width: 80%;
+  height: 80%;
+  top: 55%;
   left: 50%;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%)  ;
   z-index: 1;
   animation-name: fadeInText;
   animation-duration: 2.5s; 
@@ -1013,8 +1023,8 @@
 }
 .img_hours{
   position: absolute;
-  width: 250px;
-  height: 60%;
+  width: 380px;
+  height: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
