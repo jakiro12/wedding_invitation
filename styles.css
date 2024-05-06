@@ -661,6 +661,7 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+  filter: drop-shadow(6px 6px 8px #565657);
 }
 .section_8{
   position: relative;
@@ -849,6 +850,7 @@
   border: none;
   cursor: pointer;
   margin-top: 10px;
+  filter: drop-shadow(6px 6px 8px #565657);
 }
 .section_10{
   position: relative;
@@ -982,6 +984,7 @@
 }
 .section_11 > button{
   position: absolute;
+  filter: drop-shadow(6px 6px 8px #565657);
   bottom: 5%;
   width: 120px;
   height: 60px;
@@ -1023,8 +1026,8 @@
 }
 .img_hours{
   position: absolute;
-  width: 380px;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
