@@ -544,7 +544,7 @@
   background: url('text_5.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 120%;
 }
 @keyframes scaleframe_section5 {
   0% {
@@ -568,6 +568,20 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@keyframes scaleframe_section6 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.scale_section_6{
+  animation-name: scaleframe_section6;
+  animation-duration: 7.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
 .section_6 > section{
   position: absolute;
   top: 50%;
@@ -583,6 +597,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  opacity: 0;
 }
 .section_6 > canvas{
   z-index: 2;
@@ -669,7 +684,6 @@
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -1;
 }
 @keyframes scaleframe_section8 {
   0% {
@@ -695,7 +709,7 @@
   }
 }
 .section_8 > canvas{
-  z-index: 2;
+  z-index: 1;
 }
 .section_8 > img{
   opacity: 0;
@@ -710,7 +724,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:  100%;
-  z-index: 1;
+  z-index: 2;
   overflow: visible;
 }
 .section_8 > section > img{
@@ -887,13 +901,30 @@
   left: 50%;
   border-radius: 50%;
   background: url('text_10.svg');
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 60%;
   background-color: rgba(255, 99, 71, 0.181);
   z-index: -1;
   transform: translate(-50%, -50%) scale(0.4) ; 
   animation: scalePhrase 3.8s linear forwards;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.phrase_section_10 > button{
+  filter: drop-shadow(6px 6px 8px #565657);
+  width: 120px;
+  height: 60px;
+  border-radius: 15px/50%;
+  background: url('./btn_bg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
 @keyframes scaletext_section10 {
   0% {
@@ -959,7 +990,6 @@
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -3;
 }
 .section_11 > canvas{
   opacity: 0;
@@ -997,6 +1027,7 @@
   cursor: pointer;
   left: 50%;
   transform: translate(-50%, -50%) ;
+  z-index: 6;
 }
 .section_12{
   background: url('fondo-abajo.svg');

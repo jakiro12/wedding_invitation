@@ -1574,10 +1574,12 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_6_canvas.getBoundingClientRect().top + parent_section_6_canvas.offsetHeight/2;
   const animateCanvas=this.document.querySelector('.section_6 > canvas')
   const imageAnimate=this.document.querySelectorAll('.section_6 > img')
+  const imageInvitationAnimate=this.document.querySelector('.section_6 > section > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_6) {
    imageAnimate[0].classList.add('img_bg_stain_1')
    imageAnimate[1].classList.add('img_bg_stain_2')
    animateCanvas.classList.add('scale_section_6')
+   imageInvitationAnimate.classList.add('scale_section_6')
    executeTextSection_6=true
   }   
 });
@@ -2274,7 +2276,7 @@ window.addEventListener("scroll", function() {
   const animateCanvas=this.document.querySelector('.section_10 > canvas')
   const animateImages=this.document.querySelectorAll('.section_10 > img')
   const bothCircles=this.document.querySelectorAll('.section_10 > div')
-  const textAnimate=this.document.querySelector('.section_10 > p')
+  const textAnimate=this.document.querySelector('.section_10 > main')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_10) {
    animateCanvas.classList.add('animate_section_9_canvas')
    animateImages[0].classList.add('img_bg_stain_1')
@@ -2864,26 +2866,6 @@ setInterval(updateCounter, 1000);
 
 // Llamar a actualizarContador() una vez para mostrar el tiempo inicial
 updateCounter();
-
-const verifyTag=document.querySelectorAll('.page_contianer > div')
-const medidas = {};
-
-// Itera sobre cada elemento capturado
-verifyTag.forEach((element, index) => {
-    // Obtiene el ancho y el alto del elemento
-    const width = element.offsetWidth;
-    const height = element.offsetHeight;
-
-    // Almacena el número de elemento con sus medidas en el objeto
-    medidas[index + 1] = {
-        ancho: width,
-        alto: height
-    };
-});
-
-// Muestra el objeto con las medidas por consola
-console.log(medidas);
-
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
 buttons.forEach(button => {
@@ -2902,3 +2884,4 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
