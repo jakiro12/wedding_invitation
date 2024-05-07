@@ -524,16 +524,16 @@ function animate_1() {
   section_2_ctx.clearRect(0, 0, canvas_section_2.width, canvas_section_2.height);
     let roseCornerSize = 95;
     let roseBorderCircleSize = 80;
-    let greenBigLeaveCornerSize = 65;
+    let greenBigLeaveCornerSize = 75;
     let greenBigLeaveSize = 60;
     let littleStickLeaveSize=75;
-    let littleStickLeaveCornerSize=60;
+    let littleStickLeaveCornerSize=70;
     let mediumStickLeaveSize=80;
-    let mediumStickLeaveCornerSize=65;
+    let mediumStickLeaveCornerSize=75;
     let whiteLeaveSize=60;
-    let whiteLeaveCornerSize=55;
+    let whiteLeaveCornerSize=65;
     let tinyLeaveSize=50;
-    let tinyLeaveCornerSize=75;
+    let tinyLeaveCornerSize=85;
     let redPointsLeaveSize=50;
     // Primera Linea
     section_2_ctx.strokeStyle = '#9b5a01';
@@ -992,16 +992,16 @@ function animate_section_4() {
   section_4_ctx.clearRect(0, 0, canvas_section_4.width, canvas_section_4.height);
   let roseCornerSize = 95;
   let roseBorderCircleSize = 80;
-  let greenBigLeaveCornerSize = 65;
+  let greenBigLeaveCornerSize = 75;
   let greenBigLeaveSize = 60;
   let littleStickLeaveSize=75;
-  let littleStickLeaveCornerSize=60;
+  let littleStickLeaveCornerSize=70;
   let mediumStickLeaveSize=80;
-  let mediumStickLeaveCornerSize=65;
+  let mediumStickLeaveCornerSize=75;
   let whiteLeaveSize=60;
-  let whiteLeaveCornerSize=55;
+  let whiteLeaveCornerSize=65;
   let tinyLeaveSize=50;
-  let tinyLeaveCornerSize=75;
+  let tinyLeaveCornerSize=85;
   let redPointsLeaveSize=50;
   // Primera Linea
   section_4_ctx.strokeStyle = '#9b5a01';

@@ -192,8 +192,8 @@
 }
 .section_2--background_card{
   display: block;
-  width: calc(100% - 3px);
-  height:calc(100% - 3px) ;
+  width: calc(100% - 1px);
+  height:calc(100% - 1px) ;
   border-radius: 50%;
   background: url('fondo-abajo.svg');
   background-size: 200%;
@@ -236,7 +236,7 @@
   animation-duration: 1.5s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
   ,linear-gradient(90deg,#9b5a01, #cbac44  );
