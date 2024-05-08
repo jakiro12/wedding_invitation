@@ -50,6 +50,16 @@
   font-weight: 300;
   font-style: normal;  
 }
+.section_1--card{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 60%;
+  display: block;
+  object-fit: cover;
+}
 .section_1--counter{
   width: 100%;
   position: absolute;
@@ -186,8 +196,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0.4); 
     animation: fadeInScale 8s ease-in-out forwards;   
-    width: 210px;
-    height: 210px;
+    width: 190px;
+    height: 190px;
     background: transparent;
 }
 .section_2--background_card{
@@ -227,8 +237,8 @@
 }
 .section_2-outer_circle{
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 350px;
+  height: 350px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4);
@@ -255,8 +265,8 @@
 }
 .section_2-inner_circle{
   position: absolute;
-  width: 310px;
-  height: 310px;
+  width: 330px;
+  height: 330px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)scale(0.4);
@@ -458,7 +468,7 @@
   animation-duration: 1.5s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
   ,linear-gradient(90deg,#9b5a01, #cbac44  );
@@ -521,7 +531,7 @@
 }
 .section_5 > section{
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 80%;
   top: 50%;
   left: 50%;
@@ -636,7 +646,7 @@
 }
 .section_7 > section{
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 80%;
   top: 50%;
   left: 50%;
@@ -646,6 +656,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  opacity: 0;
 }
 .section_7--container_info{
   width: calc(100% - 6px);
@@ -813,7 +824,7 @@
 }
 .section_9 > section{
   position: absolute;
-  width: 80%;
+  width: 90%;
   height: 80%;
   top: 50%;
   left: 50%;
@@ -844,7 +855,7 @@
   height: 100%;
   object-fit: cover;
   margin-top: 60px;
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 .section_9--description > div{
   width: 100%;
@@ -1059,7 +1070,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   object-fit: contain;
@@ -1084,8 +1095,8 @@
 }
 .section_14-outer_circle{
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 350px;
+  height: 350px;
   top: calc(50%  - 65px);
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4);
@@ -1093,7 +1104,7 @@
   animation-duration: 1.5s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(white,white)
   ,linear-gradient(90deg,#9b5a01, #cbac44  );
@@ -1103,8 +1114,8 @@
 }
 .section_14-inner_circle{
   position: absolute;
-  width: 310px;
-  height: 310px;
+  width: 330px;
+  height: 330px;
   top: calc(50%  - 65px);
   left: 50%;
   transform: translate(-50%, -50%)scale(0.4);

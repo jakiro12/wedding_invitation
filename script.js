@@ -1,7 +1,6 @@
 const parentTagSection_1=document.querySelector('.section_1')
 const canvas = document.getElementById('logoCanvas');
 const ctx = canvas.getContext('2d');
-const cardLogo= new Image();
 const biggreenLeaveImage=new Image();
 const littleStickGreenImage=new Image();
 const mediumStickGreenImage= new Image();
@@ -12,7 +11,6 @@ const tinyGreenLeaveImage_2= new Image();
 const redPointsLeaveImage=new Image();
 const roseImage = new Image();
 roseImage.src = 'rosa.png';
-cardLogo.src='sobre-pattern.png'
 biggreenLeaveImage.src='big_green_leave.png'
 littleStickGreenImage.src='little_stick_green.png'
 mediumStickGreenImage.src='medium_stick_green.png'
@@ -498,13 +496,7 @@ function animate_circles_4() {
 animate_circles_4();
 
 let angle = 0;  // Ángulo inicial de rotación
-function drawFrame() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const cardLogoSize=410;//pixeles
-    ctx.drawImage(cardLogo, (containerWidth - cardLogoSize) / 2, (870 - cardLogoSize) / 2 + 15 , cardLogoSize, cardLogoSize);
-    requestAnimationFrame(drawFrame);
-  }
-  drawFrame();
+
 /*Seccion 2, otro canvas aparte */
 const parent_section_2_canvas = document.querySelector('.section_2');
 const canvas_section_2 = document.getElementById('section_canvas_2');
@@ -1399,12 +1391,12 @@ canvas_section_6.height = get_height_section_6 < 300 ?  870 : get_height_section
 function animate_section_6() {
   section_6_ctx.clearRect(0, 0, canvas_section_6.width, canvas_section_6.height);
   let roseCornerSize = 100;
-    let greenBigLeaveCornerSize = 70;
-    let littleStickLeaveCornerSize=65;
-    let mediumStickLeaveCornerSize=70;
-    let whiteLeaveCornerSize=60;
-    let tinyLeaveCornerSize=80;
-    let redPointsLeaveSize=50;
+    let greenBigLeaveCornerSize = 80;
+    let littleStickLeaveCornerSize=75;
+    let mediumStickLeaveCornerSize=80;
+    let whiteLeaveCornerSize=70;
+    let tinyLeaveCornerSize=90;
+    let redPointsLeaveSize=60;
     // Primera Linea
     section_6_ctx.strokeStyle = '#9b5a01';
     section_6_ctx.lineWidth = 2;  
@@ -1711,12 +1703,12 @@ canvas_section_8.height = get_height_section_8 < 300 ?  870 : get_height_section
 function animate_section_8(){
   section_8_ctx.clearRect(0, 0, canvas_section_8.width, canvas_section_8.height);
   let roseCornerSize = 100;
-  let greenBigLeaveCornerSize = 70;
-  let littleStickLeaveCornerSize=65;
-  let mediumStickLeaveCornerSize=70;
-  let whiteLeaveCornerSize=60;
+  let greenBigLeaveCornerSize = 75;
+  let littleStickLeaveCornerSize=85;
+  let mediumStickLeaveCornerSize=80;
+  let whiteLeaveCornerSize=70;
   let tinyLeaveCornerSize=80;
-  let redPointsLeaveSize=50;
+  let redPointsLeaveSize=60;
   // Primera Linea
   section_8_ctx.strokeStyle = '#9b5a01';
   section_8_ctx.lineWidth = 2;  
@@ -2015,17 +2007,17 @@ function animate_section_10(){
   section_10_ctx.clearRect(0, 0, canvas_section_10.width, canvas_section_10.height);
   let roseCornerSize = 95;
     let roseBorderCircleSize = 75;
-    let greenBigLeaveCornerSize = 65;
+    let greenBigLeaveCornerSize = 75;
     let greenBigLeaveSize = 60;
     let littleStickLeaveSize=75;
-    let littleStickLeaveCornerSize=60;
+    let littleStickLeaveCornerSize=70;
     let mediumStickLeaveSize=80;
-    let mediumStickLeaveCornerSize=65;
+    let mediumStickLeaveCornerSize=75;
     let whiteLeaveSize=60;
-    let whiteLeaveCornerSize=55;
+    let whiteLeaveCornerSize=65;
     let tinyLeaveSize=50;
-    let tinyLeaveCornerSize=75;
-    let redPointsLeaveSize=50;
+    let tinyLeaveCornerSize=80;
+    let redPointsLeaveSize=60;
     
     section_10_ctx.strokeStyle = '#9b5a01';
     section_10_ctx.lineWidth = 2;  
@@ -2475,10 +2467,10 @@ canvas_section_13.height = get_height_section_13 < 300 ?  870 : get_height_secti
 function animate_section_13(){
   section_13_ctx.clearRect(0, 0, canvas_section_13.width, canvas_section_13.height);
   let roseCornerSize = 100;
-  let greenBigLeaveCornerSize = 70;
-  let littleStickLeaveCornerSize=65;
-  let mediumStickLeaveCornerSize=70;
-  let whiteLeaveCornerSize=60;
+  let greenBigLeaveCornerSize = 75;
+  let littleStickLeaveCornerSize=75;
+  let mediumStickLeaveCornerSize=75;
+  let whiteLeaveCornerSize=65;
   let tinyLeaveCornerSize=80;
   let redPointsLeaveSize=50;
   // Primera Linea
@@ -2717,44 +2709,44 @@ function animate_section_14(){
 
     //Rosa del Lado izquierdo inferior
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 95, centerY + 15);
+    section_14_ctx.translate(centerX - 105, centerY + 25);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 200 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_14_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
     section_14_ctx.restore();
     
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 150, centerY - 25);
+    section_14_ctx.translate(centerX - 160, centerY - 15);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 300 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_14_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
     section_14_ctx.restore();
 
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 65, centerY + 65);
+    section_14_ctx.translate(centerX - 75, centerY + 75);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 260 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_14_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
     section_14_ctx.restore();
     
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 95, centerY + 50);
+    section_14_ctx.translate(centerX - 105, centerY + 60);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 240 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_14_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
     section_14_ctx.restore();
 
 
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 145, centerY - 5);
+    section_14_ctx.translate(centerX - 155, centerY + 5);
     section_14_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 300 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_14_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
     section_14_ctx.restore();
 
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 95, centerY + 50);
+    section_14_ctx.translate(centerX - 105, centerY + 60);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 240 ) * Math.PI / 180);  // Rota el contexto con una animación suave
     section_14_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
     section_14_ctx.restore();
 
     section_14_ctx.save();
-    section_14_ctx.translate(centerX - 90, centerY + 10);
+    section_14_ctx.translate(centerX - 100, centerY + 20);
     section_14_ctx.rotate(Math.PI * 1.6);
     section_14_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize, roseBorderCircleSize);
     section_14_ctx.restore();
@@ -2855,10 +2847,10 @@ function updateCounter() {
   let currentTime = tiempoRestante(fechaObjetivo);
   let divs = document.querySelectorAll('.section_1--background_circle');
 
-  divs[0].innerHTML = `<p  style="width: fit-content; height: 20px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.dias}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">dias</p>`;//Dias
-  divs[1].innerHTML = `<p  style="width: fit-content; height: 20px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.horas}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">horas</p>`;//Horas
-  divs[2].innerHTML = `<p  style="width: fit-content; height: 20px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.minutos}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">min</p>`; //Minutos
-  divs[3].innerHTML = `<p  style="width: fit-content; height: 20px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.segundos}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">seg</p>`;//Segundos
+  divs[0].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.dias}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">dias</p>`;//Dias
+  divs[1].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.horas}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">horas</p>`;//Horas
+  divs[2].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.minutos}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">min</p>`; //Minutos
+  divs[3].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.segundos}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">seg</p>`;//Segundos
 }
 
 // Actualizar el contador cada segundo
