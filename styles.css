@@ -238,8 +238,8 @@
 }
 .section_2-outer_circle{
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4);
@@ -266,8 +266,8 @@
 }
 .section_2-inner_circle{
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 280px;
+  height: 280px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)scale(0.4);
@@ -443,8 +443,8 @@
   }
 }
 .phrase_bible{
-  width: 290px;
-  height: 290px;
+  width: 260px;
+  height: 260px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -460,8 +460,8 @@
 }
 .section_4-outer_circle{
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4);
@@ -479,8 +479,8 @@
 }
 .section_4-inner_circle{
   position: absolute;
-  width: 330px;
-  height: 330px;
+  width: 280px;
+  height: 280px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%)scale(0.4);
@@ -889,8 +889,8 @@
   z-index: 1;
 }
 .phrase_section_10{
-  width: 290px;
-  height: 290px;
+  width: 260px;
+  height: 260px;
   position: absolute;
   top: 50%;
   left: 50%;
