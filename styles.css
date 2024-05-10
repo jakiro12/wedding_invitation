@@ -642,6 +642,13 @@
 .section_7 > canvas{
   z-index: 2;
 }
+.canvas_section_7{
+  opacity: 1;
+  animation-name: fadeCanvas3;
+  animation-duration: 7s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
 .section_7 > img{
   opacity: 0;
 }
@@ -665,22 +672,29 @@
   border: 2px solid #9b5a01; 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 100%;
+  z-index: 2;
 }
 .section_7--container_info > img{
   display: block;
   width: 100%;
   height:95%;
   margin-left:10px;
-  transform: scale(1.5);
+  transform: scale(1.1);
   object-fit: contain;
-  margin-top: 100px;
 }
-.section_7--container_info > button{
+.section_7 > button{
+ opacity: 0;
+}
+.section_7--button-check{
   width: 120px;
   height: 60px;
   margin-inline: auto;
   margin-top: 5%;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 15px/50%;
   background: url('./btn_bg.svg');
   background-position: center;
@@ -689,6 +703,12 @@
   border: none;
   cursor: pointer;
   filter: drop-shadow(6px 6px 8px #565657);
+  z-index: 2;
+  opacity: 1;
+  animation-name: fadeCanvas3;
+  animation-duration: 7s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_8{
   position: relative;
@@ -889,8 +909,8 @@
   z-index: 1;
 }
 .phrase_section_10{
-  width: 260px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -900,13 +920,13 @@
   background-repeat: no-repeat;
   background-position: 50% 60%;
   background-color: rgba(255, 99, 71, 0.181);
-  z-index: -1;
   transform: translate(-50%, -50%) scale(0.4) ; 
   animation: scalePhrase 3.8s linear forwards;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  z-index: 3;
 }
 .phrase_section_10 > button{
   filter: drop-shadow(6px 6px 8px #565657);

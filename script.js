@@ -1657,11 +1657,13 @@ window.addEventListener("scroll", function() {
   const animateSection=this.document.querySelector('.section_7 > section')
   const animateCanvas=this.document.querySelector('.section_7 > canvas')
   const animateImages=this.document.querySelectorAll('.section_7 > img')
+  const getBtnCheck=this.document.querySelector('.section_7 > button')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_7) {
    animateSection.classList.add('scale_section_5')
-   animateCanvas.classList.add('canvas_section_3')
+   animateCanvas.classList.add('canvas_section_7')
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
+   getBtnCheck.classList.add('section_7--button-check')
    executeTextSection_7=true
   }   
 });
