@@ -1965,11 +1965,14 @@ window.addEventListener("scroll", function() {
   const animateSection=this.document.querySelector('.section_9 > section')
   const animateCanvas=this.document.querySelector('.section_9 > canvas') 
   const animateImages=this.document.querySelectorAll('.section_9 > img')
+  const btnChecks=this.document.querySelectorAll('.section_9 > main > button')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_9) {
    animateCanvas.classList.add('animate_section_9_canvas')
    animateSection.classList.add('animate_section_9') 
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
+   btnChecks[0].classList.add('section_9--btn_check')
+   btnChecks[1].classList.add('section_9--btn_check')
    executeTextSection_9=true
   }   
 });

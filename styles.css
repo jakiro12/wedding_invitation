@@ -881,6 +881,31 @@
   margin-top: 10px;
   filter: drop-shadow(6px 6px 8px #565657);
 }
+.section_9 > main {
+  position: absolute;
+  width: 70%;
+  height: 160px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
+}
+.section_9--btn_check{
+  width: 120px;
+  height: 60px;
+  border-radius: 15px/50%;
+  background: url('./btn_bg.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  filter: drop-shadow(6px 6px 8px #565657);
+}
 .section_10{
   position: relative;
   background: url('fondo-abajo.svg');
