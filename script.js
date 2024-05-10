@@ -2240,13 +2240,15 @@ window.addEventListener("scroll", function() {
   const animateImages=this.document.querySelectorAll('.section_10 > img')
   const bothCircles=this.document.querySelectorAll('.section_10 > div')
   const textAnimate=this.document.querySelector('.section_10 > main')
+  const btnAction=this.document.querySelector('.section_10 > main > button')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_10) {
-   animateCanvas.classList.add('animate_section_9_canvas')
-   animateImages[0].classList.add('img_bg_stain_1')
-   animateImages[1].classList.add('img_bg_stain_2')
-   bothCircles[0].classList.add('section_4-outer_circle')
-    bothCircles[1].classList.add('section_4-inner_circle')
+    animateCanvas.classList.add('animate_section_9_canvas')
+    animateImages[0].classList.add('img_bg_stain_1')
+    animateImages[1].classList.add('img_bg_stain_2')
+    bothCircles[0].classList.add('section_10-outer_circle')
+    bothCircles[1].classList.add('section_10-inner_circle')
     textAnimate.classList.add('phrase_section_10')
+    btnAction.classList.add('phrase_section_10--btn_check')
    executeTextSection_10=true
   }   
 });
@@ -2403,6 +2405,7 @@ window.addEventListener("scroll", function() {
   const bothSquares=this.document.querySelectorAll('.section_11 > div')
   const animateCanvas=this.document.querySelector('.section_11 > canvas')
   const animateImages=this.document.querySelectorAll('.section_11 > img')
+  const btnToAction=this.document.querySelector('.section_11 > button')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
       animateCanvas.classList.add('scale_section_2');
       bothSquares[0].classList.add('first_square')
@@ -2411,6 +2414,7 @@ window.addEventListener("scroll", function() {
     animateImages[1].classList.add('section_11--recent_wedding')
     animateImages[2].classList.add('img_bg_stain_1')
     animateImages[3].classList.add('img_bg_stain_2')
+    btnToAction.classList.add('section_11--btn_check')
       executeTextSection_11=true
   } 
 });
@@ -2848,3 +2852,5 @@ buttons.forEach(button => {
   })
 })
 
+const testar=document.querySelector('.section_10 > main > button')
+console.log(testar)
