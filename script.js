@@ -26,9 +26,9 @@ const angleRotation=4; // Angulo de Rotacion de las animaciones
 
 const containerWidth = document.getElementById('container_canvas').clientWidth;
 const containerHeight = document.getElementById('container_canvas').clientHeight;
-
+const deviceHeight=window.innerHeight
 canvas.width = containerWidth > 420 ? 420 : containerWidth ;
-canvas.height = containerHeight < 300 ?  860 : containerHeight;
+canvas.height = deviceHeight;
 
 const circlesDatesContainer=document.querySelectorAll('.section_1--counter > div')
 const canvasCirclesAnimation=document.querySelector(".circle_times_animation_1")
@@ -505,7 +505,7 @@ const section_2_ctx = canvas_section_2.getContext("2d");
 const get_width_section_2 = parent_section_2_canvas.clientWidth;
 const get_height_section_2 = parent_section_2_canvas.clientHeight;
 canvas_section_2.width = get_width_section_2 > 420 ? 420 : get_width_section_2 ;
-canvas_section_2.height = get_height_section_2 < 300 ?  860 : get_height_section_2;
+canvas_section_2.height = deviceHeight;
 
 const centerX = canvas_section_2.width / 2;
 const centerY = canvas_section_2.height / 2;
@@ -788,7 +788,7 @@ const get_width_section_3 = parent_section_3_canvas.clientWidth;
 const get_height_section_3 = parent_section_3_canvas.clientHeight;
 
 canvas_section_3.width = get_width_section_3 > 420 ? 420 : get_width_section_3 ;
-canvas_section_3.height = get_height_section_3 < 300 ? 860 : get_height_section_3;
+canvas_section_3.height = deviceHeight
 
 const width_squares= 250;
 const height_squares=250;
@@ -966,7 +966,7 @@ const get_width_section_4 = parent_section_4_canvas.offsetWidth;
 const get_height_section_4 = parent_section_4_canvas.offsetHeight;
 
 canvas_section_4.width = get_width_section_4 > 420 ? 420 : get_width_section_4 ;
-canvas_section_4.height = get_height_section_4 < 300 ?  860 : get_height_section_4;
+canvas_section_4.height = deviceHeight
 
 
 function animate_section_4() {
@@ -1247,7 +1247,7 @@ const get_width_section_5 = parent_section_5_canvas.offsetWidth;
 const get_height_section_5 = parent_section_5_canvas.offsetHeight;
 
 canvas_section_5.width = get_width_section_5 > 420 ? 420 : get_width_section_5 ;
-canvas_section_5.height = get_height_section_5 < 300 ?  860 :  get_height_section_5 ;
+canvas_section_5.height = deviceHeight
 let angleRotationSection5=5;
 function animate_section_5() {
   section_5_ctx.clearRect(0, 0, canvas_section_5.width, canvas_section_5.height);
@@ -1363,7 +1363,7 @@ const get_width_section_6 = parent_section_6_canvas.offsetWidth ;
 const get_height_section_6 = parent_section_6_canvas.offsetHeight ;
 
 canvas_section_6.width = get_width_section_6 > 420 ? 420 : get_width_section_6;
-canvas_section_6.height = get_height_section_6 < 300 ?  860 : get_height_section_6 ;
+canvas_section_6.height = deviceHeight;
 
 
 function animate_section_6() {
@@ -1563,7 +1563,7 @@ const get_width_section_7 = parent_section_7_canvas.offsetWidth;
 const get_height_section_7 = parent_section_7_canvas.offsetHeight ;
 
 canvas_section_7.width = get_width_section_7  > 420 ? 420 : get_width_section_7 ;
-canvas_section_7.height = get_height_section_7 < 300 ?   860 : get_height_section_7; 
+canvas_section_7.height = deviceHeight;
 let angleRotationSection_7=3
 function animate_section_7(){
   section_7_ctx.clearRect(0, 0, canvas_section_7.width, canvas_section_7.height);
@@ -1678,7 +1678,7 @@ const get_width_section_8 = parent_section_8_canvas.offsetWidth ;
 const get_height_section_8 = parent_section_8_canvas.offsetHeight ;
 
 canvas_section_8.width = get_width_section_8 > 420 ? 420 : get_width_section_8;
-canvas_section_8.height = get_height_section_8 < 300 ?  860 : get_height_section_8;
+canvas_section_8.height =deviceHeight;
 
 function animate_section_8(){
   section_8_ctx.clearRect(0, 0, canvas_section_8.width, canvas_section_8.height);
@@ -1871,7 +1871,7 @@ const get_width_section_9 = parent_section_9_canvas.offsetWidth ;
 const get_height_section_9 = parent_section_9_canvas.offsetHeight ;
 
 canvas_section_9.width = get_width_section_9 > 420 ? 420 : get_width_section_9 ;
-canvas_section_9.height = get_height_section_9 < 300 ?  860 : get_height_section_9 ;
+canvas_section_9.height = deviceHeight;
 
 function animate_section_9(){
   section_9_ctx.clearRect(0, 0, canvas_section_9.width, canvas_section_9.height);
@@ -1986,7 +1986,7 @@ const get_width_section_10 = parent_section_10_canvas.offsetWidth ;
 const get_height_section_10 = parent_section_10_canvas.offsetHeight ;
 
 canvas_section_10.width = get_width_section_10 > 420 ? 420 : get_width_section_10 ;
-canvas_section_10.height = get_height_section_10 < 300 ?  860 : get_height_section_10 ;
+canvas_section_10.height = deviceHeight;
 function animate_section_10(){
   section_10_ctx.clearRect(0, 0, canvas_section_10.width, canvas_section_10.height);
   let roseCornerSize = 95;
@@ -2265,7 +2265,7 @@ const get_width_section_11 = parent_section_11_canvas.offsetWidth ;
 const get_height_section_11 = parent_section_11_canvas.offsetHeight ;
 
 canvas_section_11.width = get_width_section_11 > 420 ? 420 : get_width_section_11 ;
-canvas_section_11.height = get_height_section_11 < 300 ?  860 : get_height_section_11;
+canvas_section_11.height =deviceHeight;
 function animate_section_11(){
   section_11_ctx.clearRect(0, 0, canvas_section_11.width, canvas_section_11.height);
   let greenBigLeaveSize = 55;
@@ -2440,7 +2440,7 @@ const get_width_section_13 = parent_section_13_canvas.offsetWidth ;
 const get_height_section_13 = parent_section_13_canvas.offsetHeight ;
 
 canvas_section_13.width = get_width_section_13 > 420 ? 420 : get_width_section_13 ;
-canvas_section_13.height = get_height_section_13 < 300 ?  860 : get_height_section_13;
+canvas_section_13.height = deviceHeight;
 
 function animate_section_13(){
   section_13_ctx.clearRect(0, 0, canvas_section_13.width, canvas_section_13.height);
@@ -2632,7 +2632,7 @@ const get_width_section_14 = parent_section_14_canvas.offsetWidth ;
 const get_height_section_14 = parent_section_14_canvas.offsetHeight ;
 
 canvas_section_14.width = get_width_section_14 > 420 ? 420 : get_width_section_14 ;
-canvas_section_14.height = get_height_section_14 < 300 ?  860 : get_height_section_14 ;
+canvas_section_14.height = deviceHeight;
 function animate_section_14(){
   section_14_ctx.clearRect(0, 0, canvas_section_14.width, canvas_section_14.height);
     let roseBorderCircleSize = 80;
