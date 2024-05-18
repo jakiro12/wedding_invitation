@@ -2476,7 +2476,9 @@ const parent_section_12_canvas = document.querySelector('.section_12');
 let executeTextSection_12=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_12_canvas.getBoundingClientRect().top + parent_section_12_canvas.offsetHeight/2 ;
-  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
+  const boxAnimate=this.document.querySelector('.section_12 > section')
+  if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_12) {
+    boxAnimate.classList.add('section_12_animation')
       executeTextSection_12=true
   } 
 });
@@ -2672,12 +2674,13 @@ animate_section_13()
 let executeTextSection_13=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_13_canvas.getBoundingClientRect().top + parent_section_13_canvas.offsetHeight/2;
-  const animateSection=this.document.querySelector('.section_13 > section')
   const animateCanvas=this.document.querySelector('.section_13 > canvas')
   const animateImages=this.document.querySelectorAll('.section_13 > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
+    animateImages[0].classList.add('section_13--animate_img')
    animateImages[1].classList.add('img_bg_stain_1')
    animateImages[2].classList.add('img_bg_stain_2')
+   animateCanvas.classList.add('section_13--canvas_animate')
    executeTextSection_13=true
   }   
 });
@@ -2884,10 +2887,10 @@ function updateCounter() {
   let currentTime = tiempoRestante(fechaObjetivo);
   let divs = document.querySelectorAll('.section_1--background_circle');
 
-  divs[0].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.dias}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">dias</p>`;//Dias
-  divs[1].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.horas}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">horas</p>`;//Horas
-  divs[2].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.minutos}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">min</p>`; //Minutos
-  divs[3].innerHTML = `<p  style="width: fit-content; height: 22px;font-size: 16px;display:flex;justify-content: center;align-items: center;">${currentTime.segundos}</p>` + `<p style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;">seg</p>`;//Segundos
+  divs[0].innerHTML = `<p  style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;margin-top:10px;">${currentTime.dias}</p>` + `<p style="width: fit-content; height: 12px;font-size: 14px;display:flex;justify-content: center;align-items: center;">dias</p>`;//Dias
+  divs[1].innerHTML = `<p  style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;margin-top:10px;">${currentTime.horas}</p>` + `<p style="width: fit-content; height: 12px;font-size: 14px;display:flex;justify-content: center;align-items: center;">horas</p>`;//Horas
+  divs[2].innerHTML = `<p  style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;margin-top:10px;">${currentTime.minutos}</p>` + `<p style="width: fit-content; height: 12px;font-size: 14px;display:flex;justify-content: center;align-items: center;">min</p>`; //Minutos
+  divs[3].innerHTML = `<p  style="width: fit-content; height: 18px;font-size: 14px;display:flex;justify-content: center;align-items: center;margin-top:10px;">${currentTime.segundos}</p>` + `<p style="width: fit-content; height: 12px;font-size: 14px;display:flex;justify-content: center;align-items: center;">seg</p>`;//Segundos
 }
 
 // Actualizar el contador cada segundo

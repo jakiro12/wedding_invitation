@@ -111,16 +111,13 @@
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  font-size: 10px;
   font-family: 'Carneys Gallery Script Demo Ver', sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-bottom: 10px;
-  padding-top: 10px; 
 }
 .section_1--background_circle > p:nth-child(2){
   font-family: "Cormorant Infant", serif;
@@ -905,6 +902,10 @@
   cursor: pointer;
   margin-top: 10px;
   filter: drop-shadow(6px 6px 8px #565657);
+  animation-name: fade_section_9;
+  animation-duration: 2s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
 .section_10{
   position: relative;
@@ -1074,8 +1075,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
-
+.section_12_animation{
+  animation-name: fade_section_9;
+  animation-duration: 4s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
 
 .section_13{
   position: relative;
@@ -1084,7 +1091,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.img_hours{
+
+.section_13 > canvas{
+  opacity: 0;
+}
+.img_hours{ 
+  opacity: 0;
+}
+.section_13--animate_img{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1093,7 +1107,18 @@
   transform: translate(-50%, -50%) scale(1);
   object-fit: contain;
   z-index: 2;
+  animation-name: fade_section_9;
+  animation-duration: 4s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
 }
+.section_13--canvas_animate{
+  animation-name: fade_section_9;
+  animation-duration: 4s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
+
 .section_14{
   position: relative;
   background: url('fondo-abajo.svg');
