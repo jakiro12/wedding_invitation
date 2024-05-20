@@ -2452,12 +2452,15 @@ function animate_section_11(){
 }
 animate_section_11()
 let executeTextSection_11=false
+const btnToAction=document.querySelector('.section_11 > button')
+btnToAction.addEventListener('click',()=>{
+  window.open('gift_inv.pdf','_blank')
+})
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_11_canvas.getBoundingClientRect().top + parent_section_11_canvas.offsetHeight/2 ;
   const bothSquares=this.document.querySelectorAll('.section_11 > div')
   const animateCanvas=this.document.querySelector('.section_11 > canvas')
   const animateImages=this.document.querySelectorAll('.section_11 > img')
-  const btnToAction=this.document.querySelector('.section_11 > button')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
       animateCanvas.classList.add('scale_section_2');
       bothSquares[0].classList.add('first_square')
