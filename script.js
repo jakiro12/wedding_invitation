@@ -2286,13 +2286,16 @@ function animate_section_10(){
 }
 animate_section_10()
 let executeTextSection_10=false
+const btnAction=document.querySelector('.section_10 > main > button')
+btnAction.addEventListener('click',()=>{
+    window.open('gift_inv.pdf','_blank')
+})
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_10_canvas.getBoundingClientRect().top + parent_section_10_canvas.offsetHeight/2;
   const animateCanvas=this.document.querySelector('.section_10 > canvas')
   const animateImages=this.document.querySelectorAll('.section_10 > img')
   const bothCircles=this.document.querySelectorAll('.section_10 > div')
   const textAnimate=this.document.querySelector('.section_10 > main')
-  const btnAction=this.document.querySelector('.section_10 > main > button')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_10) {
     animateCanvas.classList.add('animate_section_9_canvas')
     animateImages[0].classList.add('img_bg_stain_1')
