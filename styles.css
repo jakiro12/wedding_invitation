@@ -450,7 +450,7 @@
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(255, 99, 71, 0.181);
+  background-color: #fcead5;
   z-index: -1;
   transform: translate(-50%, -50%) scale(0.4) ; 
   animation: scalePhrase 3.8s linear forwards;
