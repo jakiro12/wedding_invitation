@@ -1,3 +1,6 @@
+let width = document.documentElement.clientWidth * window.devicePixelRatio;
+viewport = document.querySelector("meta[name=viewport]");
+viewport.setAttribute('content', 'width=' + width + ', minimum-scale= 1');
 const parentTagSection_1=document.querySelector('.section_1')
 const canvas = document.getElementById('logoCanvas');
 const ctx = canvas.getContext('2d');
@@ -2705,7 +2708,7 @@ function animate_section_14(){
     let greenBigLeaveSize = 60;
     let littleStickLeaveSize=75;
     let mediumStickLeaveSize=80;
-    let whiteLeaveSize=60;
+    let whiteLeaveSize=50;
     let tinyLeaveSize=50;
     let redPointsLeaveSize=60;
         
@@ -2810,13 +2813,13 @@ function animate_section_14(){
     section_14_ctx.save();
     section_14_ctx.translate(redPointsLeaveSize/2 + 40,  centerY*2 - 90);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 180 ) * Math.PI / 180);  
-    section_14_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize*1.5, redPointsLeaveSize*1.5);
+    section_14_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize*2, redPointsLeaveSize*2);
     section_14_ctx.restore();
 
     section_14_ctx.save();
     section_14_ctx.translate( whiteLeaveSize/2 , centerY*2 - 90 );
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 200 ) * Math.PI / 180);  
-    section_14_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize*1.5, whiteLeaveSize*1.5);
+    section_14_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize*2, whiteLeaveSize*2);
     section_14_ctx.restore();
 
 
@@ -2835,13 +2838,13 @@ function animate_section_14(){
     section_14_ctx.save();
     section_14_ctx.translate(centerX*2 - 60 ,  centerY*2 - 130);
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 0 ) * Math.PI / 180);  
-    section_14_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize*1.5, redPointsLeaveSize*1.5);
+    section_14_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize*2, redPointsLeaveSize*2);
     section_14_ctx.restore();
 
     section_14_ctx.save();
     section_14_ctx.translate(centerX*2 - whiteLeaveSize/2 , centerY*2 - 130 );
     section_14_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 20 ) * Math.PI / 180);  
-    section_14_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize*1.5, whiteLeaveSize*1.5);
+    section_14_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize*2, whiteLeaveSize*2);
     section_14_ctx.restore();
 
 
