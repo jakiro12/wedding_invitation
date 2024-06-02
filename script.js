@@ -1,6 +1,3 @@
-let width = document.documentElement.clientWidth * window.devicePixelRatio;
-viewport = document.querySelector("meta[name=viewport]");
-viewport.setAttribute('content', 'width=' + width + ', minimum-scale= 1');
 const parentTagSection_1=document.querySelector('.section_1')
 const canvas = document.getElementById('logoCanvas');
 const ctx = canvas.getContext('2d');
@@ -29,8 +26,8 @@ const angleRotation=4; // Angulo de Rotacion de las animaciones
 
 const containerWidth = document.getElementById('container_canvas').clientWidth;
 const deviceHeight=window.innerHeight
-canvas.width = containerWidth > 420 ? 420 : containerWidth ;
-canvas.height = deviceHeight;
+canvas.width = Math.floor(containerWidth > 420 ? 420 : containerWidth) ;
+canvas.height = Math.floor(deviceHeight);
 
 const circlesDatesContainer=document.querySelectorAll('.section_1--counter > div')
 const canvasCirclesAnimation=document.querySelector(".circle_times_animation_1")
@@ -505,8 +502,8 @@ const canvas_section_2 = document.getElementById('section_canvas_2');
 const section_2_ctx = canvas_section_2.getContext("2d");
 
 const get_width_section_2 = parent_section_2_canvas.clientWidth;
-canvas_section_2.width = get_width_section_2 > 420 ? 420 : get_width_section_2 ;
-canvas_section_2.height = deviceHeight;
+canvas_section_2.width = Math.floor(get_width_section_2 > 420 ? 420 : get_width_section_2) ;
+canvas_section_2.height = Math.floor(deviceHeight);
 
 const centerX = canvas_section_2.width / 2;
 const centerY = canvas_section_2.height / 2;
@@ -798,8 +795,8 @@ const section_3_ctx = canvas_section_3.getContext('2d');
 const get_width_section_3 = parent_section_3_canvas.clientWidth;
 const get_height_section_3 = parent_section_3_canvas.clientHeight;
 
-canvas_section_3.width = get_width_section_3 > 420 ? 420 : get_width_section_3 ;
-canvas_section_3.height = deviceHeight
+canvas_section_3.width = Math.floor(get_width_section_3 > 420 ? 420 : get_width_section_3) ;
+canvas_section_3.height = Math.floor(deviceHeight);
 
 const width_squares= 250;
 const height_squares=250;
