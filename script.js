@@ -811,7 +811,7 @@ function animate_section_3() {
   
   let mediumStickLeaveSize=95;
           
-    section_3_ctx.drawImage(mediumStickGreenImage, centerX - 50, centerY -200, mediumStickLeaveSize + 20, mediumStickLeaveSize);
+    section_3_ctx.drawImage(mediumStickGreenImage, centerX + 30, centerY + 120, mediumStickLeaveSize + 20, mediumStickLeaveSize);
   requestAnimationFrame(animate_section_3) 
 }
 animate_section_3()
