@@ -808,51 +808,11 @@ const middle_width= get_width_section_3 / 2
 const initialImageSize=0;
 function animate_section_3() {
   section_3_ctx.clearRect(0, 0, canvas_section_3.width, canvas_section_3.height);
-  let greenBigLeaveSize = 55;
-  let littleStickLeaveSize=95;
-  let mediumStickLeaveSize=95;
-  let whiteLeaveSize=50;
-  let redPointsLeaveSize=60;
-  let roseBorderCircleSize = 65;
-  let tinyLeaveSize=90;
   
-    section_3_ctx.save();
-    section_3_ctx.translate( centerX - 150,  centerY - 185 );
-    section_3_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX - 50 , centerY - 240 );
-    section_3_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize + 20, mediumStickLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX - 80 , centerY - 220 )
-    section_3_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
-    section_3_ctx.restore(); 
-
-    section_3_ctx.save();
-    section_3_ctx.translate( centerX - 130 , centerY - 215 );
-    section_3_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX - 130 ,  centerY - 215 );
-    section_3_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize,redPointsLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX - 90 , centerY - 170 );
-    section_3_ctx.rotate(Math.PI * 2.2);
-    section_3_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize,roseBorderCircleSize);
-    section_3_ctx.restore();
-
-
-    angleLeave += 1; 
-    
-      requestAnimationFrame(animate_section_3);
-    
-   
+  let mediumStickLeaveSize=95;
+          
+    section_3_ctx.drawImage(mediumStickGreenImage, centerX - 50, centerY -200, mediumStickLeaveSize + 20, mediumStickLeaveSize);
+  requestAnimationFrame(animate_section_3) 
 }
 animate_section_3()
 
