@@ -1316,17 +1316,19 @@
   width: 25%;
   height: 25%;
   outline: 2px solid black;
-  left: 50%;
+  left: 40%;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 4;
+  overflow: visible;
 }
 .box_flower_1 > div{
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: visible;
 }
 @keyframes rotate_big_green {
   0% {
@@ -1380,6 +1382,30 @@
   }
 }
 .container_flower_r > img:nth-child(1){
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% + 65px);
+  transform: translate(-50%, -50%) rotateZ(20deg); 
+}
+.container_flower_r > img:nth-child(2){
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: calc(50% + 70px);
+  left: calc(50% - 15px);
+  transform: translate(-50%, -50%) rotateZ(150deg); 
+}
+.container_flower_r > img:nth-child(3){
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: calc(50% );
+  left: calc(50% + 65px);
+  transform: translate(-50%, -50%) rotateZ(250deg); 
+}
+.container_flower_r > img:nth-child(4){
   width: 50px;
   height: 50px;
   position: absolute;
@@ -1388,7 +1414,23 @@
   transform: translate(-50%, -50%) rotateZ(0deg); 
   animation: rotate_white_left 3s infinite linear;
 }
-.container_flower_r > img:nth-child(2){
+.container_flower_r > img:nth-child(5){
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% + 30px);
+  transform: translate(-50%, -50%) rotateZ(200deg); 
+}
+.container_flower_r > img:nth-child(6){
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: calc(50% + 40px);
+  left: calc(50% + 15px);
+  transform: translate(-50%, -50%) rotateZ(280deg); 
+}
+.container_flower_r > img:nth-child(7){
   width: 70px;
   height: 70px;
   position: absolute;
@@ -1397,7 +1439,7 @@
   transform: translate(-50%, -50%) rotateZ(90deg); 
   animation: rotate_big_green 3s infinite linear;
 }
-.container_flower_r > img:nth-child(3){
+.container_flower_r > img:nth-child(8){
   width: 70px;
   height: 70px;
   position: absolute;
@@ -1405,6 +1447,14 @@
   left: calc(50% - 5px);
   transform: translate(-50%, -50%) rotateZ(340deg); 
   animation: rotate_big_green_2 3s infinite linear;
+}
+.container_flower_r > img:nth-child(9){
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% + 55px);
+  transform: translate(-50%, -50%) rotateZ(240deg); 
 }
 .container_flower_r > img:last-child{
   width: 90px;
