@@ -505,8 +505,8 @@ const get_width_section_2 = parent_section_2_canvas.clientWidth;
 canvas_section_2.width = Math.floor(get_width_section_2 > 420 ? 420 : get_width_section_2) ;
 canvas_section_2.height = Math.floor(deviceHeight);
 
-const centerX = canvas_section_2.width / 2;
-const centerY = canvas_section_2.height / 2;
+const centerX = Math.floor(canvas_section_2.width / 2);
+const centerY = Math.floor(canvas_section_2.height / 2);
 
 
 let angleLeave = 0;
