@@ -1340,8 +1340,8 @@
   position: absolute;
   width: 25%;
   height: 25%;
-  left: calc(50% + 115px);
-  top: calc(50% - 115px);
+  left: calc(50% + 105px);
+  top: calc(50% - 105px);
   transform:translate(-50%, -50%) rotateZ(365deg);
   display: flex;
   justify-content: center;
@@ -1353,8 +1353,8 @@
   position: absolute;
   width: 25%;
   height: 25%;
-  left: calc(50% - 115px);
-  top: calc(50% + 115px);
+  left: calc(50% - 105px);
+  top: calc(50% + 105px);
   transform:translate(-50%, -50%) rotateZ(185deg);
   display: flex;
   justify-content: center;
@@ -1446,8 +1446,8 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  top: calc(50% + 35px) ;
-  left:calc(50% + 35px);
+  top: calc(50% + 40px) ;
+  left:calc(50% + 40px);
   transform: translate(-50%, -50%) rotateZ(80deg); 
   animation: rotate_center_medium 3s infinite linear;
 }
@@ -1461,8 +1461,8 @@
   animation: rotate_center_big 3s infinite linear;
 }
 .container_flower_c > img:nth-child(3){
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   position: absolute;
   top: calc(50% - 20px) ;
   left:calc(50% - 50px);
