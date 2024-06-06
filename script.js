@@ -512,18 +512,7 @@ const centerY = Math.floor(canvas_section_2.height / 2);
 let angleLeave = 0;
 function animate_1() {
   section_2_ctx.clearRect(0, 0, canvas_section_2.width, canvas_section_2.height);
-    let roseCornerSize = 95;
-    let roseBorderCircleSize = 75;
-    let greenBigLeaveCornerSize = 85;
-    let greenBigLeaveSize = 50;
-    let littleStickLeaveSize=75;
-    let littleStickLeaveCornerSize=80;
-    let mediumStickLeaveSize=80;
-    let mediumStickLeaveCornerSize=85;
-    let whiteLeaveSize=60;
-    let whiteLeaveCornerSize=70;
-    let tinyLeaveCornerSize=90;
-    let redPointsLeaveSize=60;
+  
     // Primera Linea
     section_2_ctx.strokeStyle = '#9b5a01';
     section_2_ctx.lineWidth = 2;  
@@ -570,13 +559,6 @@ function animate_1() {
     section_2_ctx.stroke();
     section_2_ctx.restore();  
 
-  
-
-
-
-// Corner rosa
-    
- 
     angleLeave += 0.1; // Incrementar el ángulo para la animación
 
     requestAnimationFrame(animate_1);
@@ -588,6 +570,7 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_2_canvas.getBoundingClientRect().top + parent_section_2_canvas.offsetHeight/2;
   const bothCircles=this.document.querySelectorAll('.section_2 > div')
   const allImageAnimate=this.document.querySelectorAll('.section_2 > img')
+  const allImageAnimateFlower=this.document.querySelectorAll('.section_2 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_2) {
       canvas_section_2.classList.add('scale_section_2');
       allImageAnimate[0].classList.add('section_2_text')
@@ -595,6 +578,10 @@ window.addEventListener("scroll", function() {
       bothCircles[1].classList.add('section_2-inner_circle')
       allImageAnimate[1].classList.add('img_bg_stain_1')
       allImageAnimate[2].classList.add('img_bg_stain_2')
+      allImageAnimateFlower[0].style.opacity='1';
+      allImageAnimateFlower[1].style.opacity='1';
+      allImageAnimateFlower[2].style.opacity='1';
+      allImageAnimateFlower[3].style.opacity='1';
       executeTextSection_2=true
   } 
 });
@@ -602,40 +589,9 @@ window.addEventListener("scroll", function() {
 
 /* Tercera Seccion del Canvas */
 const parent_section_3_canvas = document.querySelector('.section_3');
-const canvas_section_3 = document.getElementById('section_canvas_3');
-const section_3_ctx = canvas_section_3.getContext('2d');
-const get_width_section_3 = parent_section_3_canvas.clientWidth;
-const get_height_section_3 = parent_section_3_canvas.clientHeight;
-
-canvas_section_3.width = get_width_section_3 > 420 ? 420 : get_width_section_3 ;
-canvas_section_3.height = deviceHeight;
-
-const width_squares= 250;
-const height_squares=250;
-
-const middle_height=get_height_section_3 /2
-const middle_width= get_width_section_3 / 2
 
 
 const initialImageSize=0;
-function animate_section_3() {
-  section_3_ctx.clearRect(0, 0, canvas_section_3.width, canvas_section_3.height);
-  let greenBigLeaveSize = 55;
-  let littleStickLeaveSize=95;
-  let mediumStickLeaveSize=95;
-  let whiteLeaveSize=50;
-  let redPointsLeaveSize=60;
-  let roseBorderCircleSize = 65;
-  let tinyLeaveSize=90;
-  
-
-    angleLeave += 1; 
-    
-      requestAnimationFrame(animate_section_3);
-    
-   
-}
-animate_section_3()
 
 let executeTextSection_3=false
 
@@ -643,7 +599,7 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_3_canvas.getBoundingClientRect().top + parent_section_3_canvas.offsetHeight /2;
   const squaresImage=this.document.querySelectorAll('.section_3 > div')
   const imageAnimate=this.document.querySelectorAll('.section_3 > img')
-  const canvasVisibility=this.document.querySelector('.section_3 > canvas')
+  const imageAnimateFlower=this.document.querySelectorAll('.section_3 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_3 ) {
     squaresImage[0].classList.add('first_square')
     squaresImage[1].classList.add('second_square')
@@ -651,7 +607,10 @@ window.addEventListener("scroll", function() {
     imageAnimate[1].classList.add('section_3--recent_wedding')
     imageAnimate[2].classList.add('img_bg_stain_1')
     imageAnimate[3].classList.add('img_bg_stain_2')
-    canvasVisibility.classList.add('canvas_section_3')
+    imageAnimateFlower[0].style.opacity='1';
+    imageAnimateFlower[1].style.opacity='1';
+    imageAnimateFlower[2].style.opacity='1';
+    imageAnimateFlower[3].style.opacity='1';
     executeTextSection_3=true
     } 
 });
@@ -1254,7 +1213,6 @@ window.addEventListener("scroll", function() {
 });
 
 const parent_section_14_canvas = document.querySelector('.section_14');
-const canvas_section_14 = document.getElementById('section_canvas_14');
 
 let executeTextSection_14=false
 window.addEventListener("scroll", function() {

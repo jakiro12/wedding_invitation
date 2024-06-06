@@ -150,11 +150,9 @@
 }
 @keyframes scaleframe {
     0% {
-      transform: scale(1.1);
       opacity: 0;
     }
     100% {
-      transform: scale(1);
       opacity: 1;
     }
   }
@@ -185,6 +183,11 @@
   .section_2 > img{
     opacity: 0;
   }
+  .section_2 > aside{
+    opacity: 0;
+    transition: opacity 4s ease;
+  }
+  
   .section_2 > p{
     opacity: 0;
   }
@@ -296,7 +299,10 @@
 .section_3 > img{
   opacity: 0;
 }
-
+.section_3 > aside{
+  opacity: 0;
+  transition: opacity 4s ease;
+}
 @keyframes fadeCanvas3 {
   0% {
        opacity: 0;
@@ -495,11 +501,9 @@
 }
 @keyframes scaleframe_section4 {
   0% {
-    transform: scale(1.1);
     opacity: 0;
   }
   50%{
-    transform: scale(1.05);
     opacity: 1;
   }
   100% {
