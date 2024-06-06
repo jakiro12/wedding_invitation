@@ -629,19 +629,7 @@ canvas_section_4.height = deviceHeight
 
 function animate_section_4() {
   section_4_ctx.clearRect(0, 0, canvas_section_4.width, canvas_section_4.height);
-  let roseCornerSize = 95;
-  let roseBorderCircleSize = 75;
-  let greenBigLeaveCornerSize = 85;
-  let greenBigLeaveSize = 50;
-  let littleStickLeaveSize=75;
-  let littleStickLeaveCornerSize=80;
-  let mediumStickLeaveSize=80;
-  let mediumStickLeaveCornerSize=85;
-  let whiteLeaveSize=60;
-  let whiteLeaveCornerSize=70;
-  let tinyLeaveCornerSize=90;
-  let redPointsLeaveSize=60;
-  // Primera Linea
+
   section_4_ctx.strokeStyle = '#9b5a01';
   section_4_ctx.lineWidth = 2;  
   section_4_ctx.save();  
@@ -702,6 +690,7 @@ window.addEventListener("scroll", function() {
   const bothCircles=this.document.querySelectorAll('.section_4 > span')
   const canvasVisibility=this.document.querySelector('.section_4 > canvas')
   const animateImages=this.document.querySelectorAll('.section_4 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_4 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_4) {
     bothCircles[0].classList.add('section_4-outer_circle')
     bothCircles[1].classList.add('section_4-inner_circle')
@@ -709,6 +698,10 @@ window.addEventListener("scroll", function() {
     canvasVisibility.classList.add('scale_section_4')
     animateImages[0].classList.add('img_bg_stain_1')
     animateImages[1].classList.add('img_bg_stain_2')
+    animateImagesFlower[0].style.opacity='1';
+    animateImagesFlower[1].style.opacity='1';
+    animateImagesFlower[2].style.opacity='1';
+    animateImagesFlower[3].style.opacity='1';
     executeTextSection_4=true
   }   
 });
@@ -725,23 +718,6 @@ const get_height_section_5 = parent_section_5_canvas.offsetHeight;
 canvas_section_5.width = get_width_section_5 > 420 ? 420 : get_width_section_5 ;
 canvas_section_5.height = deviceHeight
 let angleRotationSection5=5;
-function animate_section_5() {
-  section_5_ctx.clearRect(0, 0, canvas_section_5.width, canvas_section_5.height);
-  let greenBigLeaveSize = 55;
-  let littleStickLeaveSize=95;
-  let mediumStickLeaveSize=90;
-  let whiteLeaveSize=50;
-  let redPointsLeaveSize=60;
-  let roseSize = 65;
-
-  
-    
-    angleLeave += 0.1; 
-
-    requestAnimationFrame(animate_section_5);
-}
-animate_section_5()
-
 
 let executeTextSection_5=false
 window.addEventListener("scroll", function() {
@@ -749,11 +725,16 @@ window.addEventListener("scroll", function() {
   const canvasVisibility=this.document.querySelector('.section_5 > canvas')
   const sectionVisibility=this.document.querySelector('.section_5 > section')
   const animateImages=this.document.querySelectorAll('.section_5 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_5 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_5) {
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
    sectionVisibility.classList.add('scale_section_5')
    canvasVisibility.classList.add('canvas_section_3')
+   animateImagesFlower[0].style.opacity='1';
+   animateImagesFlower[1].style.opacity='1';
+   animateImagesFlower[2].style.opacity='1';
+   animateImagesFlower[3].style.opacity='1';
    executeTextSection_5=true
   }   
 });
@@ -773,13 +754,7 @@ canvas_section_6.height = deviceHeight;
 
 function animate_section_6() {
   section_6_ctx.clearRect(0, 0, canvas_section_6.width, canvas_section_6.height);
-  let roseCornerSize = 95;
-  let greenBigLeaveCornerSize = 85;
-  let littleStickLeaveCornerSize=80;
-  let mediumStickLeaveCornerSize=85;
-  let whiteLeaveCornerSize=70;
-  let tinyLeaveCornerSize=90;
-  let redPointsLeaveSize=60;
+  
     // Primera Linea
     section_6_ctx.strokeStyle = '#9b5a01';
     section_6_ctx.lineWidth = 2;  
@@ -841,12 +816,17 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_6_canvas.getBoundingClientRect().top + parent_section_6_canvas.offsetHeight/2;
   const animateCanvas=this.document.querySelector('.section_6 > canvas')
   const imageAnimate=this.document.querySelectorAll('.section_6 > img')
+  const imageAnimateFlower=this.document.querySelectorAll('.section_6 > aside')
   const imageInvitationAnimate=this.document.querySelector('.section_6 > section > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_6) {
    imageAnimate[0].classList.add('img_bg_stain_1')
    imageAnimate[1].classList.add('img_bg_stain_2')
    animateCanvas.classList.add('scale_section_6')
    imageInvitationAnimate.classList.add('scale_section_6')
+   imageAnimateFlower[0].style.opacity='1';
+   imageAnimateFlower[1].style.opacity='1';
+   imageAnimateFlower[2].style.opacity='1';
+   imageAnimateFlower[3].style.opacity='1';
    executeTextSection_6=true
   }   
 });
