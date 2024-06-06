@@ -572,79 +572,7 @@ function animate_1() {
 
   
 
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX + 145, centerY - 60);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 100 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
-    section_2_ctx.restore();
 
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX + 130, centerY - 80);
-    section_2_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 100 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX + 40, centerY - 150);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 45 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX + 75, centerY - 142);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 85 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX + 75, centerY - 142);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 85 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX + 75, centerY - 80);
-    section_2_ctx.rotate(Math.PI / 2);
-    section_2_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize, roseBorderCircleSize);
-    section_2_ctx.restore();
-
-    //Rosa del Lado izquierdo inferior    
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX - 150, centerY + 45);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 300 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(mediumStickGreenImage, -(mediumStickLeaveSize / 2), -(mediumStickLeaveSize / 2), mediumStickLeaveSize, mediumStickLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX - 65, centerY + 145);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 240 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_2_ctx.restore();
-    
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX - 95, centerY + 120);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 240 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize, whiteLeaveSize);
-    section_2_ctx.restore();
-
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX - 135, centerY + 65);
-    section_2_ctx.rotate((Math.sin((angleLeave) * Math.PI / 240) * angleRotation + 300 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX - 95, centerY + 120);
-    section_2_ctx.rotate((Math.sin(angleLeave * Math.PI / 180) * angleRotation + 240 ) * Math.PI / 180);  
-    section_2_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize, redPointsLeaveSize);
-    section_2_ctx.restore();
-
-    section_2_ctx.save();
-    section_2_ctx.translate(centerX - 85, centerY + 75);
-    section_2_ctx.rotate(Math.PI * 1.6);
-    section_2_ctx.drawImage(roseImage, -70, -70, roseBorderCircleSize, roseBorderCircleSize);
-    section_2_ctx.restore();
 
 // Corner rosa
     
