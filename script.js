@@ -628,55 +628,6 @@ function animate_section_3() {
   let roseBorderCircleSize = 65;
   let tinyLeaveSize=90;
   
-    //Flores Laterales
-    section_3_ctx.save();
-    section_3_ctx.translate(tinyLeaveSize/2 + 40, centerY*2 - 130 );
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotation + 220 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate( littleStickLeaveSize/2 + 40,  centerY*2 - 80);
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 110 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(redPointsLeaveSize/2 + 40,  centerY*2 - 90);
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 180 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize*2, redPointsLeaveSize*2);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate( whiteLeaveSize/2 , centerY*2 - 90 );
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 200 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize*2, whiteLeaveSize*2);
-    section_3_ctx.restore();
-
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX*2 - 80 , centerY*2 - 130 );
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 300) * angleRotation + 140 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(tinyGreenLeaveImage_2, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
-    section_3_ctx.restore();
-    
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX*2 - 80 ,  centerY*2 - 80);
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation - 0 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX*2 - 60 ,  centerY*2 - 130);
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 0 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize*2, redPointsLeaveSize*2);
-    section_3_ctx.restore();
-
-    section_3_ctx.save();
-    section_3_ctx.translate(centerX*2 - whiteLeaveSize/2 , centerY*2 - 130 );
-    section_3_ctx.rotate((Math.sin(angleLeave * Math.PI / 240) * angleRotation + 20 ) * Math.PI / 180);  
-    section_3_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize*2, whiteLeaveSize*2);
-    section_3_ctx.restore();
 
     angleLeave += 1; 
     
