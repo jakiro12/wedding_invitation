@@ -1353,9 +1353,9 @@
   position: absolute;
   width: 25%;
   height: 25%;
-  left: calc(50% + 105px);
-  top: calc(33% - 105px);
-  transform:translate(-50%, -50%) rotateZ(365deg);
+  left: calc(50% + 125px);
+  top: calc(35% - 105px);
+  transform:translate(-50%, -50%) rotateZ(5deg);
   display: flex;
   justify-content: center;
   align-items: center;
