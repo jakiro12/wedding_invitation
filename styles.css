@@ -185,7 +185,7 @@
   }
   .section_2 > aside{
     opacity: 0;
-    transition: opacity 4s linear;
+    transition: opacity 8s linear;
   }
   
   .section_2 > p{
@@ -196,7 +196,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.4); 
-    animation: fadeInScale 8s linear-in-out forwards;   
+    animation: fadeInScale 8s ease-in-out forwards;   
     width: 190px;
     height: 190px;
     background: transparent;
@@ -390,7 +390,7 @@
   top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4) rotateZ(-45deg); 
-  animation: scaleSquares 4.5s linear-in-out forwards;
+  animation: scaleSquares 4.5s ease-in-out forwards;
   width: 310px;
   height: 310px;
   border: 3px solid;
@@ -402,7 +402,7 @@
   top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4) rotateZ(-45deg); 
-  animation: scaleSquares_rotate 5s linear-in-out forwards;
+  animation: scaleSquares_rotate 5s ease-in-out forwards;
   width: 310px;
   height: 310px;
   border: 3px solid;
