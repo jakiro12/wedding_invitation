@@ -121,48 +121,7 @@ function animate_circles() {
 
 // Rosa superior
 
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 30, centerYCirclesAnimation - 15);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 100 ) * Math.PI / 180);  
-  circles_animations_ctx.drawImage(mediumStickGreenImage, -mediumStickLeaveSize/2, -mediumStickLeaveSize/2, mediumStickLeaveSize, mediumStickLeaveSize);
-  circles_animations_ctx.restore();
-
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 25, centerYCirclesAnimation - 15 );
-  circles_animations_ctx.rotate((Math.sin((angleLeaveCircles) * Math.PI / 240) * angleRotation + 100 ) * Math.PI / 180);  
-  circles_animations_ctx.drawImage(biggreenLeaveImage, -(greenBigLeaveSize / 2), -(greenBigLeaveSize / 2), greenBigLeaveSize, greenBigLeaveSize);
-  circles_animations_ctx.restore();
-
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 10, centerYCirclesAnimation - 20);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 0 ) * Math.PI / 180); 
-  circles_animations_ctx.drawImage(tinyGreenLeaveImage, -(tinyLeaveSize / 2), -(tinyLeaveSize / 2), tinyLeaveSize, tinyLeaveSize);
-  circles_animations_ctx.restore();
-
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 5, centerYCirclesAnimation - 35);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 240) * angleRotation + 80 ) * Math.PI / 180);  
-  circles_animations_ctx.drawImage(littleStickGreenImage, -(littleStickLeaveSize / 2), -(littleStickLeaveSize / 2), littleStickLeaveSize, littleStickLeaveSize);
-  circles_animations_ctx.restore();
-
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 10, centerYCirclesAnimation - 30);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 60 ) * Math.PI / 180);  
-  circles_animations_ctx.drawImage(whiteLeaveImage, -(whiteLeaveSize / 2), -(whiteLeaveSize / 2), whiteLeaveSize,whiteLeaveSize);
-  circles_animations_ctx.restore();
-
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate(centerXCirclesAnimation + 10, centerYCirclesAnimation - 30);
-  circles_animations_ctx.rotate((Math.sin(angleLeaveCircles * Math.PI / 180) * angleRotation + 60 ) * Math.PI / 180);  
-  circles_animations_ctx.drawImage(redPointsLeaveImage, -(redPointsLeaveSize / 2), -(redPointsLeaveSize / 2), redPointsLeaveSize,redPointsLeaveSize);
-  circles_animations_ctx.restore()
-
-  circles_animations_ctx.save();
-  circles_animations_ctx.translate( centerXCirclesAnimation + 20, centerYCirclesAnimation - 25);
-  circles_animations_ctx.rotate( Math.PI * 0.6)
-  circles_animations_ctx.drawImage(roseImage, -roseSize/2, -roseSize/2, roseSize, roseSize);
-  circles_animations_ctx.restore();
-
+  
   angleLeaveCircles += 1
 
     requestAnimationFrame(animate_circles)

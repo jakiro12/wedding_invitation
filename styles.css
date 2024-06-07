@@ -83,6 +83,18 @@
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
+.section_1--circle_counters > aside{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.section_1--counter--circle_counter_flowers > div{
+  transform: scale(0.25) rotateZ(15deg);
+}
 .section_1--counter > div >span{
   width: calc(100% - 4px);
   display: block;
