@@ -386,12 +386,15 @@ window.addEventListener("scroll", function() {
   const animateCanvas=this.document.querySelector('.section_7 > canvas')
   const animateImages=this.document.querySelectorAll('.section_7 > img')
   const getBtnCheck=this.document.querySelector('.section_7 > button')
+  const animateImagesFlower=this.document.querySelectorAll('.section_7 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_7) {
    animateSection.classList.add('scale_section_5')
    animateCanvas.classList.add('canvas_section_7')
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
    getBtnCheck.classList.add('section_7--button-check')
+   animateImagesFlower[0].style.opacity='1';
+   animateImagesFlower[1].style.opacity='1';
    executeTextSection_7=true
   }   
 });
@@ -410,14 +413,6 @@ canvas_section_8.height =deviceHeight;
 
 function animate_section_8(){
   section_8_ctx.clearRect(0, 0, canvas_section_8.width, canvas_section_8.height);
-  let roseCornerSize = 95;
-  let greenBigLeaveCornerSize = 85;
-  let littleStickLeaveCornerSize=80;
-  let mediumStickLeaveCornerSize=85;
-  let whiteLeaveCornerSize=70;
-  let tinyLeaveCornerSize=90;
-  let redPointsLeaveSize=60;
-    // Primera Linea
     section_8_ctx.strokeStyle = '#9b5a01';
     section_8_ctx.lineWidth = 2;  
     section_8_ctx.save();  
@@ -472,11 +467,14 @@ window.addEventListener("scroll", function() {
   const animateSection=this.document.querySelector('.section_8 > section')
   const animateCanvas=this.document.querySelector('.section_8 > canvas')
   const animateImages=this.document.querySelectorAll('.section_8 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_8 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
    animateSection.classList.add('scale_section_8')
    animateCanvas.classList.add('scale_section_8_canvas')
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
+   animateImagesFlower[0].style.opacity='1'
+   animateImagesFlower[1].style.opacity='1'
    executeTextSection_8=true
   }   
 });
@@ -497,6 +495,7 @@ window.addEventListener("scroll", function() {
   const animateSection=this.document.querySelector('.section_9 > section')
   const animateCanvas=this.document.querySelector('.section_9 > canvas') 
   const animateImages=this.document.querySelectorAll('.section_9 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_9 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_9) {
    animateCanvas.classList.add('animate_section_9_canvas')
    animateSection.classList.add('animate_section_9') 
@@ -504,6 +503,8 @@ window.addEventListener("scroll", function() {
    animateImages[1].classList.add('img_bg_stain_2')
    btnChecks[0].classList.add('section_9--btn_check')
    btnChecks[1].classList.add('section_9--btn_check')
+   animateImagesFlower[0].style.opacity='1'
+   animateImagesFlower[1].style.opacity='1'
    executeTextSection_9=true
   }   
 });
@@ -520,18 +521,6 @@ canvas_section_10.width = get_width_section_10 > 420 ? 420 : get_width_section_1
 canvas_section_10.height = deviceHeight;
 function animate_section_10(){
   section_10_ctx.clearRect(0, 0, canvas_section_10.width, canvas_section_10.height);
-  let roseCornerSize = 95;
-    let roseBorderCircleSize = 75;
-    let greenBigLeaveCornerSize = 85;
-    let greenBigLeaveSize = 50;
-    let littleStickLeaveSize=75;
-    let littleStickLeaveCornerSize=80;
-    let mediumStickLeaveSize=80;
-    let mediumStickLeaveCornerSize=85;
-    let whiteLeaveSize=60;
-    let whiteLeaveCornerSize=70;
-    let tinyLeaveCornerSize=90;
-    let redPointsLeaveSize=60;
     // Primera Linea
     section_10_ctx.strokeStyle = '#9b5a01';
     section_10_ctx.lineWidth = 2;  
@@ -597,6 +586,7 @@ window.addEventListener("scroll", function() {
   const animateImages=this.document.querySelectorAll('.section_10 > img')
   const bothCircles=this.document.querySelectorAll('.section_10 > div')
   const textAnimate=this.document.querySelector('.section_10 > main')
+  const animateImagesFlower=this.document.querySelectorAll('.section_10 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_10) {
     animateCanvas.classList.add('animate_section_9_canvas')
     animateImages[0].classList.add('img_bg_stain_1')
@@ -605,6 +595,8 @@ window.addEventListener("scroll", function() {
     bothCircles[1].classList.add('section_10-inner_circle')
     textAnimate.classList.add('phrase_section_10')
     btnAction.classList.add('phrase_section_10--btn_check')
+    animateImagesFlower[0].style.opacity='1'
+    animateImagesFlower[1].style.opacity='1'
    executeTextSection_10=true
   }   
 });
@@ -622,6 +614,7 @@ window.addEventListener("scroll", function() {
   const bothSquares=this.document.querySelectorAll('.section_11 > div')
   const animateCanvas=this.document.querySelector('.section_11 > canvas')
   const animateImages=this.document.querySelectorAll('.section_11 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_11 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_11) {
       animateCanvas.classList.add('scale_section_2');
       bothSquares[0].classList.add('first_square')
@@ -631,6 +624,10 @@ window.addEventListener("scroll", function() {
     animateImages[2].classList.add('img_bg_stain_1')
     animateImages[3].classList.add('img_bg_stain_2')
     btnToAction.classList.add('section_11--btn_check')
+    animateImagesFlower[0].style.opacity='1'
+    animateImagesFlower[1].style.opacity='1'
+    animateImagesFlower[2].style.opacity='1'
+    animateImagesFlower[3].style.opacity='1'
       executeTextSection_11=true
   } 
 });
@@ -659,13 +656,6 @@ canvas_section_13.height = deviceHeight;
 
 function animate_section_13(){
   section_13_ctx.clearRect(0, 0, canvas_section_13.width, canvas_section_13.height);
-  let roseCornerSize = 95;
-  let greenBigLeaveCornerSize = 85;
-  let littleStickLeaveCornerSize=80;
-  let mediumStickLeaveCornerSize=85;
-  let whiteLeaveCornerSize=70;
-  let tinyLeaveCornerSize=90;
-  let redPointsLeaveSize=60;
     // Primera Linea
     section_13_ctx.strokeStyle = '#9b5a01';
     section_13_ctx.lineWidth = 2;  
@@ -720,11 +710,14 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_13_canvas.getBoundingClientRect().top + parent_section_13_canvas.offsetHeight/2;
   const animateCanvas=this.document.querySelector('.section_13 > canvas')
   const animateImages=this.document.querySelectorAll('.section_13 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_13 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
     animateImages[0].classList.add('section_13--animate_img')
    animateImages[1].classList.add('img_bg_stain_1')
    animateImages[2].classList.add('img_bg_stain_2')
    animateCanvas.classList.add('section_13--canvas_animate')
+   animateImagesFlower[0].style.opacity='1'
+   animateImagesFlower[1].style.opacity='1'
    executeTextSection_13=true
   }   
 });
@@ -736,12 +729,17 @@ window.addEventListener("scroll", function() {
   const box2Top = parent_section_14_canvas.getBoundingClientRect().top + parent_section_14_canvas.offsetHeight/2;
   const animateCircles=this.document.querySelectorAll('.section_14 > div')
   const animateImages=this.document.querySelectorAll('.section_14 > img')
+  const animateImagesFlower=this.document.querySelectorAll('.section_14 > aside')
   if (box2Top <= window.innerHeight && box2Top >= 0 ) {
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
    animateImages[2].classList.add('section_14--img_invitation')
    animateCircles[0].classList.add('section_14-outer_circle')
    animateCircles[1].classList.add('section_14-inner_circle')
+   animateImagesFlower[0].style.opacity='1'
+   animateImagesFlower[1].style.opacity='1'
+   animateImagesFlower[2].style.opacity='1'
+   animateImagesFlower[3].style.opacity='1'
    executeTextSection_14=true
   }   
 });

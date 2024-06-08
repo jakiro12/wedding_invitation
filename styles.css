@@ -401,8 +401,8 @@
   width: 290px;
   height: 290px;
   animation-name: scaleImage;
-  animation-duration: 5.5s; 
-  animation-timing-function: linear; 
+  animation-duration: 6s; 
+  animation-timing-function: ease-in; 
   animation-fill-mode: forwards;
   z-index: 1;
 }
@@ -411,7 +411,7 @@
   top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) scale(0.4) rotateZ(-45deg); 
-  animation: scaleSquares 4.5s ease-in-out forwards;
+  animation: scaleSquares 2.5s ease-in-out forwards;
   width: 310px;
   height: 310px;
   border: 3px solid;
@@ -423,7 +423,7 @@
   top: calc(50% + 145px - 230px);
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(-5deg) scale(0.4) rotateZ(-45deg); 
-  animation: scaleSquares_rotate 5s ease-in-out forwards;
+  animation: scaleSquares_rotate 3s ease-in-out forwards;
   width: 310px;
   height: 310px;
   border: 3px solid;
@@ -685,6 +685,10 @@
 .section_7 > img{
   opacity: 0;
 }
+.section_7 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
+}
 .section_7 > section{
   position: absolute;
   width: 90%;
@@ -779,6 +783,10 @@
 .section_8 > img{
   opacity: 0;
 }
+.section_8 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
+}
 .section_8 > section{
   position: absolute;
   width: 80%;
@@ -852,6 +860,10 @@
 }
 .section_9 > img{
   opacity: 0;
+}
+.section_9 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
 }
 .animate_section_9_canvas{
   animation-name: fade_section_9;
@@ -957,6 +969,10 @@
 .section_10 > img{
   opacity: 0;
 }
+.section_10 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
+}
 .section_10 > section{
   position: absolute;
   width: 80%;
@@ -1055,6 +1071,10 @@
 .section_11 > img{
   opacity: 0;
 }
+.section_11 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
+}
 .section_11--recent_wedding{
   position:absolute;
   opacity: 0;
@@ -1113,6 +1133,7 @@
   align-items: center;
   opacity: 0;
 }
+
 .section_12_animation{
   animation-name: fade_section_9;
   animation-duration: 4s; 
@@ -1130,6 +1151,10 @@
 
 .section_13 > canvas{
   opacity: 0;
+}
+.section_13 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
 }
 .img_hours{ 
   opacity: 0;
@@ -1167,6 +1192,10 @@
 }
 .section_14 > canvas {
   z-index: 2;
+}
+.section_14 > aside{
+  opacity: 0;
+  transition: opacity 8s linear;
 }
 .section_14 > img{
   z-index: 1;
