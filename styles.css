@@ -41,10 +41,11 @@
 .section_1 > p{
   position: absolute;
   top: 35px;
+  text-transform: uppercase;
   margin-inline:auto ;
   width: 95%;
   height: fit-content;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
   font-family: "Cormorant Infant", serif;
   font-weight: 300;
@@ -542,6 +543,21 @@
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
 }
+
+@keyframes scaleframe_section8 {
+  0% {
+    transform:  translate(-50%, -50%) scale(0.4);
+    opacity: 0;
+  }
+  50%{
+    transform:  translate(-50%, -50%) scale(0.7);
+    opacity: 1;
+  }
+  100% {
+    transform:  translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
 .section_5{
   position: relative;
   background: url('fondo-arriba.png');
@@ -574,18 +590,28 @@
   z-index: 1;
   opacity: 0;
 }
+@keyframes scaleframe_section_5 {
+  0% {
+    opacity: 0;
+  background-size: 40%;
+  }
+  100% {
+    opacity: 1;
+  background-size: 120%;
+  }
+}
 .section_5--container_info{
   width: calc(100% - 6px);
   height: calc(100% - 6px);
   border: 2px solid #9b5a01;
-  animation-name: scaleframe_section_frame8;
-  animation-duration: 2s; 
+  animation-name: scaleframe_section_5;
+  animation-duration: 4s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
   background: url('text_5.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 40%;
 }
 @keyframes scaleframe_section5 {
   0% {
@@ -617,8 +643,24 @@
     opacity: 1;
   }
 }
+@keyframes scaleframe_section_6 {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .scale_section_6{
   animation-name: scaleframe_section6;
+  animation-duration: 7.6s; 
+  animation-timing-function: linear; 
+  animation-fill-mode: forwards;
+}
+.scale_section_6_img{
+  animation-name: scaleframe_section_6;
   animation-duration: 7.6s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
@@ -639,6 +681,7 @@
   height: 100%;
   object-fit: contain;
   opacity: 0;
+
 }
 .section_6 > canvas{
   z-index: 2;
@@ -717,7 +760,7 @@
   width: 100%;
   height:95%;
   margin-left:10px;
-  transform: scale(1.1);
+  transform: scale(0.4);
   object-fit: contain;
 }
 .section_7 > button{
@@ -754,20 +797,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-@keyframes scaleframe_section8 {
-  0% {
-    transform:  translate(-50%, -50%) scale(1.1);
-    opacity: 0;
-  }
-  50%{
-    transform:  translate(-50%, -50%) scale(1.05);
-    opacity: 1;
-  }
-  100% {
-    transform:  translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-}
+
 @keyframes scalecanvas_section_8 {
   0% {
     opacity: 0;
@@ -823,7 +853,7 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
-  filter: drop-shadow(6px 6px 8px #565657);
+  filter: drop-shadow(6px 6px 8px #c1c1cd);
 }
 .scale_section_8{
   animation-name: scaleframe_section8;
@@ -852,6 +882,16 @@
   
   100% {
     opacity: 1;
+  }
+}
+@keyframes fade_section_9_img {
+  0% {
+    opacity: 0;
+    transform:translate(-50%, -50%)  scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform:translate(-50%, -50%)  scale(1);
   }
 }
 .section_9 > canvas{
@@ -904,7 +944,7 @@
   height: 100%;
   object-fit: cover;
   margin-top: 60px;
-  transform: scale(1.1);
+  transform: scale(0.4);
 }
 .section_9--description > div{
   width: 100%;
@@ -1165,10 +1205,10 @@
   height: 100%;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.4);
   object-fit: contain;
   z-index: 2;
-  animation-name: fade_section_9;
+  animation-name: fade_section_9_img;
   animation-duration: 4s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;

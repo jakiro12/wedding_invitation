@@ -359,7 +359,7 @@ window.addEventListener("scroll", function() {
    imageAnimate[0].classList.add('img_bg_stain_1')
    imageAnimate[1].classList.add('img_bg_stain_2')
    animateCanvas.classList.add('scale_section_6')
-   imageInvitationAnimate.classList.add('scale_section_6')
+   imageInvitationAnimate.classList.add('scale_section_6_img')
    imageAnimateFlower[0].style.opacity='1';
    imageAnimateFlower[1].style.opacity='1';
    imageAnimateFlower[2].style.opacity='1';
@@ -387,12 +387,14 @@ window.addEventListener("scroll", function() {
   const animateImages=this.document.querySelectorAll('.section_7 > img')
   const getBtnCheck=this.document.querySelector('.section_7 > button')
   const animateImagesFlower=this.document.querySelectorAll('.section_7 > aside')
+  const imageInvitation=this.document.querySelector('.section_7--container_info > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_7) {
    animateSection.classList.add('scale_section_5')
    animateCanvas.classList.add('canvas_section_7')
    animateImages[0].classList.add('img_bg_stain_1')
    animateImages[1].classList.add('img_bg_stain_2')
    getBtnCheck.classList.add('section_7--button-check')
+   imageInvitation.classList.add('scale_section_6_img')
    animateImagesFlower[0].style.opacity='1';
    animateImagesFlower[1].style.opacity='1';
    executeTextSection_7=true
@@ -496,6 +498,7 @@ window.addEventListener("scroll", function() {
   const animateCanvas=this.document.querySelector('.section_9 > canvas') 
   const animateImages=this.document.querySelectorAll('.section_9 > img')
   const animateImagesFlower=this.document.querySelectorAll('.section_9 > aside')
+  const centerImage=this.document.querySelector('.section_9--description > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_9) {
    animateCanvas.classList.add('animate_section_9_canvas')
    animateSection.classList.add('animate_section_9') 
@@ -503,6 +506,7 @@ window.addEventListener("scroll", function() {
    animateImages[1].classList.add('img_bg_stain_2')
    btnChecks[0].classList.add('section_9--btn_check')
    btnChecks[1].classList.add('section_9--btn_check')
+   centerImage.classList.add('scale_section_6_img')
    animateImagesFlower[0].style.opacity='1'
    animateImagesFlower[1].style.opacity='1'
    executeTextSection_9=true
