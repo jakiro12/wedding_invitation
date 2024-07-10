@@ -33,7 +33,7 @@
 }
 .section_1{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -128,7 +128,7 @@
   width: calc(100% - 3px);
   height: calc(100% - 3px);
   border-radius: 50%;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,7 +189,7 @@
 
   .section_2{
     position: relative;  
-    background: url('fondo-abajo.png');
+    background: url('images/fondo-abajo.png');
     background-size: 200%;
     background-repeat: no-repeat;
     background-position: center;
@@ -228,7 +228,7 @@
   width: calc(100% - 1px);
   height:calc(100% - 1px) ;
   border-radius: 50%;
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,7 +310,7 @@
 }
 .section_3{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -433,7 +433,7 @@
 }
 .section_4 {
   position: relative;
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -478,7 +478,7 @@
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  background: url('prober.svg');
+  background: url('images/prober.svg');
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
@@ -560,7 +560,7 @@
 }
 .section_5{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -608,7 +608,7 @@
   animation-duration: 4s; 
   animation-timing-function: linear; 
   animation-fill-mode: forwards;
-  background: url('text_5.svg');
+  background: url('images/text_5.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -630,7 +630,7 @@
 
 .section_6{
   position: relative;
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -710,7 +710,7 @@
 }
 .section_7{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -776,7 +776,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px/50%;
-  background: url('./boton-ver-mapa.svg');
+  background: url('images/boton-ver-mapa.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -792,7 +792,7 @@
 }
 .section_8{
   position: relative;
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -847,7 +847,7 @@
   left: 48%;
   transform: translate(-50%, -50%) ;
   border-radius: 15px/50%;
-  background: url('./boton-ver-mapa.svg');
+  background: url('images/boton-ver-mapa.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -870,7 +870,7 @@
 
 .section_9{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -957,7 +957,7 @@
   width: 120px;
   height: 60px;
   border-radius: 15px/50%;
-  background: url('./btn_bg.svg');
+  background: url('images/btn_bg.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -982,7 +982,7 @@
   width: 120px;
   height: 60px;
   border-radius: 15px/50%;
-  background: url('./btn_bg.svg');
+  background: url('images/btn_bg.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -997,7 +997,7 @@
 }
 .section_10{
   position: relative;
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1032,7 +1032,7 @@
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  background: url('text_10.svg');
+  background: url('images/text_10.svg');
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: 50% 60%;
@@ -1050,7 +1050,7 @@
   width: 120px;
   height: 60px;
   border-radius: 15px/50%;
-  background: url('./btn_bg.svg');
+  background: url('images/btn_bg.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1099,7 +1099,7 @@
 
 .section_11{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1139,7 +1139,7 @@
   width: 120px;
   height: 60px;
   border-radius: 15px/50%;
-  background: url('./btn_bg.svg');
+  background: url('images/btn_bg.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1154,7 +1154,7 @@
   animation-fill-mode: forwards;
 }
 .section_12{
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1183,7 +1183,7 @@
 
 .section_13{
   position: relative;
-  background: url('fondo-arriba.png');
+  background: url('images/fondo-arriba.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1222,7 +1222,7 @@
 
 .section_14{
   position: relative;
-  background: url('fondo-abajo.png');
+  background: url('images/fondo-abajo.png');
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
