@@ -101,7 +101,7 @@ function animate_1() {
     requestAnimationFrame(animate_1);
 }
 animate_1()
-
+//comentario
 let executeTextSection_2=false
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_2_canvas.getBoundingClientRect().top + parent_section_2_canvas.offsetHeight/2;
