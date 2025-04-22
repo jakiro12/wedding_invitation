@@ -372,12 +372,15 @@ canvas_section_7.width = get_width_section_7  > 420 ? 420 : get_width_section_7 
 canvas_section_7.height = deviceHeight;
 
 let executeTextSection_7= false
+const getBtnCheck=this.document.querySelector('.section_7 > button')
+getBtnCheck.addEventListener('click',()=>{
+  window.open('https://maps.app.goo.gl/5pxRxQbrQXYYmhWU6','_blank')
+})
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_7_canvas.getBoundingClientRect().top + parent_section_7_canvas.offsetHeight/2;
   const animateSection=this.document.querySelector('.section_7 > section')
   const animateCanvas=this.document.querySelector('.section_7 > canvas')
   const animateImages=this.document.querySelectorAll('.section_7 > img')
-  const getBtnCheck=this.document.querySelector('.section_7 > button')
   const animateImagesFlower=this.document.querySelectorAll('.section_7 > aside')
   const imageInvitation=this.document.querySelector('.section_7--container_info > img')
   if (box2Top <= window.innerHeight && box2Top >= 0 && !executeTextSection_7) {
@@ -456,6 +459,10 @@ function animate_section_8(){
 }
 animate_section_8()
 let executeTextSection_8=false
+const getBtnCheck_=this.document.querySelector('.section_8 > section > button')
+getBtnCheck_.addEventListener('click',()=>{
+  window.open('https://maps.app.goo.gl/5pxRxQbrQXYYmhWU6','_blank')
+})
 window.addEventListener("scroll", function() {
   const box2Top = parent_section_8_canvas.getBoundingClientRect().top + parent_section_8_canvas.offsetHeight/2;
   const animateSection=this.document.querySelector('.section_8 > section')
