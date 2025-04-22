@@ -96,7 +96,6 @@ function animate_1() {
     section_2_ctx.stroke();
     section_2_ctx.restore();  
 
-    angleLeave += 0.1; // Incrementar el ángulo para la animación
 
     requestAnimationFrame(animate_1);
 }
@@ -211,11 +210,6 @@ function animate_section_4() {
   section_4_ctx.lineTo(650, 0);
   section_4_ctx.stroke();
   section_4_ctx.restore();  
-
-
-
-
-    angleLeave += 1; // Incrementar el ángulo para la  animación
 
     requestAnimationFrame(animate_section_4);
 }
@@ -337,9 +331,7 @@ function animate_section_6() {
     section_6_ctx.lineTo(650, 0);
     section_6_ctx.stroke();
     section_6_ctx.restore();  
-    //Rosa Esquina
-
-    angleLeave += 1; 
+  
     
       requestAnimationFrame(animate_section_6);
     
@@ -571,11 +563,6 @@ function animate_section_10(){
     section_10_ctx.stroke();
     section_10_ctx.restore();  
 
-  
-
-    
-
-
   requestAnimationFrame(animate_section_10)
 }
 animate_section_10()
@@ -748,7 +735,7 @@ window.addEventListener("scroll", function() {
   }   
 });
 
-const fechaObjetivo = new Date(2024, 5, 28);
+const fechaObjetivo = new Date(2025, 5, 28);
 
 function tiempoRestante(fechaObjetivo) {
     let fechaActual = new Date();
